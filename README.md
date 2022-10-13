@@ -7,6 +7,9 @@ Eerik Sven Puudist <br>
 Lisanne Siniväli <br>
 ChengHan Chung <br>
 
+## Resources
+Google Drive: https://drive.google.com/drive/folders/1IDYaNn0kvyiB37LL9aF61I5tshlyzpCS
+
 ## Assignments Overview
 ### Objective
 To practice the different concepts and modeling techniques and build multi-faceted analytical views on scientific publications data. One view is to build a data cube that can answer BI queries, i.e., building a data warehouse or a data mart. The queries can be in the form of ranking authors in a scientific discipline, computing authors, journals, and publishers’ H-index. Another view is to utilize graph databases to query for, e.g., co-authorship prediction, and analyzing communities. Other views, e.g., using document databases, could serve as an intermediate stage to systematically load and extract the data for the other analytical views. Another objective is to make the process repeatable. That is, you rerun the pipeline to ingest new batches of the data, simulating what happens in reality.
@@ -75,8 +78,9 @@ The following figure is a suggestion of how the pipeline should look like, you c
 Below are the individual tasks regarding the projects that need to be completed. Legend:
 
 :white_check_mark: - completed task; :large_orange_diamond: - in progress; :x: - not started/not completed
+<br>
 
-- :large_orange_diamond: Define the conceptual goal
+- :large_orange_diamond: Define the conceptual goal <br>
     - all the subsequent tasks depend on this
 - :x: Design a rough sketch of the pipeline
 - :x: Access the data
