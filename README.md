@@ -8,8 +8,8 @@ Lisanne Siniväli <br>
 ChengHan Chung <br>
 
 ## Resources
-Google Drive: https://drive.google.com/drive/folders/1IDYaNn0kvyiB37LL9aF61I5tshlyzpCS
-Overleaf (write-up of the project): https://www.overleaf.com/project/6346e5ce25d48976778453a7
+- Google Drive: https://drive.google.com/drive/folders/1IDYaNn0kvyiB37LL9aF61I5tshlyzpCS
+- Overleaf (write-up of the project): https://www.overleaf.com/project/6346e5ce25d48976778453a7
 
 ## Present Tasks
 Below are the individual tasks regarding the projects that need to be completed. Legend:
