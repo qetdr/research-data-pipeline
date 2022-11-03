@@ -18,8 +18,8 @@ Below are the individual tasks regarding the projects that need to be completed.
 
 - :large_orange_diamond: Define the conceptual goal
     - all the subsequent tasks depend on this
-- :x: Design a rough sketch of the pipeline
-- :x: Access the data
+- :large_orange_diamond: Design a rough sketch of the pipeline
+- :white_check_mark: Access the data
 - :large_orange_diamond: to be added ...
 
 ## Project Timeline :calendar:
