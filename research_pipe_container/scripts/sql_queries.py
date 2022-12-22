@@ -61,9 +61,9 @@ CREATE TABLE IF NOT EXISTS author
 last_name VARCHAR,
 first_name VARCHAR,
 middle_name VARCHAR,
-gender VARCHAR,
 affiliation VARCHAR,
 hindex VARCHAR,
+gender VARCHAR,
 PRIMARY KEY (author_id) 
 );
 """)
@@ -71,11 +71,10 @@ PRIMARY KEY (author_id)
 ## journal
 journal_create =  ("""
 CREATE TABLE IF NOT EXISTS journal
-(journal_id VARCHAR,
-issn VARCHAR,
+(journal_issn VARCHAR,
 title VARCHAR,
 if_latest FLOAT,
-PRIMARY KEY (journal_id) 
+PRIMARY KEY (journal_issn) 
 );
 """)
 
@@ -113,16 +112,16 @@ ON CONFLICT (article_id) DO NOTHING
 
 ## author
 author_insert = ("""
-INSERT INTO author (author_id, last_name, first_name, middle_name, gender, affiliation, hindex)
+INSERT INTO author (author_id, last_name, first_name, middle_name, affiliation, hindex, gender)
 VALUES (%s, %s, %s, %s, %s, %s, %s)
 ON CONFLICT (author_id) DO NOTHING
 """)
 
 ## journal
 journal_insert = ("""
-INSERT INTO journal (journal_id, issn, title, if_latest)
-VALUES (%s, %s, %s, %s)
-ON CONFLICT (journal_id) DO NOTHING
+INSERT INTO journal (journal_issn, journal_title, if_latest)
+VALUES (%s, %s, %s)
+ON CONFLICT (journal_issn) DO NOTHING
 """)
 
 insert_tables = [authorship_insert, article_category_insert, 
