@@ -5,28 +5,19 @@
 Dmitri Rozgonjuk <br>
 Eerik Sven Puudist <br>
 Lisanne Siniväli <br>
-ChengHan Chung <br>
+Cheng-Han Chung <br>
 
 ## Resources
 - Google Drive: https://drive.google.com/drive/folders/1IDYaNn0kvyiB37LL9aF61I5tshlyzpCS
 - Overleaf (write-up of the project): https://www.overleaf.com/project/6346e5ce25d48976778453a7
 
-## Present Tasks
-Below are the individual tasks regarding the projects that need to be completed. Legend:
+### Useful Tutorials
 
-:white_check_mark: - completed task; :large_orange_diamond: - in progress; :x: - not started/not completed
+#### Neo4J 
+- Working with the Kaggle data (from Python to Neo4J): https://medium.com/@st3llasia/analyzing-arxiv-data-using-neo4j-part-1-ccce072a2027
+- Network analysis with Kaggle data in Neo4J: https://medium.com/swlh/network-analysis-of-arxiv-dataset-to-create-a-search-and-recommendation-engine-of-articles-cd18b36a185e
+- Link prediction with Neo4J: https://towardsdatascience.com/link-prediction-with-neo4j-part-2-predicting-co-authors-using-scikit-learn-78b42356b44c
 
-- :large_orange_diamond: Define the conceptual goal
-    - all the subsequent tasks depend on this
-- :large_orange_diamond: Design a rough sketch of the pipeline
-- :white_check_mark: Access the data
-- :large_orange_diamond: to be added ...
-
-## Project Timeline :calendar:
-As of today (13.10.2022), there are is no clear deadline information (other than 15.12). 
-- **19.10**: data modeling goals are defined
-- ...
-- **15.12**: Project submission
 
 ## Project Requirements
 Below is the information regarding the project requirements provided by the course instructors.
