@@ -13,6 +13,13 @@ Cheng-Han Chung <br>
 
 ### Useful Tutorials
 
+#### Data Augmentation
+- CrossRef API: https://www.crossref.org/documentation/retrieve-metadata/rest-api/tips-for-using-the-crossref-rest-api/
+- CWT Journal Indicators: https://www.journalindicators.com
+- Genderize.io: https://genderize.io/
+- UCI Name-Gender dataset: https://archive.ics.uci.edu/ml/datasets/Gender+by+Name
+
+
 #### Neo4J 
 - Working with the Kaggle data (from Python to Neo4J): https://medium.com/@st3llasia/analyzing-arxiv-data-using-neo4j-part-1-ccce072a2027
 - Network analysis with Kaggle data in Neo4J: https://medium.com/swlh/network-analysis-of-arxiv-dataset-to-create-a-search-and-recommendation-engine-of-articles-cd18b36a185e
