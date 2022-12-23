@@ -4,6 +4,7 @@ import time # tracking time
 import opendatasets as od # Kaggle datasets
 import pandas as pd # Dataframes
 import numpy as np # Vector operations
+from unidecode import unidecode
 
 ### --- DATA INGESTION --- ###
 def ingest_and_process(force = False):
@@ -88,10 +89,15 @@ def authorship_author_extract(df):
     authorship_raw = authorship_raw.drop(columns = 'authors_parsed')
 
     # Clean up names (remove interpunctuation)
-    authorship_raw['last_name'] = authorship_raw['last_name'].str.replace("[,.;-]'", '', regex=True) 
-    authorship_raw['first_name'] = authorship_raw['first_name'].str.replace("[,.;-]'", '', regex=True) 
-    authorship_raw['middle_name'] = authorship_raw['middle_name'].str.replace("[,.;-]'", '', regex=True) 
-
+    ## Also apply international encoding
+    authorship_raw['last_name'] = authorship_raw['last_name'].apply(unidecode)
+    authorship_raw['first_name'] = authorship_raw['first_name'].apply(unidecode)
+    authorship_raw['middle_name'] = authorship_raw['middle_name'].str.replace("[,.;-]", '', regex=True)
+    
+    authorship_raw['last_name'] = authorship_raw['last_name'].str.replace('[^a-zA-Z0-9]', '', regex=True).str.strip()
+    authorship_raw['first_name'] = authorship_raw['first_name'].str.replace('[^a-zA-Z0-9]', '', regex=True).str.strip()
+    authorship_raw['middle_name'] = authorship_raw['middle_name'].str.replace('[^a-zA-Z0-9]', '', regex=True).str.strip()
+    
     # Author_identifier
     authorship_raw['author_id'] = authorship_raw['last_name'] + authorship_raw['first_name'].str[0]
     
@@ -134,7 +140,7 @@ def article_category_category_extract(df):
 ###### --- article table --- ######
 def article_extract(df):
     # Article table
-    article = pd.DataFrame(columns = ['article_id', 'title', 'doi', 'n_authors', 'journal_issn', 'n_cites', 'year'])
+    article = pd.DataFrame(columns = ['article_id', 'title', 'doi', 'n_authors', 'journal_issn', 'type', 'n_cites', 'year'])
     article['article_id'] = df['article_id']
     article['title'] = df['title']
     article['doi'] = df['doi']
@@ -145,5 +151,5 @@ def article_extract(df):
 ###### --- journal table --- ######
 def journal_extract():
     # Journal table
-    journal = pd.DataFrame(columns = ['journal_issn', 'journal_title', 'if_latest'])
+    journal = pd.DataFrame(columns = ['journal_issn', 'journal_title', 'snip_latest'])
     return journal

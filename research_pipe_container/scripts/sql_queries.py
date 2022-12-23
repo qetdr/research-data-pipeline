@@ -73,7 +73,7 @@ journal_create =  ("""
 CREATE TABLE IF NOT EXISTS journal
 (journal_issn VARCHAR,
 title VARCHAR,
-if_latest FLOAT,
+snip_latest FLOAT,
 PRIMARY KEY (journal_issn) 
 );
 """)
@@ -119,7 +119,7 @@ ON CONFLICT (author_id) DO NOTHING
 
 ## journal
 journal_insert = ("""
-INSERT INTO journal (journal_issn, journal_title, if_latest)
+INSERT INTO journal (journal_issn, journal_title, snip_latest)
 VALUES (%s, %s, %s)
 ON CONFLICT (journal_issn) DO NOTHING
 """)
