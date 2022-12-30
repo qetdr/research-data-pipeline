@@ -5,9 +5,11 @@ import opendatasets as od # Kaggle datasets
 import pandas as pd # Dataframes
 import numpy as np # Vector operations
 from unidecode import unidecode
+import os # accessing directories, make directory
+from math import floor
 
 ### --- DATA INGESTION --- ###
-def ingest_and_process(force = False):
+def ingest_and_extract(force = False):
     """Download the data from Kaggle URL (or use an instance from local machine)
     and exclude the not needed data
     Args:
@@ -106,15 +108,8 @@ def authorship_author_extract(df):
     authorship = authorship_raw.drop(columns = ['last_name', 'first_name', 'middle_name'])
     
     #### --- AUTHOR TABLE --- ####
-    # Create the table from the `authorship` table
+    # Create the table from the `authorship` table and drop duplicates based on ID
     author = authorship_raw[['author_id', 'last_name', 'first_name', 'middle_name']]
-
-    # Drop duplicates
-    author.drop_duplicates(keep=False,inplace=True)
-
-    # Add the `gender` column to be augmented
-    author['affiliation'] = np.nan
-    author['hindex'] = np.nan
 
     # Sort alphabetically by last name
     author = author.sort_values('author_id').reset_index(drop = True)
@@ -153,3 +148,58 @@ def journal_extract():
     # Journal table
     journal = pd.DataFrame(columns = ['journal_issn', 'journal_title', 'snip_latest'])
     return journal
+
+
+##### 
+def ingest_and_prepare():
+    start_pipe = time.time() # Initialize the time of pipeline
+    start_etl = time.time() # Initialize the time of ETL
+    print(f'Time of pipeline start: {time.ctime(start_pipe)}')
+    print()
+    # Data ingestion
+    df = ingest_and_extract(force = False)
+
+    # Prepare Pandas dataframes
+    authorship, author = authorship_author_extract(df)
+    article_category, category = article_category_category_extract(df)
+    article = article_extract(df)
+    journal = journal_extract()
+    
+    # Clean the data last time: remove all authors with NaNs or too short names
+    ## NaNs
+    author = author[~author['author_id'].isnull()]
+    nan_authors = authorship[authorship['author_id'].isnull()]['article_id'].values
+    article = article.loc[~article['article_id'].isin(nan_authors)]
+    authorship = authorship.loc[~authorship['article_id'].isin(nan_authors)]
+
+    ## Too short (< 4) names
+    author = author[~(author['author_id'].str.len() < 4)].reset_index(drop = True)
+    short_authors = authorship[(authorship['author_id'].str.len() < 4)]['article_id'].values
+    article = article.loc[~article['article_id'].isin(short_authors)].reset_index(drop = True)
+    authorship = authorship.loc[~authorship['article_id'].isin(short_authors)].reset_index(drop = True)
+    
+    ## Write .csv-s to 'tables' directory
+    ### Create the 'tables' directory
+    try:
+        os.mkdir('./tables')
+        print("Created directory 'tables'.")
+    except:
+        # It may happen that the dir already exists...
+        print("Directory 'tables' exists.")
+    finally:
+        print('Writing pandas tables to .csv-files.')
+    
+    ### Write the tables as csv
+    authorship.to_csv('tables/authorship.csv', index = False)
+    article_category.to_csv('tables/article_category.csv', index = False)
+    category.to_csv('tables/category.csv', index = False)
+    journal.to_csv('tables/journal.csv', index = False)
+    article.to_csv('tables/article.csv', index = False)
+    author.to_csv('tables/author.csv', index = False)
+
+    print('Pandas tables to .csv-files successfully written!')
+    
+    end_etl = time.time() # Endtime of ETL
+    
+    print()
+    print(f'ETL Runtime: {round(end_etl - start_etl, 6)} sec.')
