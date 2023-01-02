@@ -1,0 +1,12 @@
+apache-airflow
+opendatasets==0.1.22
+pandas==1.5.2
+unidecode
+ipython-sql==0.4.1
+genderize
+habanero
+jupyterlab==3.0.7
+psycopg2-binary
+neo4j==4.2.1
+py2neo==2021.0.1
+neo4jupyter
