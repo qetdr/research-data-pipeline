@@ -445,7 +445,7 @@ default_args = {
     'catchup' : False, # Catchup is turned off
     'email_on_retry': False, # Do not email on retry
     'email_on_failure': False, # Also, do not email on failure
-    'start_date': datetime.datetime(2022, 8, 1), # set starting day in the past
+    'start_date': datetime(2022, 8, 1), # set starting day in the past
     'schedule_interval': '@yearly' # run yearly
 }
 
