@@ -45,7 +45,7 @@ def delete_for_update():
     """
     date_value = ''.join(str(date.today()).split('-')[1:3])
     
-    if date_value == '0801': # check if the date value is August 1st
+    if date_value == '0105': # check if the date value is August 1st
         
         # Delete the .csv tables from 'data_ready'
         try:
@@ -251,9 +251,13 @@ def pandas_to_dwh():
         print('Postgres connection not established')
         sys.exit(1)
 
-    # Insert into tables
-    for i in tqdm(range(len(tables))):
-        insert_to_tables(cur, tables[i], insert_tables[i])
+    try:
+        # Insert into tables
+        for i in tqdm(range(len(tables))):
+            insert_to_tables(cur, tables[i], insert_tables[i])
+    except:
+        print('Error in inserting the data.')
+        print('Error in inserting the data.')
 
 ## From pandas to Neo4J
 def pandas_to_neo():
@@ -304,6 +308,19 @@ def pandas_to_neo():
         RETURN count(n.prop) + count(r.prop)
         """)
         print(f'Warm-up query result: {result_warmup1}')
+
+        result_warmup2 = conn_neo.query('MATCH (n:Article) RETURN COUNT(n) AS ct')
+        print(result_warmup2[0]['ct'])
+
+        result_warmup3 = conn_neo.query('MATCH (n:Author) RETURN COUNT(n) AS ct')
+        print(result_warmup3 [0]['ct'])
+
+        result_warmup4 = conn_neo.query("""
+        MATCH (n)
+        OPTIONAL MATCH (n:Author)-[r:AUTHORED]->(n2:Article)
+        RETURN count(r)
+        """)
+        print(result_warmup4)
 
         print(f'Inserting pandas to Neo4J...')
         try: 
@@ -374,10 +391,10 @@ def pandas_to_neo():
 default_args = {
     'owner': 'dmitri_rozgonjuk',
     'depends_on_past': False, # The DAG does not have dependencies on past runs
-    'retries': 3, # On failure, the task are retried 3 times
-    # 'schedule_interval': None,
-    'schedule_interval': '0 0 1 7 *', # Schedule interval yearly to execute on 00:00 01.08
-    'retry_delay': timedelta(minutes = 5), # Retries happen every 5 minutes
+    'retries': 4, # On failure, the task are retried 3 times
+    'schedule_interval': None,
+   # 'schedule_interval': '0 0 1 7 *', # Schedule interval yearly to execute on 00:00 01.08
+    'retry_delay': timedelta(minutes = 2), # Retries happen every 5 minutes
     'catchup' : False, # Catchup is turned off
     'email_on_retry': False, # Do not email on retry
     'email_on_failure': False, # Also, do not email on failure
