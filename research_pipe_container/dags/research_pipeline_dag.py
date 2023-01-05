@@ -46,6 +46,8 @@ def delete_for_update():
     date_value = ''.join(str(date.today()).split('-')[1:3])
     
     if date_value == '0801': # check if the date value is August 1st
+        
+        # Delete the .csv tables from 'data_ready'
         try:
             print('Removing previously cleaned tables for update...')
             os.remove('dags/data_ready/article.csv')
@@ -58,6 +60,69 @@ def delete_for_update():
             print('Succesfully removed tables for update!')
         except:
             print("Could not remove the 'data_ready' directory")
+
+        # Make the -- Postgres -- connection and delete the tables
+        # Connect to the database
+        try: 
+            print('Connecting to Postgres...')
+            conn = psycopg2.connect(host="postgres", user="airflow", password="airflow", database ="airflow", port = 5432)
+            conn.set_session(autocommit=True)
+            cur = conn.cursor()
+        except:
+            print('Postgres connection not established')
+            sys.exit(1)
+        
+        # Drop Tables 
+        try: 
+            for query in drop_tables:
+                cur.execute(query)
+                conn.commit()
+            print('All tables dropped.')
+        except:
+            print('Error with dropping tables.')
+            
+        # Create Tables
+        try: 
+            for query in create_tables:
+                cur.execute(query)
+                conn.commit()
+            print('All tables created.')
+        except:
+            print('Error with creating tables.')
+
+        # Make the -- Neo4J -- connection and delete the entities
+        try:
+            print('Trying to establish Neo4J connection...')
+            conn_neo = Neo4jConnection(uri='bolt://neo:7687', user='', pwd='')
+            print('Neo4J Connection established!')
+        except: 
+            print('Neo4j Connection not established...') 
+            sys.exit(1)
+        try:
+            print('Deleting previous nodes and relationships...')
+            # Delete all nodes and relationships that exist
+            conn_neo.query('MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n, r')
+            print('Previous nodes and relationships deleted!')
+        except:
+            print('Error with deleting nodes and relationships.')
+            sys.exit(1)
+        
+        # Set constraints
+        try:
+            print('Setting constraints to unique IDs...')
+            # Add ID uniqueness constraint to optimize queries
+            conn_neo.query('CREATE CONSTRAINT ON(n:Category) ASSERT n.id IS UNIQUE')
+            conn_neo.query('CREATE CONSTRAINT ON(j:Journal) ASSERT j.id IS UNIQUE')
+            conn_neo.query('CREATE CONSTRAINT ON(au:Author) ASSERT au.id IS UNIQUE')
+            conn_neo.query('CREATE CONSTRAINT ON(ar:Article) ASSERT ar.id IS UNIQUE')
+            print('Constraints to unique IDs successfully set!')
+        except:
+            print('Could not set constraints.')
+            sys.exit(1)
+
+        print('Data tables deleted.')
+        print('Postgres database reset.')
+        print('Neo4j database reset.')
     else:
         print('Too early for a data update.')
         print('Finishing the task.')   
@@ -182,32 +247,9 @@ def pandas_to_dwh():
         conn = psycopg2.connect(host="postgres", user="airflow", password="airflow", database ="airflow", port = 5432)
         conn.set_session(autocommit=True)
         cur = conn.cursor()
-
-        # create sparkify database with UTF8 encoding
-        cur.execute("DROP DATABASE IF EXISTS research_db")
-        cur.execute("CREATE DATABASE research_db WITH ENCODING 'utf8' TEMPLATE template0")
-    
     except:
         print('Postgres connection not established')
         sys.exit(1)
-
-    # Drop Tables 
-    try: 
-        for query in drop_tables:
-            cur.execute(query)
-            conn.commit()
-        print('All tables dropped.')
-    except:
-        print('Error with dropping tables.')
-        
-    # Create Tables
-    try: 
-        for query in create_tables:
-            cur.execute(query)
-            conn.commit()
-        print('All tables created.')
-    except:
-        print('Error with creating tables.')
 
     # Insert into tables
     for i in tqdm(range(len(tables))):
@@ -252,41 +294,18 @@ def pandas_to_neo():
         print('Trying to establish Neo4J connection...')
         conn_neo = Neo4jConnection(uri='bolt://neo:7687', user='', pwd='')
         print('Neo4J Connection established!')
-        
-        try:
-            print('Deleting previous nodes and relationships...')
-            # Delete all relationships that exist
-            conn_neo.query('MATCH (a) -[r] -> () DELETE a, r')
-            # Delete all nodes that exist
-            conn_neo.query('MATCH (a) DELETE a') 
-        except:
-            print('Error with deleting nodes and relationships.')
-       
-        try:
-            print('Setting constraints to unique IDs...')
-            # Add ID uniqueness constraint to optimize queries
-            conn_neo.query('CREATE CONSTRAINT ON(n:Category) ASSERT n.id IS UNIQUE')
-            conn_neo.query('CREATE CONSTRAINT ON(j:Journal) ASSERT j.id IS UNIQUE')
-            conn_neo.query('CREATE CONSTRAINT ON(au:Author) ASSERT au.id IS UNIQUE')
-            conn_neo.query('CREATE CONSTRAINT ON(ar:Article) ASSERT ar.id IS UNIQUE')
-        except:
-            print('Could not set constraints.')
 
-        print(f'Inserting pandas to NEO4J...')
-        try: 
-            print("Adding 'article' nodes to Neo4J...")
-            add_article(conn_neo, article)
-            print("'article' added to Neo4J!")
-        except: 
-            print("Could not add 'article' to Neo4J")  
+        # Warm up the start by caching the database
+        ## Read more here: https://neo4j.com/developer/kb/warm-the-cache-to-improve-performance-from-cold-start/
+        ### 1st query
+        result_warmup1 = conn_neo.query("""
+        MATCH (n)
+        OPTIONAL MATCH (n)-[r]->()
+        RETURN count(n.prop) + count(r.prop)
+        """)
+        print(f'Warm-up query result: {result_warmup1}')
 
-        try: 
-            print("Adding 'author' nodes to Neo4J...")
-            add_author(conn_neo, author)
-            print("'author' added to Neo4J!")
-        except: 
-            print("Could not add 'author' to Neo4J")  
-        
+        print(f'Inserting pandas to Neo4J...')
         try: 
             print("Adding 'category' nodes to Neo4J...")
             add_category(conn_neo, category)
@@ -299,7 +318,21 @@ def pandas_to_neo():
             add_journal(conn_neo, journal)
             print("'journal' added to Neo4J!")
         except: 
-            print("Could not add 'journal' nodes to Neo4J")        
+            print("Could not add 'journal' nodes to Neo4J")    
+        
+        try: 
+            print("Adding 'article' nodes to Neo4J...")
+            add_article(conn_neo, article)
+            print("'article' added to Neo4J!")
+        except: 
+            print("Could not add 'article' to Neo4J")  
+
+        try: 
+            print("Adding 'author' nodes to Neo4J...")
+            add_author(conn_neo, author)
+            print("'author' added to Neo4J!")
+        except: 
+            print("Could not add 'author' to Neo4J")      
 
         try: 
             print("Adding 'article_category' relationship to Neo4J...")
