@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 import os
+import sys
 
 # Airflow-related imports
 from airflow import DAG
@@ -29,10 +30,39 @@ import os # accessing directories
 from tqdm import tqdm # track loop runtime
 from unidecode import unidecode # international encoding fo names
 import psycopg2
+from datetime import date
 
 
 #### ------ Python Functions ------  ####
-# Insert into tables (helper function)
+
+## Check the date and delete
+def delete_for_update():
+    """Task for removing tables from 'data_ready'
+    so that all .csv-s could be updated.
+    The fucntion checks if 'today' is August 1st. 
+    This is used for the scheduling job (start = August 2nd, yearly) 
+    where data_ready tables are deleted in the previous day
+    """
+    date_value = ''.join(str(date.today()).split('-')[1:3])
+    
+    if date_value == '0801': # check if the date value is August 1st
+        try:
+            print('Removing previously cleaned tables for update...')
+            os.remove('dags/data_ready/article.csv')
+            os.remove('dags/data_ready/article_augmented.csv')
+            os.remove('dags/data_ready/article_category.csv')
+            os.remove('dags/data_ready/author.csv')
+            os.remove('dags/data_ready/authorship.csv')
+            os.remove('dags/data_ready/category.csv')
+            os.remove('dags/data_ready/journal.csv')
+            print('Succesfully removed tables for update!')
+        except:
+            print("Could not remove the 'data_ready' directory")
+    else:
+        print('Too early for a data update.')
+        print('Finishing the task.')   
+
+## Insert into tables (helper function)
 def insert_to_tables(cur, table, query):
     ''' Helper function for inserting values to Postresql tables
     Args:
@@ -49,8 +79,12 @@ def insert_to_tables(cur, table, query):
         print(f'Error with table -- {table.name} --')
     print()
 
-# DAG task functions
+## Check if the uncleaned tables in the directory or prepare them
 def find_tables_or_ingest_raw():
+    """Function that searches if 'raw' .csv tables exist.
+    If yes, nothing is done (will be used in next task).
+    If no, data will be ingested and prepared.
+    """
     print('Checking if tables are prepared as .csv files...')
     if os.path.exists('dags/tables/author.csv'):
         print("'author.csv' exists.")
@@ -79,9 +113,10 @@ def find_tables_or_ingest_raw():
         ingest_and_prepare()
         print('Tables are in the working directory!')
 
+## Check if clean tables in the directory or prepare them
 def check_or_augment():
     """Function to either check if clean tables exist
-    or clean the data and write them to .csv
+    or clean the data and write them to clean .csv-s.
     """
 
     if os.path.exists('dags/data_ready/article_augmented_raw.csv'):
@@ -107,7 +142,12 @@ def check_or_augment():
     article_category = article_category_ready(article)
     category = category_ready(article_category)
 
+## From pandas to Postgres
 def pandas_to_dwh():
+    """Task that imports .csv-s to pandas, makes the Postgres-connection,
+    creates a database, drops existing and creates new tables, and inserts
+    the data from pandas.
+    """
     # Import the data
     try:
         article = pd.read_csv('dags/data_ready/article.csv')
@@ -134,15 +174,22 @@ def pandas_to_dwh():
         print('All tables staged for DWH.')
     except:
         print('Error with importing the data tables')
+        sys.exit(1)
        
     # Connect to the database
-    conn = psycopg2.connect(host="postgres", user="airflow", password="airflow", database ="airflow", port = 5432)
-    conn.set_session(autocommit=True)
-    cur = conn.cursor()
+    try: 
+        print('Connecting to Postgres...')
+        conn = psycopg2.connect(host="postgres", user="airflow", password="airflow", database ="airflow", port = 5432)
+        conn.set_session(autocommit=True)
+        cur = conn.cursor()
 
-    # create sparkify database with UTF8 encoding
-    cur.execute("DROP DATABASE IF EXISTS research_db")
-    cur.execute("CREATE DATABASE research_db WITH ENCODING 'utf8' TEMPLATE template0")
+        # create sparkify database with UTF8 encoding
+        cur.execute("DROP DATABASE IF EXISTS research_db")
+        cur.execute("CREATE DATABASE research_db WITH ENCODING 'utf8' TEMPLATE template0")
+    
+    except:
+        print('Postgres connection not established')
+        sys.exit(1)
 
     # Drop Tables 
     try: 
@@ -166,7 +213,13 @@ def pandas_to_dwh():
     for i in tqdm(range(len(tables))):
         insert_to_tables(cur, tables[i], insert_tables[i])
 
+## From pandas to Neo4J
 def pandas_to_neo():
+    """Task that makes the connection with Neo4J database,
+    imports cleaned .csv-s, tries to delete the previous relationships and nodes,
+    creates unique ID constraints, inserts the nodes and relationships from pandas,
+    and outputs some test queries (with count of nodes).
+    """
     # Import the data
     try:
         article = pd.read_csv('dags/data_ready/article.csv')
@@ -210,7 +263,7 @@ def pandas_to_neo():
             print('Error with deleting nodes and relationships.')
        
         try:
-            print('Settings constraints to unique IDs...')
+            print('Setting constraints to unique IDs...')
             # Add ID uniqueness constraint to optimize queries
             conn_neo.query('CREATE CONSTRAINT ON(n:Category) ASSERT n.id IS UNIQUE')
             conn_neo.query('CREATE CONSTRAINT ON(j:Journal) ASSERT j.id IS UNIQUE')
@@ -278,7 +331,7 @@ def pandas_to_neo():
         print(f"Number of categories in the NEO4J database: {n_categories[0]['ct']}")
     except:
         print('Neo4J Connection not established...')
-
+        sys.exit(1)
 
 #### ------ AIRFLOW ------  ####
 # Cron notation: https://cloud.google.com/scheduler/docs/configuring/cron-job-schedules
@@ -289,8 +342,8 @@ default_args = {
     'owner': 'dmitri_rozgonjuk',
     'depends_on_past': False, # The DAG does not have dependencies on past runs
     'retries': 3, # On failure, the task are retried 3 times
-    'schedule_interval': None,
-    #'schedule_interval': '0 2 1 8 *', # Schedule interval yearly to 03:00 01.08
+    # 'schedule_interval': None,
+    'schedule_interval': '0 0 1 7 *', # Schedule interval yearly to execute on 00:00 01.08
     'retry_delay': timedelta(minutes = 5), # Retries happen every 5 minutes
     'catchup' : False, # Catchup is turned off
     'email_on_retry': False, # Do not email on retry
@@ -318,13 +371,16 @@ augment_task2 = PythonOperator(task_id='check_or_augment', python_callable = che
 postgres_task3 = PythonOperator(task_id='pandas_to_dwh', python_callable = pandas_to_dwh, dag = dag)
 
 # Neo4J Connection and data load
-neo_task3 = PythonOperator(task_id='pandas_to_neo', python_callable = pandas_to_neo, dag = dag)
+neo_task4 = PythonOperator(task_id='pandas_to_neo', python_callable = pandas_to_neo, dag = dag)
+
+# Neo4J Connection and data load
+prepare_for_update_task5 = PythonOperator(task_id='delete_for_update', python_callable = delete_for_update, dag = dag)
 
 ## Ending the DAG
 end_operator = EmptyOperator(task_id='Stop_Execution',  dag = dag)
 
 # Create task dependencies/pipeline
 ## Initially, data load to Postgres and Neo4J was parallel - but this produced errors (memory issues)
-start_operator >> ingest_task1 >> augment_task2 >> postgres_task3 >> neo_task3 >> end_operator
+start_operator >> prepare_for_update_task5 >> ingest_task1 >> augment_task2 >> postgres_task3 >> neo_task4 >> end_operator
 # augment_task2 >> postgres_task3 >> end_operator
 # augment_task2 >> neo_task3 >> end_operator
