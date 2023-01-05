@@ -8,6 +8,8 @@ from unidecode import unidecode
 import os # accessing directories, make directory
 from math import floor
 from tqdm import tqdm
+import shutil # for rmeoving a non-empty directory
+
 
 ### --- DATA INGESTION --- ###
 def ingest_and_extract(force = False):
@@ -68,7 +70,7 @@ def ingest_and_extract(force = False):
     df_raw = df_raw.reset_index(drop = True)
 
     # Delete the .arxiv directory to save space
-    os.rmdir('./arxiv')
+    shutil.rmtree('./arxiv')
 
     end_time = time.time()
 
