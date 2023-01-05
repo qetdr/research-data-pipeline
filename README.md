@@ -6,6 +6,16 @@ Lisanne Siniväli
 Eerik-Sven Puudist
 Cheng-Han Chung
 
+TO DO:
+- check that data is imported to DWH and NEO
+- schedule Airflow to:
+    - every August 1st to delete the contents in 'data_ready' dir
+    - run the DAG
+        - this should initialize the augmentation process again and compute all stats
+        - also updates the DBs
+- write the readme
+
+
 # Pipeline Structure
 - [GENERAL PIPELINE FIGURE]
 
@@ -19,8 +29,50 @@ Cheng-Han Chung
 
 # Files
 ## Directory tree
+
+DIRS
+
+dags: files necessary for Airflow DAG run
+    - tables: data tables from initial ingestion as well as raw augmented article table
+    - augmentation: files for augmentations
+     - article_journal.csv
+     - names_genders.csv
+    - data_ready: clean and augmented data tables for query use
+    - scripts: python scripts for ETL
+        - raw_to_tables.py
+        - augmentations.py
+        - crossref_queries.py
+        - final_tables.py
+        - sql_queries.py
+        - neo4j_queries.py
+        
+
+logs: airflow logs
+neo4j: neo4j-related files
+plugins: folder for optional airflow plugins, currently not used
+
+FILES
+docker-compose.yaml
+kaggle.json
+README.md
+requirements.txt
+analytical_queries.ipynb
+
 - [TREE]
 - [EXPLANATIONS]
+
+# Prerequisites
+- Docker Desktop
+- Docker Memory > 6GB
+
+
+- python -m pip install -r requirements.txt
+- download the data
+    - python3 dags/scripts/raw_to_tables.py
+
+
+
+- kaggle.json (in the same dir as dags)
 
 # How to Run
 Once Airflow is set up and the services are running, it's time to initiate the pipeline via a DAG. The main function of the DAG is to check if there are clean data tables. If yes, connections are made with databases and data tables are loaded from .csv-s to Postgres DWH and Neo4J. Then, analytic queries can be run from the Jupyter Notebook. If there are no clean data tables, checks are made if the uncleaned (without augmentations) data tables exist. If yes, the data tables are augmented. If no, it is checked whether the raw data folder exists in the directory. If yes, the data are cleaned and augmented. If no, data is first downloaded from the Kaggle repository, cleaned and augmented, and prepared for the databases.
@@ -36,7 +88,7 @@ This creates an environment file for Airflow to allow to run it as a superuser.
 4. Now, run `docker-compose up`. This runs all the services described in the `docker-compose.yaml` file. These services include Airflow, Jupyter Notebook, PostgreSQL, and Neo4J.
 
 
-
+Make sure Neo is running and accessible via a remote interface.
 
 ## Interacting with Services
 In order to be able to use Jupyter Notebook, Neo4J, and Airflow from browser, use the following links:
