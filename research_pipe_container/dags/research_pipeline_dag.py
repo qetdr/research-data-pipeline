@@ -98,6 +98,38 @@ def delete_for_update():
         except: 
             print('Neo4j Connection not established...') 
             sys.exit(1)
+        
+        # Warm-up queries
+        # Warm up the start by caching the database
+        ## Read more here: https://neo4j.com/developer/kb/warm-the-cache-to-improve-performance-from-cold-start/
+        ### 1st query
+        result_warmup1 = conn_neo.query("""
+        MATCH (n)
+        OPTIONAL MATCH (n)-[r]->()
+        RETURN count(n.prop) + count(r.prop)
+        """)
+        print(f'Warm-up query result: {result_warmup1}')
+
+        result_warmup2 = conn_neo.query('MATCH (n:Article) RETURN COUNT(n) AS ct')
+        print(result_warmup2[0]['ct'])
+
+        result_warmup3 = conn_neo.query('MATCH (n:Author) RETURN COUNT(n) AS ct')
+        print(result_warmup3[0]['ct'])
+
+        result_warmup4 = conn_neo.query('MATCH (n:Journal) RETURN COUNT(n) AS ct')
+        print(result_warmup4[0]['ct'])
+
+        result_warmup5 = conn_neo.query('MATCH (n:Category) RETURN COUNT(n) AS ct')
+        print(result_warmup5[0]['ct'])
+
+        result_warmup4 = conn_neo.query("""
+        MATCH (n)
+        OPTIONAL MATCH (n:Author)-[r:AUTHORED]->(n2:Article)
+        RETURN count(r)
+        """)
+        print(result_warmup4)
+
+        
         try:
             print('Deleting previous nodes and relationships...')
             # Delete all nodes and relationships that exist
@@ -313,7 +345,13 @@ def pandas_to_neo():
         print(result_warmup2[0]['ct'])
 
         result_warmup3 = conn_neo.query('MATCH (n:Author) RETURN COUNT(n) AS ct')
-        print(result_warmup3 [0]['ct'])
+        print(result_warmup3[0]['ct'])
+
+        result_warmup4 = conn_neo.query('MATCH (n:Journal) RETURN COUNT(n) AS ct')
+        print(result_warmup4[0]['ct'])
+
+        result_warmup5 = conn_neo.query('MATCH (n:Category) RETURN COUNT(n) AS ct')
+        print(result_warmup5[0]['ct'])
 
         result_warmup4 = conn_neo.query("""
         MATCH (n)
@@ -329,6 +367,7 @@ def pandas_to_neo():
             print("'category' added to Neo4J!")
         except:
             print("Could not add 'category' to Neo4J")
+            print("This can be a connection issue (see above) or the data already exists (see below)")
         
         try: 
             print("Adding 'journal' nodes to Neo4J...")
@@ -336,20 +375,23 @@ def pandas_to_neo():
             print("'journal' added to Neo4J!")
         except: 
             print("Could not add 'journal' nodes to Neo4J")    
-        
+            print("This can be a connection issue (see above) or the data already exists (see below)")
+
         try: 
             print("Adding 'article' nodes to Neo4J...")
             add_article(conn_neo, article)
             print("'article' added to Neo4J!")
         except: 
             print("Could not add 'article' to Neo4J")  
+            print("This can be a connection issue (see above) or the data already exists (see below)")
 
         try: 
             print("Adding 'author' nodes to Neo4J...")
             add_author(conn_neo, author)
             print("'author' added to Neo4J!")
         except: 
-            print("Could not add 'author' to Neo4J")      
+            print("Could not add 'author' to Neo4J")     
+            print("This can be a connection issue (see above) or the data already exists (see below)") 
 
         try: 
             print("Adding 'article_category' relationship to Neo4J...")
@@ -357,6 +399,7 @@ def pandas_to_neo():
             print("'article_category' added to Neo4J!")
         except: 
             print("Could not add 'article_category' to Neo4J")  
+            print("This can be a connection issue (see above) or the data already exists (see below)")
 
         try: 
             print("Adding 'authorship' relationship to Neo4J...")
@@ -364,21 +407,26 @@ def pandas_to_neo():
             print("'authorship' added to Neo4J!")
         except: 
             print("Could not add 'authorship' to Neo4J")
+            print("This can be a connection issue (see above) or the data already exists (see below)")
 
-        
-        print(f'pandas to Neo4J inserted!')
-        
-        print('Error or entities already exist (check the subsequent info)!')
         print('Below are the counts of entities in the Neo4J database (must be non-null):')
         n_articles = conn_neo.query('MATCH (n:Article) RETURN COUNT(n) AS ct')
         n_authors = conn_neo.query('MATCH (n:Author) RETURN COUNT(n) AS ct')
         n_journals = conn_neo.query('MATCH (n:Journal) RETURN COUNT(n) AS ct')   
         n_categories =  conn_neo.query('MATCH (n:Category) RETURN COUNT(n) AS ct')  
             
-        print(f"Number of articles in the NEO4J database: {n_articles[0]['ct']}")
-        print(f"Number of authors in the NEO4J database: {n_authors[0]['ct']}")
-        print(f"Number of journals in the NEO4J database: {n_journals[0]['ct']}")
-        print(f"Number of categories in the NEO4J database: {n_categories[0]['ct']}")
+        print(f"Number of articles in the Neo4J database: {n_articles[0]['ct']}")
+        print(f"Number of authors in the Neo4J database: {n_authors[0]['ct']}")
+        print(f"Number of journals in the Neo4J database: {n_journals[0]['ct']}")
+        print(f"Number of categories in the Neo4J database: {n_categories[0]['ct']}")
+
+        result_warmup4 = conn_neo.query("""
+        MATCH (n)
+        OPTIONAL MATCH (n:Author)-[r:AUTHORED]->(n2:Article)
+        RETURN count(r)
+        """)
+        print(f'Number of author-article relationships {result_warmup4}')
+
     except:
         print('Neo4J Connection not established...')
         sys.exit(1)
@@ -391,14 +439,14 @@ def pandas_to_neo():
 default_args = {
     'owner': 'dmitri_rozgonjuk',
     'depends_on_past': False, # The DAG does not have dependencies on past runs
-    'retries': 4, # On failure, the task are retried 3 times
-    'schedule_interval': None,
+    'retries': 4, # On failure, the task are retried 4 times
    # 'schedule_interval': '0 0 1 7 *', # Schedule interval yearly to execute on 00:00 01.08
     'retry_delay': timedelta(minutes = 2), # Retries happen every 5 minutes
     'catchup' : False, # Catchup is turned off
     'email_on_retry': False, # Do not email on retry
     'email_on_failure': False, # Also, do not email on failure
-    'start_date': days_ago(1), # set starting day in the past
+    'start_date': datetime.datetime(2022, 8, 1), # set starting day in the past
+    'schedule_interval': '@yearly' # run yearly
 }
 
 # Define the DAG
@@ -423,7 +471,7 @@ postgres_task3 = PythonOperator(task_id='pandas_to_dwh', python_callable = panda
 # Neo4J Connection and data load
 neo_task4 = PythonOperator(task_id='pandas_to_neo', python_callable = pandas_to_neo, dag = dag)
 
-# Neo4J Connection and data load
+# Delete the data and prepare for updates
 prepare_for_update_task5 = PythonOperator(task_id='delete_for_update', python_callable = delete_for_update, dag = dag)
 
 ## Ending the DAG
