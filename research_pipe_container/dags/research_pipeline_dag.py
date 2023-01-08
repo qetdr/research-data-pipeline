@@ -408,6 +408,15 @@ def pandas_to_neo():
         except: 
             print("Could not add 'authorship' to Neo4J")
             print("This can be a connection issue (see above) or the data already exists (see below)")
+        try:
+            conn_neo.query("""
+                MATCH (author1:Author) - [:AUTHORED] -> (article:Article) <-[:AUTHORED] - (author2:Author)
+                CREATE (author1)-[new:COAUTHORS]->(author2)
+                RETURN type(new);
+            """)
+            print("Added co-authorship relations.")
+        except:
+            print("Failed to added co-authorship relations.")
 
         print('Below are the counts of entities in the Neo4J database (must be non-null):')
         n_articles = conn_neo.query('MATCH (n:Article) RETURN COUNT(n) AS ct')
