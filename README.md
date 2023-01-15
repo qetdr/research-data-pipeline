@@ -55,7 +55,7 @@ This creates an environment file for Airflow to allow to run it as a superuser.
     - Install the necessary packages (on your local machine):<br> 
     `python -m pip install -r requirements.txt`
     - Run the following command:<br>
-    `python3 dags/scripts/raw_to_tables.py`<br>
+    `python dags/scripts/raw_to_tables.py`<br>
     This script will (1) download the Kaggle data on your machine, (2) unzip it (appx 3+ GB), (3) extract the necessary data, (4) make the preliminary data cleaning, (5) create the tables depicted in Figure 2, and (6) saves the tables to the `dags/tables` directory in .csv format. Note: you might be asked for your Kaggle credentials from the command line but usually it works also when the file is in the root directory of the project.
 
 8. Navigate to Airflow (http://localhost:8080/). If everything is correct, you should see a DAG called `research_pipeline_dag`. Click on it. Then click on `Graph`. You should now be able to see the DAG. 
