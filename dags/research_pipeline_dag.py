@@ -53,7 +53,6 @@ def delete_for_update():
     except:
         print("Could not remove the 'data_ready' directory")
 
-
 ## Check if the uncleaned tables in the directory or prepare them
 def find_tables_or_ingest_raw():
     """Function that searches if 'raw' .csv tables exist.
@@ -350,6 +349,7 @@ def pandas_to_neo():
         print("Could not add 'authorship' to Neo4J")
         print("This can be a connection issue (see above) or the data already exists (see below)")
     try:
+        print("Adding 'co-authorship' relation to Neo4J...")
         conn_neo.query("""
                 MATCH (author1:Author) - [:AUTHORED] -> (article:Article) <-[:AUTHORED] - (author2:Author)
                 CREATE (author1)-[new:COAUTHORS]->(author2)
@@ -357,7 +357,19 @@ def pandas_to_neo():
             """)
         print("Added co-authorship relations.")
     except:
-        print("Failed to added co-authorship relations.")
+        print("Failed to add co-authorship relations.")
+
+    try:
+       print("Adding article-journal relation to Neo4J...")
+       conn_neo.query("""
+       MATCH (article:Article), (j:Journal) 
+       WHERE article.journal_issn = j.id
+       CREATE (article)-[:PUBLISHED_IN]->(j) 
+       RETURN article, j
+       """)
+       print("Added article-journal relations.")
+    except:
+        print("Failed to add articl-journal relations.")
 
         print('Below are the counts of entities in the Neo4J database (must be non-null):')
         n_articles = conn_neo.query('MATCH (n:Article) RETURN COUNT(n) AS ct')
