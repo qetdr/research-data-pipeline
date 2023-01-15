@@ -39,142 +39,20 @@ from datetime import date
 def delete_for_update():
     """Task for removing tables from 'data_ready'
     so that all .csv-s could be updated.
-    The fucntion checks if 'today' is August 1st. 
-    This is used for the scheduling job (start = August 2nd, yearly) 
-    where data_ready tables are deleted in the previous day
     """
-    date_value = ''.join(str(date.today()).split('-')[1:3])
-    
-    if date_value == '0105': # check if the date value is August 1st
-        
-        # Delete the .csv tables from 'data_ready'
-        try:
-            print('Removing previously cleaned tables for update...')
-            os.remove('dags/data_ready/article.csv')
-            os.remove('dags/data_ready/article_augmented.csv')
-            os.remove('dags/data_ready/article_category.csv')
-            os.remove('dags/data_ready/author.csv')
-            os.remove('dags/data_ready/authorship.csv')
-            os.remove('dags/data_ready/category.csv')
-            os.remove('dags/data_ready/journal.csv')
-            print('Succesfully removed tables for update!')
-        except:
-            print("Could not remove the 'data_ready' directory")
-
-        # Make the -- Postgres -- connection and delete the tables
-        # Connect to the database
-        try: 
-            print('Connecting to Postgres...')
-            conn = psycopg2.connect(host="postgres", user="airflow", password="airflow", database ="airflow", port = 5432)
-            conn.set_session(autocommit=True)
-            cur = conn.cursor()
-        except:
-            print('Postgres connection not established')
-            sys.exit(1)
-        
-        # Drop Tables 
-        try: 
-            for query in drop_tables:
-                cur.execute(query)
-                conn.commit()
-            print('All tables dropped.')
-        except:
-            print('Error with dropping tables.')
-            
-        # Create Tables
-        try: 
-            for query in create_tables:
-                cur.execute(query)
-                conn.commit()
-            print('All tables created.')
-        except:
-            print('Error with creating tables.')
-
-        # Make the -- Neo4J -- connection and delete the entities
-        try:
-            print('Trying to establish Neo4J connection...')
-            conn_neo = Neo4jConnection(uri='bolt://neo:7687', user='', pwd='')
-            print('Neo4J Connection established!')
-        except: 
-            print('Neo4j Connection not established...') 
-            sys.exit(1)
-        
-        # Warm-up queries
-        # Warm up the start by caching the database
-        ## Read more here: https://neo4j.com/developer/kb/warm-the-cache-to-improve-performance-from-cold-start/
-        ### 1st query
-        result_warmup1 = conn_neo.query("""
-        MATCH (n)
-        OPTIONAL MATCH (n)-[r]->()
-        RETURN count(n.prop) + count(r.prop)
-        """)
-        print(f'Warm-up query result: {result_warmup1}')
-
-        result_warmup2 = conn_neo.query('MATCH (n:Article) RETURN COUNT(n) AS ct')
-        print(result_warmup2[0]['ct'])
-
-        result_warmup3 = conn_neo.query('MATCH (n:Author) RETURN COUNT(n) AS ct')
-        print(result_warmup3[0]['ct'])
-
-        result_warmup4 = conn_neo.query('MATCH (n:Journal) RETURN COUNT(n) AS ct')
-        print(result_warmup4[0]['ct'])
-
-        result_warmup5 = conn_neo.query('MATCH (n:Category) RETURN COUNT(n) AS ct')
-        print(result_warmup5[0]['ct'])
-
-        result_warmup4 = conn_neo.query("""
-        MATCH (n)
-        OPTIONAL MATCH (n:Author)-[r:AUTHORED]->(n2:Article)
-        RETURN count(r)
-        """)
-        print(result_warmup4)
-
-        
-        try:
-            print('Deleting previous nodes and relationships...')
-            # Delete all nodes and relationships that exist
-            conn_neo.query('MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n, r')
-            print('Previous nodes and relationships deleted!')
-        except:
-            print('Error with deleting nodes and relationships.')
-            sys.exit(1)
-        
-        # Set constraints
-        try:
-            print('Setting constraints to unique IDs...')
-            # Add ID uniqueness constraint to optimize queries
-            conn_neo.query('CREATE CONSTRAINT ON(n:Category) ASSERT n.id IS UNIQUE')
-            conn_neo.query('CREATE CONSTRAINT ON(j:Journal) ASSERT j.id IS UNIQUE')
-            conn_neo.query('CREATE CONSTRAINT ON(au:Author) ASSERT au.id IS UNIQUE')
-            conn_neo.query('CREATE CONSTRAINT ON(ar:Article) ASSERT ar.id IS UNIQUE')
-            print('Constraints to unique IDs successfully set!')
-        except:
-            print('Could not set constraints.')
-            sys.exit(1)
-
-        print('Data tables deleted.')
-        print('Postgres database reset.')
-        print('Neo4j database reset.')
-    else:
-        print('Too early for a data update.')
-        print('Finishing the task.')   
-
-## Insert into tables (helper function)
-def insert_to_tables(cur, table, query):
-    ''' Helper function for inserting values to Postresql tables
-    Args:
-        table (pd.DataFrame): pandas table
-        query (SQL query): correspondive SQL query for 'table' for data insertion in DB
-    '''
-    print(f'Inserting table -- {table.name} -- ...')
-    
     try:
-        for i, row in table.iterrows():
-            cur.execute(query, list(row))
-        print(f'Table -- {table.name} -- successfully inserted!')
+        print('Removing previously cleaned tables for update...')
+        os.remove('dags/data_ready/article.csv')
+        os.remove('dags/data_ready/article_augmented.csv')
+        os.remove('dags/data_ready/article_category.csv')
+        os.remove('dags/data_ready/author.csv')
+        os.remove('dags/data_ready/authorship.csv')
+        os.remove('dags/data_ready/category.csv')
+        os.remove('dags/data_ready/journal.csv')
+        print('Succesfully removed tables for update!')
     except:
-        print(f'Error with table -- {table.name} --')
-    print()
+        print("Could not remove the 'data_ready' directory")
+
 
 ## Check if the uncleaned tables in the directory or prepare them
 def find_tables_or_ingest_raw():
@@ -205,25 +83,31 @@ def find_tables_or_ingest_raw():
 
     ## If tables do not exist, pull from kaggle (or local machine), proprocess to tables
     else: 
-        print('Preparing tables...')
-        print()
-        ingest_and_prepare()
         print('Tables are in the working directory!')
+        print('Please run the data ingestion script from Terminal:')
+        print('python -m pip install -r requirements.txt')
+        print('python dags/scripts/raw_to_tables.py')
+        sys.exit(1)
 
 ## Check if clean tables in the directory or prepare them
 def check_or_augment():
     """Function to either check if clean tables exist
     or clean the data and write them to clean .csv-s.
     """
+    print('Checking if clean tables exist...')
 
+    print("Checking if 'article_augmented_raw' table exist...")
     if os.path.exists('dags/data_ready/article_augmented_raw.csv'):
         if os.path.exists('dags/data_ready/article.csv'):
-            article = pd.read_csv('dags/data_ready/article.csv')
+            print("Checking if clean 'article' table exist...")
+            article = pd.read_csv('dags/data_ready/article.csv', error_bad_lines=False)
+            print("Augmented clean table 'article' exists!")
         else:
-            article_journal = pd.read_csv('dags/data_ready/article_augmented_raw.csv')
+            article_journal = pd.read_csv('dags/data_ready/article_augmented_raw.csv', error_bad_lines=False)
             article = article_journal[article_journal['type'] == 'journal-article'].reset_index(drop = True)
             article.to_csv('dags/data_ready/article.csv', index = False)
     else:
+        print("'article_augmented_raw'  not found. Perparing augmentation...")
         article = article_ready()
     
     # Journal
@@ -239,6 +123,23 @@ def check_or_augment():
     article_category = article_category_ready(article)
     category = category_ready(article_category)
 
+## Insert into tables (helper function for DWH)
+def insert_to_tables(cur, table, query):
+    ''' Helper function for inserting values to Postresql tables
+    Args:
+        table (pd.DataFrame): pandas table
+        query (SQL query): correspondive SQL query for 'table' for data insertion in DB
+    '''
+    print(f'Inserting table -- {table.name} -- ...')
+    
+    try:
+        for i, row in table.iterrows():
+            cur.execute(query, list(row))
+        print(f'Table -- {table.name} -- successfully inserted!')
+    except:
+        print(f'Error with table -- {table.name} --')
+    print()
+
 ## From pandas to Postgres
 def pandas_to_dwh():
     """Task that imports .csv-s to pandas, makes the Postgres-connection,
@@ -247,12 +148,12 @@ def pandas_to_dwh():
     """
     # Import the data
     try:
-        article = pd.read_csv('dags/data_ready/article.csv')
-        author = pd.read_csv('dags/data_ready/author.csv')
-        authorship = pd.read_csv('dags/data_ready/authorship.csv')
-        category = pd.read_csv('dags/data_ready/category.csv')
-        article_category = pd.read_csv('dags/data_ready/article_category.csv')
-        journal = pd.read_csv('dags/data_ready/journal.csv')
+        article = pd.read_csv('dags/data_ready/article.csv', error_bad_lines=False)
+        author = pd.read_csv('dags/data_ready/author.csv', error_bad_lines=False)
+        authorship = pd.read_csv('dags/data_ready/authorship.csv', error_bad_lines=False)
+        category = pd.read_csv('dags/data_ready/category.csv', error_bad_lines=False)
+        article_category = pd.read_csv('dags/data_ready/article_category.csv', error_bad_lines=False)
+        journal = pd.read_csv('dags/data_ready/journal.csv', error_bad_lines=False)
         tables = [article, author, authorship, category, article_category, journal]
 
         # Name of tables (for later print)
@@ -282,6 +183,24 @@ def pandas_to_dwh():
     except:
         print('Postgres connection not established')
         sys.exit(1)
+        
+    # Drop Tables 
+    try: 
+        for query in drop_tables:
+            cur.execute(query)
+            conn.commit()
+        print('All tables dropped.')
+    except:
+        print('Error with dropping tables.')
+            
+    # Create Tables
+    try: 
+        for query in create_tables:
+            cur.execute(query)
+            conn.commit()
+            print('All tables created.')
+    except:
+        print('Error with creating tables.')
 
     try:
         # Insert into tables
@@ -300,12 +219,12 @@ def pandas_to_neo():
     """
     # Import the data
     try:
-        article = pd.read_csv('dags/data_ready/article.csv')
-        author = pd.read_csv('dags/data_ready/author.csv')
-        authorship = pd.read_csv('dags/data_ready/authorship.csv')
-        category = pd.read_csv('dags/data_ready/category.csv')
-        article_category = pd.read_csv('dags/data_ready/article_category.csv')
-        journal = pd.read_csv('dags/data_ready/journal.csv')
+        article = pd.read_csv('dags/data_ready/article.csv', error_bad_lines=False)
+        author = pd.read_csv('dags/data_ready/author.csv', error_bad_lines=False)
+        authorship = pd.read_csv('dags/data_ready/authorship.csv', error_bad_lines=False)
+        category = pd.read_csv('dags/data_ready/category.csv', error_bad_lines=False)
+        article_category = pd.read_csv('dags/data_ready/article_category.csv', error_bad_lines=False)
+        journal = pd.read_csv('dags/data_ready/journal.csv', error_bad_lines=False)
         tables = [article, author, authorship, category, article_category, journal]
 
         # Name of tables (for later print)
@@ -330,7 +249,10 @@ def pandas_to_neo():
         print('Trying to establish Neo4J connection...')
         conn_neo = Neo4jConnection(uri='bolt://neo:7687', user='', pwd='')
         print('Neo4J Connection established!')
-
+    except:
+        print('Neo4J Connection not established...')
+        sys.exit(1)
+    try:   
         # Warm up the start by caching the database
         ## Read more here: https://neo4j.com/developer/kb/warm-the-cache-to-improve-performance-from-cold-start/
         ### 1st query
@@ -359,64 +281,83 @@ def pandas_to_neo():
         RETURN count(r)
         """)
         print(result_warmup4)
+    except:
+        print('Error while running warm-up queries.')
+        sys.exit(1)
 
-        print(f'Inserting pandas to Neo4J...')
-        try: 
-            print("Adding 'category' nodes to Neo4J...")
-            add_category(conn_neo, category)
-            print("'category' added to Neo4J!")
-        except:
-            print("Could not add 'category' to Neo4J")
-            print("This can be a connection issue (see above) or the data already exists (see below)")
+    # Set constraints
+    try:
+        print('Setting constraints to unique IDs...')
+        # Add ID uniqueness constraint to optimize queries
+        conn_neo.query('CREATE CONSTRAINT ON(n:Category) ASSERT n.id IS UNIQUE')
+        conn_neo.query('CREATE CONSTRAINT ON(j:Journal) ASSERT j.id IS UNIQUE')
+        conn_neo.query('CREATE CONSTRAINT ON(au:Author) ASSERT au.id IS UNIQUE')
+        conn_neo.query('CREATE CONSTRAINT ON(ar:Article) ASSERT ar.id IS UNIQUE')
+        print('Constraints to unique IDs successfully set!')
+    except:
+        print('Could not set constraints.')
+        sys.exit(1)
+
+
+
+
+    print(f'Inserting pandas to Neo4J...')
+    try: 
+        print("Adding 'category' nodes to Neo4J...")
+        add_category(conn_neo, category)
+        print("'category' added to Neo4J!")
+    except:
+        print("Could not add 'category' to Neo4J")
+        print("This can be a connection issue (see above) or the data already exists (see below)")
         
-        try: 
-            print("Adding 'journal' nodes to Neo4J...")
-            add_journal(conn_neo, journal)
-            print("'journal' added to Neo4J!")
-        except: 
-            print("Could not add 'journal' nodes to Neo4J")    
-            print("This can be a connection issue (see above) or the data already exists (see below)")
+    try: 
+        print("Adding 'journal' nodes to Neo4J...")
+        add_journal(conn_neo, journal)
+        print("'journal' added to Neo4J!")
+    except: 
+        print("Could not add 'journal' nodes to Neo4J")    
+        print("This can be a connection issue (see above) or the data already exists (see below)")
 
-        try: 
-            print("Adding 'article' nodes to Neo4J...")
-            add_article(conn_neo, article)
-            print("'article' added to Neo4J!")
-        except: 
-            print("Could not add 'article' to Neo4J")  
-            print("This can be a connection issue (see above) or the data already exists (see below)")
+    try: 
+        print("Adding 'article' nodes to Neo4J...")
+        add_article(conn_neo, article)
+        print("'article' added to Neo4J!")
+    except: 
+        print("Could not add 'article' to Neo4J")  
+        print("This can be a connection issue (see above) or the data already exists (see below)")
 
-        try: 
-            print("Adding 'author' nodes to Neo4J...")
-            add_author(conn_neo, author)
-            print("'author' added to Neo4J!")
-        except: 
-            print("Could not add 'author' to Neo4J")     
-            print("This can be a connection issue (see above) or the data already exists (see below)") 
+    try: 
+        print("Adding 'author' nodes to Neo4J...")
+        add_author(conn_neo, author)
+        print("'author' added to Neo4J!")
+    except: 
+        print("Could not add 'author' to Neo4J")     
+        print("This can be a connection issue (see above) or the data already exists (see below)") 
 
-        try: 
-            print("Adding 'article_category' relationship to Neo4J...")
-            add_article_category(conn_neo, article_category)
-            print("'article_category' added to Neo4J!")
-        except: 
-            print("Could not add 'article_category' to Neo4J")  
-            print("This can be a connection issue (see above) or the data already exists (see below)")
+    try: 
+        print("Adding 'article_category' relationship to Neo4J...")
+        add_article_category(conn_neo, article_category)
+        print("'article_category' added to Neo4J!")
+    except: 
+        print("Could not add 'article_category' to Neo4J")  
+        print("This can be a connection issue (see above) or the data already exists (see below)")
 
-        try: 
-            print("Adding 'authorship' relationship to Neo4J...")
-            add_authorship(conn_neo, authorship)
-            print("'authorship' added to Neo4J!")
-        except: 
-            print("Could not add 'authorship' to Neo4J")
-            print("This can be a connection issue (see above) or the data already exists (see below)")
-        try:
-            conn_neo.query("""
+    try: 
+        print("Adding 'authorship' relationship to Neo4J...")
+        add_authorship(conn_neo, authorship)
+        print("'authorship' added to Neo4J!")
+    except: 
+        print("Could not add 'authorship' to Neo4J")
+        print("This can be a connection issue (see above) or the data already exists (see below)")
+    try:
+        conn_neo.query("""
                 MATCH (author1:Author) - [:AUTHORED] -> (article:Article) <-[:AUTHORED] - (author2:Author)
                 CREATE (author1)-[new:COAUTHORS]->(author2)
                 RETURN type(new);
             """)
-            print("Added co-authorship relations.")
-        except:
-            print("Failed to added co-authorship relations.")
+        print("Added co-authorship relations.")
+    except:
+        print("Failed to added co-authorship relations.")
 
         print('Below are the counts of entities in the Neo4J database (must be non-null):')
         n_articles = conn_neo.query('MATCH (n:Article) RETURN COUNT(n) AS ct')
@@ -436,10 +377,6 @@ def pandas_to_neo():
         """)
         print(f'Number of author-article relationships {result_warmup4}')
 
-    except:
-        print('Neo4J Connection not established...')
-        sys.exit(1)
-
 #### ------ AIRFLOW ------  ####
 # Cron notation: https://cloud.google.com/scheduler/docs/configuring/cron-job-schedules
 ## Also: https://crontab.guru/
@@ -455,7 +392,7 @@ default_args = {
     'email_on_retry': False, # Do not email on retry
     'email_on_failure': False, # Also, do not email on failure
     'start_date': datetime(2022, 8, 1), # set starting day in the past
-    'schedule_interval': '@yearly' # run yearly
+    'schedule_interval': None # '@yearly' # run yearly
 }
 
 # Define the DAG
