@@ -44,7 +44,7 @@ def insert_data(conn, query, rows, batch_size = 1000):
     result = None
     
     while batch * batch_size < len(rows):
-
+        
         res = conn.query(query, 
                          parameters = {'rows': rows[batch*batch_size:(batch+1)*batch_size].to_dict('records')})
         total += res[0]['total']

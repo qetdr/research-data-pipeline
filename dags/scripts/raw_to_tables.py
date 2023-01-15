@@ -198,12 +198,12 @@ def ingest_and_prepare():
         print('Writing pandas tables to .csv-files.')
     
     ### Write the tables as csv
-    authorship.to_csv('dags/tables/authorship.csv', index = False)
-    article_category.to_csv('dags/tables/article_category.csv', index = False)
-    category.to_csv('dags/tables/category.csv', index = False)
-    journal.to_csv('dags/tables/journal.csv', index = False)
-    article.to_csv('dags/tables/article.csv', index = False)
-    author.to_csv('dags/tables/author.csv', index = False)
+   # authorship.to_csv('dags/tables/authorship.csv', index = False, sep = ';')
+   # article_category.to_csv('dags/tables/article_category.csv', index = False, sep = ';')
+   # category.to_csv('dags/tables/category.csv', index = False, sep = ';')
+   # journal.to_csv('dags/tables/journal.csv', index = False, sep = ';')
+   # article.to_csv('dags/tables/article.csv', index = False, sep = ';')
+   # author.to_csv('dags/tables/author.csv', index = False, sep = ';')
 
     print('Pandas tables to .csv-files successfully written!')
     
@@ -217,12 +217,12 @@ def ingest_and_prepare():
 def main():
     if os.path.exists('dags/tables') and len(os.listdir('dags/tables')) == 8: # directory + 7 tables
         print('Tables exist...')
-        author = pd.read_csv('dags/tables/author.csv')
-        authorshiphip = pd.read_csv('dags/tables/authorship.csv')
-        article = pd.read_csv('dags/tables/article.csv')
-        article_category = pd.read_csv('dags/tables/article_category.csv')
-        category = pd.read_csv('dags/tables/category.csv')
-        journal = pd.read_csv('dags/tables/journal.csv')
+        author = pd.read_csv('dags/tables/author.csv', error_bad_lines=False)
+        authorshiphip = pd.read_csv('dags/tables/authorship.csv', error_bad_lines=False)
+        article = pd.read_csv('dags/tables/article.csv', error_bad_lines=False)
+        article_category = pd.read_csv('dags/tables/article_category.csv', error_bad_lines=False)
+        category = pd.read_csv('dags/tables/category.csv', error_bad_lines=False)
+        journal = pd.read_csv('dags/tables/journal.csv', error_bad_lines=False)
         print('Tables are in the working directory!')
 
     ## If tables do not exist, pull from kaggle (or local machine), proprocess to tables
@@ -230,7 +230,7 @@ def main():
         print('Preparing tables...')
         print()
         ingest_and_prepare()
-        print("Ingested and tables are in the 'dags/scripts/tables' directory!")
+        print("Ingested and tables are in the 'dags/tables' directory!")
 
 if __name__ == '__main__':
     main()
