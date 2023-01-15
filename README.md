@@ -181,7 +181,9 @@ ORDER BY rank_total_pubs
 LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100;
 </pre>
 
-[PIC1]
+|![[Figure 5. Top researchers with most publications.]](images/dwh_q1.png)|
+|:--:|
+| <b>Figure 5. Top researchers with most publications. </b> | 
 
 ### 5.1.2. Proportionally, in which journals have the top 0.01% of scientists (in terms of publication count) published their work the most?
 
@@ -213,37 +215,40 @@ ORDER BY final.rank
 LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100;
 </pre>
 
-[PIC2]
+|![[Figure 6. Proportion of specific journals among all publications within the top authors.]](images/dwh_q2.png)|
+|:--:|
+| <b>Figure 6. Proportion of specific journals among all publications within the top authors. </b> | 
 
 ### 5.1.3. What was the most productive year (N publications) for top 0.01% scientists?
 
 <pre>
-SELECT final.author_id, final.rank, final.publications, final.most_productive_year as most_productive_year, final.number as count_of_pub
-FROM (SELECT a.author_id, rank, publications, mode() within group (order by ar.year) AS most_productive_year, sum(publications) as number
-    FROM (SELECT author_id, rank_total_pubs as rank, total_pubs as publications
+SELECT final.author_id, final.rank, final.year AS most_influential_year, final.pub AS count_of_pub, final.avg_cites
+FROM (SELECT a.author_id, rank, count(ar.year) as pub, ar.year, (sum(ar.n_cites::DECIMAL)::int) / count(ar.year) as avg_cites
+    FROM (SELECT author_id, rank_total_pubs as rank
+    FROM author
+    ORDER BY rank_total_pubs 
+    LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100) AS a
+    INNER JOIN authorship au ON a.author_id = au.author_id
+    INNER JOIN article ar ON au.article_id = ar.article_id
+    GROUP BY a.author_id, rank, ar.year) as final
+LEFT JOIN (SELECT a.author_id, rank, count(ar.year) as pub, ar.year, (sum(ar.n_cites::DECIMAL)::int) / count(ar.year) as avg_cites
+    FROM (SELECT author_id, rank_total_pubs as rank
     FROM author 
     ORDER BY rank_total_pubs 
     LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100) AS a
     INNER JOIN authorship au ON a.author_id = au.author_id
     INNER JOIN article ar ON au.article_id = ar.article_id
-    GROUP BY a.author_id, rank, publications, ar.year
-    having ar.year = mode() within group (order by ar.year)) as final
-LEFT JOIN (SELECT a.author_id, rank, publications, mode() within group (order by ar.year) AS most_productive_year, sum(publications) as number 
-    FROM (SELECT author_id, rank_total_pubs as rank, total_pubs as publications
-    FROM author 
-    ORDER BY rank_total_pubs 
-    LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100) AS a
-    INNER JOIN authorship au ON a.author_id = au.author_id
-    INNER JOIN article ar ON au.article_id = ar.article_id
-    GROUP BY a.author_id, rank, publications, ar.year
-    having ar.year = mode() within group (order by ar.year)) as final1 ON 
-    final.author_id = final1.author_id AND final.number < final1.number
+    GROUP BY a.author_id, rank, ar.year) as final1 ON 
+    final.author_id = final1.author_id AND final.avg_cites < final1.avg_cites
 WHERE final1.author_id IS NULL
 ORDER BY final.rank 
 LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100;
 </pre>
 
-[pic3]
+|![[Figure 7. The most productive year for the top scientists. ]](images/dwh_q3.png)|
+|:--:|
+| <b>Figure 7. The most productive year for the top scientists. </b> | 
+
 
 ### 5.1.4. What was the most influential (in terms of N citations/ N publications) year for top 3% scientists?
 
@@ -271,9 +276,55 @@ ORDER BY final.rank
 LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100;
 </pre>
 
-<PIC>
+|![[Figure 8. The most infuential year for the top scientists.]](images/dwh_q4.png)|
+|:--:|
+| <b>Figure 8. The most infuential year for the top scientists.</b> | 
 
 ## 5.2. Graph Database Queries
 Using the graph database, the aim of the queries was to provide information about a particular author's research activity. Specifically, we wanted to see with whom and on what a given author (e.g., based on name) has collaborated. Querying graph database allows to gain insights into the ego-network of a particualr scientist. To that end, we can see the total network (with the scientist) as well as gain a first insight into how modularized is the network (when exploring the network qithout including the ego-node).
 
-## 5.2.1. 
+## 5.2.1. Display the collaboration network of Lars Birkedal and the papers published with himself on it .
+
+<pre>
+MATCH (author1:Author)-[r:COAUTHORS]-(author2:Author)
+WHERE author1.id = "BirkedalL"
+RETURN author1, author2, r
+</pre>
+
+|![[Figure 9. Ego-network of Lars Birkedal (with author)]](images/graph_ego1.png)|
+|:--:|
+| <b>Figure 9. Ego-network of Lars Birkedal </b> (with author).| 
+
+
+## 5.2.2. Display the collaboration network of Lars Birkedal's co-authors (without showing articles).
+<pre>
+MATCH (author1:Author)-[r:COAUTHORS]-(author2:Author)
+WHERE author1.id = "BirkedalL"
+RETURN author2, r
+</pre>
+
+|![[Figure 10. Ego-network of Lars Birkedal (without the author)]](images/graph_ego2.png)|
+|:--:|
+| <b>Figure 10. Ego-network of Lars Birkedal </b> (without the author).| 
+
+## 5.2.3. Display all papers published in the journal 'Artificial Intelligence'
+<pre>
+MATCH p=(ar:Article)-[r:PUBLISHED_IN]->(j:Journal)
+WHERE j.title = 'Artificial Intelligence'
+RETURN p
+</pre>
+
+|![[Figure 11. All papers published in 'Artificial Intelligence]](images/graph_fig3.png)|
+|:--:|
+| <b>Figure 11. All papers published in 'Artificial Intelligence' </b>| 
+
+## 5.2.4. Display all articles that are from data science domain ('DS') and are cited more than 100 times.
+<pre>
+MATCH q = (ar:Article)-[r:BELONGS_TO]->(c:Category) 
+WHERE c.subdom = 'DS' AND ar.n_cites > 100
+RETURN q
+</pre>
+
+|![Figure 12. Papers from 'data science' domain with more than 100 citations](images/graph_fig4.png)|
+|:--:|
+| <b>Figure 12. All articles that are labels </b>| 
