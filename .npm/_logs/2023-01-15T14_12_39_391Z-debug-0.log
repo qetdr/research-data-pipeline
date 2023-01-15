@@ -1,0 +1,971 @@
+0 verbose cli /opt/conda/bin/node /opt/conda/bin/npm
+1 info using npm@8.19.2
+2 info using node@v18.12.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/opt/conda/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 4ms
+10 timing config:load:file:/home/jovyan/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/opt/conda/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:credentials Completed in 1ms
+16 timing config:load:setEnvs Completed in 0ms
+17 timing config:load Completed in 10ms
+18 timing npm:load:configload Completed in 10ms
+19 timing npm:load:mkdirpcache Completed in 5ms
+20 timing npm:load:mkdirplogs Completed in 3ms
+21 verbose title npm install markdown-pdf
+22 verbose argv "install" "--global" "markdown-pdf"
+23 timing npm:load:setTitle Completed in 1ms
+24 timing config:load:flatten Completed in 1ms
+25 timing npm:load:display Completed in 2ms
+26 verbose logfile logs-max:10 dir:/home/jovyan/.npm/_logs
+27 verbose logfile /home/jovyan/.npm/_logs/2023-01-15T14_12_39_391Z-debug-0.log
+28 timing npm:load:logFile Completed in 27ms
+29 timing npm:load:timers Completed in 1ms
+30 timing npm:load:configScope Completed in 0ms
+31 timing npm:load Completed in 50ms
+32 timing arborist:ctor Completed in 0ms
+33 silly logfile done cleaning log files
+34 timing idealTree:init Completed in 26ms
+35 timing idealTree:userRequests Completed in 1ms
+36 silly idealTree buildDeps
+37 silly fetch manifest markdown-pdf@*
+38 http fetch GET 200 https://registry.npmjs.org/npm 822ms (cache miss)
+39 http fetch GET 200 https://registry.npmjs.org/markdown-pdf 921ms (cache miss)
+40 silly placeDep ROOT markdown-pdf@11.0.0 OK for:  want: *
+41 silly fetch manifest commander@^3.0.0
+42 silly fetch manifest duplexer@^0.1.1
+43 silly fetch manifest extend@^3.0.2
+44 silly fetch manifest highlight.js@^10.0.0
+45 silly fetch manifest phantomjs-prebuilt@^2.1.3
+46 silly fetch manifest remarkable@^2.0.0
+47 silly fetch manifest stream-from-to@^1.4.2
+48 silly fetch manifest through2@^3.0.1
+49 silly fetch manifest tmp@^0.1.0
+50 http fetch GET 200 https://registry.npmjs.org/commander 272ms (cache miss)
+51 http fetch GET 200 https://registry.npmjs.org/extend 295ms (cache miss)
+52 http fetch GET 200 https://registry.npmjs.org/phantomjs-prebuilt 305ms (cache miss)
+53 http fetch GET 200 https://registry.npmjs.org/remarkable 322ms (cache miss)
+54 http fetch GET 200 https://registry.npmjs.org/tmp 337ms (cache miss)
+55 http fetch GET 200 https://registry.npmjs.org/highlight.js 406ms (cache miss)
+56 http fetch GET 200 https://registry.npmjs.org/duplexer 796ms (cache miss)
+57 http fetch GET 200 https://registry.npmjs.org/through2 854ms (cache miss)
+58 http fetch GET 200 https://registry.npmjs.org/stream-from-to 879ms (cache miss)
+59 timing idealTree:#root Completed in 1820ms
+60 silly placeDep node_modules/markdown-pdf commander@3.0.2 OK for: markdown-pdf@11.0.0 want: ^3.0.0
+61 silly placeDep node_modules/markdown-pdf duplexer@0.1.2 OK for: markdown-pdf@11.0.0 want: ^0.1.1
+62 silly placeDep node_modules/markdown-pdf extend@3.0.2 OK for: markdown-pdf@11.0.0 want: ^3.0.2
+63 silly placeDep node_modules/markdown-pdf highlight.js@10.7.3 OK for: markdown-pdf@11.0.0 want: ^10.0.0
+64 silly placeDep node_modules/markdown-pdf phantomjs-prebuilt@2.1.16 OK for: markdown-pdf@11.0.0 want: ^2.1.3
+65 silly placeDep node_modules/markdown-pdf remarkable@2.0.1 OK for: markdown-pdf@11.0.0 want: ^2.0.0
+66 silly placeDep node_modules/markdown-pdf stream-from-to@1.4.3 OK for: markdown-pdf@11.0.0 want: ^1.4.2
+67 silly placeDep node_modules/markdown-pdf through2@3.0.2 OK for: markdown-pdf@11.0.0 want: ^3.0.1
+68 silly placeDep node_modules/markdown-pdf tmp@0.1.0 OK for: markdown-pdf@11.0.0 want: ^0.1.0
+69 silly fetch manifest es6-promise@^4.0.3
+70 silly fetch manifest extract-zip@^1.6.5
+71 silly fetch manifest fs-extra@^1.0.0
+72 silly fetch manifest hasha@^2.2.0
+73 silly fetch manifest kew@^0.7.0
+74 silly fetch manifest progress@^1.1.8
+75 silly fetch manifest request@^2.81.0
+76 silly fetch manifest request-progress@^2.0.1
+77 silly fetch manifest which@^1.2.10
+78 silly fetch manifest argparse@^1.0.10
+79 silly fetch manifest autolinker@^3.11.0
+80 silly fetch manifest async@^1.5.2
+81 silly fetch manifest concat-stream@^1.4.7
+82 silly fetch manifest mkdirp@^0.5.0
+83 silly fetch manifest series-stream@^1.0.1
+84 silly fetch manifest inherits@^2.0.4
+85 silly fetch manifest readable-stream@2 || 3
+86 silly fetch manifest rimraf@^2.6.3
+87 http fetch GET 200 https://registry.npmjs.org/request-progress 193ms (cache miss)
+88 http fetch GET 200 https://registry.npmjs.org/kew 226ms (cache miss)
+89 http fetch GET 200 https://registry.npmjs.org/progress 240ms (cache miss)
+90 http fetch GET 200 https://registry.npmjs.org/extract-zip 277ms (cache miss)
+91 http fetch GET 200 https://registry.npmjs.org/inherits 335ms (cache miss)
+92 http fetch GET 200 https://registry.npmjs.org/argparse 345ms (cache miss)
+93 http fetch GET 200 https://registry.npmjs.org/rimraf 399ms (cache miss)
+94 http fetch GET 200 https://registry.npmjs.org/concat-stream 439ms (cache miss)
+95 http fetch GET 200 https://registry.npmjs.org/which 462ms (cache miss)
+96 http fetch GET 200 https://registry.npmjs.org/fs-extra 477ms (cache miss)
+97 http fetch GET 200 https://registry.npmjs.org/mkdirp 478ms (cache miss)
+98 http fetch GET 200 https://registry.npmjs.org/readable-stream 497ms (cache miss)
+99 http fetch GET 200 https://registry.npmjs.org/request 521ms (cache miss)
+100 http fetch GET 200 https://registry.npmjs.org/async 544ms (cache miss)
+101 http fetch GET 200 https://registry.npmjs.org/autolinker 584ms (cache miss)
+102 http fetch GET 200 https://registry.npmjs.org/hasha 767ms (cache miss)
+103 http fetch GET 200 https://registry.npmjs.org/es6-promise 797ms (cache miss)
+104 http fetch GET 200 https://registry.npmjs.org/series-stream 816ms (cache miss)
+105 timing idealTree:node_modules/markdown-pdf Completed in 857ms
+106 timing idealTree:node_modules/markdown-pdf/node_modules/commander Completed in 0ms
+107 timing idealTree:node_modules/markdown-pdf/node_modules/duplexer Completed in 0ms
+108 timing idealTree:node_modules/markdown-pdf/node_modules/extend Completed in 0ms
+109 timing idealTree:node_modules/markdown-pdf/node_modules/highlight.js Completed in 0ms
+110 silly placeDep node_modules/markdown-pdf es6-promise@4.2.8 OK for: phantomjs-prebuilt@2.1.16 want: ^4.0.3
+111 silly placeDep node_modules/markdown-pdf extract-zip@1.7.0 OK for: phantomjs-prebuilt@2.1.16 want: ^1.6.5
+112 silly placeDep node_modules/markdown-pdf fs-extra@1.0.0 OK for: phantomjs-prebuilt@2.1.16 want: ^1.0.0
+113 silly placeDep node_modules/markdown-pdf hasha@2.2.0 OK for: phantomjs-prebuilt@2.1.16 want: ^2.2.0
+114 silly placeDep node_modules/markdown-pdf kew@0.7.0 OK for: phantomjs-prebuilt@2.1.16 want: ^0.7.0
+115 silly placeDep node_modules/markdown-pdf progress@1.1.8 OK for: phantomjs-prebuilt@2.1.16 want: ^1.1.8
+116 silly placeDep node_modules/markdown-pdf request@2.88.2 OK for: phantomjs-prebuilt@2.1.16 want: ^2.81.0
+117 silly placeDep node_modules/markdown-pdf request-progress@2.0.1 OK for: phantomjs-prebuilt@2.1.16 want: ^2.0.1
+118 silly placeDep node_modules/markdown-pdf which@1.3.1 OK for: phantomjs-prebuilt@2.1.16 want: ^1.2.10
+119 silly fetch manifest concat-stream@^1.6.2
+120 silly fetch manifest debug@^2.6.9
+121 silly fetch manifest mkdirp@^0.5.4
+122 silly fetch manifest yauzl@^2.10.0
+123 silly fetch manifest graceful-fs@^4.1.2
+124 silly fetch manifest jsonfile@^2.1.0
+125 silly fetch manifest klaw@^1.0.0
+126 silly fetch manifest is-stream@^1.0.1
+127 silly fetch manifest pinkie-promise@^2.0.0
+128 silly fetch manifest aws-sign2@~0.7.0
+129 silly fetch manifest aws4@^1.8.0
+130 silly fetch manifest caseless@~0.12.0
+131 silly fetch manifest combined-stream@~1.0.6
+132 silly fetch manifest forever-agent@~0.6.1
+133 silly fetch manifest form-data@~2.3.2
+134 silly fetch manifest har-validator@~5.1.3
+135 silly fetch manifest http-signature@~1.2.0
+136 silly fetch manifest is-typedarray@~1.0.0
+137 silly fetch manifest isstream@~0.1.2
+138 silly fetch manifest json-stringify-safe@~5.0.1
+139 silly fetch manifest mime-types@~2.1.19
+140 silly fetch manifest oauth-sign@~0.9.0
+141 silly fetch manifest performance-now@^2.1.0
+142 silly fetch manifest qs@~6.5.2
+143 silly fetch manifest safe-buffer@^5.1.2
+144 silly fetch manifest tough-cookie@~2.5.0
+145 silly fetch manifest tunnel-agent@^0.6.0
+146 silly fetch manifest uuid@^3.3.2
+147 silly fetch manifest throttleit@^1.0.0
+148 silly fetch manifest isexe@^2.0.0
+149 http fetch GET 200 https://registry.npmjs.org/forever-agent 401ms (cache miss)
+150 http fetch GET 200 https://registry.npmjs.org/pinkie-promise 411ms (cache miss)
+151 http fetch GET 200 https://registry.npmjs.org/form-data 422ms (cache miss)
+152 http fetch GET 200 https://registry.npmjs.org/is-typedarray 431ms (cache miss)
+153 http fetch GET 200 https://registry.npmjs.org/combined-stream 444ms (cache miss)
+154 http fetch GET 200 https://registry.npmjs.org/safe-buffer 442ms (cache miss)
+155 http fetch GET 200 https://registry.npmjs.org/aws-sign2 466ms (cache miss)
+156 http fetch GET 200 https://registry.npmjs.org/yauzl 491ms (cache miss)
+157 http fetch GET 200 https://registry.npmjs.org/is-stream 487ms (cache miss)
+158 http fetch GET 200 https://registry.npmjs.org/isexe 468ms (cache miss)
+159 http fetch GET 200 https://registry.npmjs.org/caseless 492ms (cache miss)
+160 http fetch GET 200 https://registry.npmjs.org/isstream 485ms (cache miss)
+161 http fetch GET 200 https://registry.npmjs.org/klaw 502ms (cache miss)
+162 http fetch GET 200 https://registry.npmjs.org/json-stringify-safe 488ms (cache miss)
+163 http fetch GET 200 https://registry.npmjs.org/aws4 502ms (cache miss)
+164 http fetch GET 200 https://registry.npmjs.org/http-signature 496ms (cache miss)
+165 http fetch GET 200 https://registry.npmjs.org/throttleit 487ms (cache miss)
+166 http fetch GET 200 https://registry.npmjs.org/oauth-sign 506ms (cache miss)
+167 http fetch GET 200 https://registry.npmjs.org/tunnel-agent 507ms (cache miss)
+168 http fetch GET 200 https://registry.npmjs.org/har-validator 526ms (cache miss)
+169 http fetch GET 200 https://registry.npmjs.org/graceful-fs 546ms (cache miss)
+170 http fetch GET 200 https://registry.npmjs.org/performance-now 524ms (cache miss)
+171 http fetch GET 200 https://registry.npmjs.org/mime-types 532ms (cache miss)
+172 http fetch GET 200 https://registry.npmjs.org/tough-cookie 563ms (cache miss)
+173 http fetch GET 200 https://registry.npmjs.org/qs 575ms (cache miss)
+174 http fetch GET 200 https://registry.npmjs.org/uuid 583ms (cache miss)
+175 http fetch GET 200 https://registry.npmjs.org/debug 632ms (cache miss)
+176 http fetch GET 200 https://registry.npmjs.org/jsonfile 854ms (cache miss)
+177 timing idealTree:node_modules/markdown-pdf/node_modules/phantomjs-prebuilt Completed in 875ms
+178 timing idealTree:node_modules/markdown-pdf/node_modules/es6-promise Completed in 0ms
+179 silly placeDep node_modules/markdown-pdf concat-stream@1.6.2 OK for: extract-zip@1.7.0 want: ^1.6.2
+180 silly placeDep node_modules/markdown-pdf debug@2.6.9 OK for: extract-zip@1.7.0 want: ^2.6.9
+181 silly placeDep node_modules/markdown-pdf mkdirp@0.5.6 OK for: extract-zip@1.7.0 want: ^0.5.4
+182 silly placeDep node_modules/markdown-pdf yauzl@2.10.0 OK for: extract-zip@1.7.0 want: ^2.10.0
+183 silly fetch manifest buffer-from@^1.0.0
+184 silly fetch manifest inherits@^2.0.3
+185 silly fetch manifest readable-stream@^2.2.2
+186 silly fetch manifest typedarray@^0.0.6
+187 silly fetch manifest ms@2.0.0
+188 silly fetch manifest minimist@^1.2.6
+189 silly fetch manifest fd-slicer@~1.1.0
+190 silly fetch manifest buffer-crc32@~0.2.3
+191 http fetch GET 200 https://registry.npmjs.org/buffer-from 128ms (cache miss)
+192 http fetch GET 200 https://registry.npmjs.org/typedarray 134ms (cache miss)
+193 http fetch GET 200 https://registry.npmjs.org/fd-slicer 142ms (cache miss)
+194 http fetch GET 200 https://registry.npmjs.org/ms 153ms (cache miss)
+195 http fetch GET 200 https://registry.npmjs.org/minimist 158ms (cache miss)
+196 http fetch GET 200 https://registry.npmjs.org/buffer-crc32 161ms (cache miss)
+197 timing idealTree:node_modules/markdown-pdf/node_modules/extract-zip Completed in 182ms
+198 silly placeDep node_modules/markdown-pdf buffer-from@1.1.2 OK for: concat-stream@1.6.2 want: ^1.0.0
+199 silly placeDep node_modules/markdown-pdf inherits@2.0.4 OK for: concat-stream@1.6.2 want: ^2.0.3
+200 silly placeDep node_modules/markdown-pdf readable-stream@2.3.7 OK for: concat-stream@1.6.2 want: ^2.2.2
+201 silly placeDep node_modules/markdown-pdf typedarray@0.0.6 OK for: concat-stream@1.6.2 want: ^0.0.6
+202 silly fetch manifest core-util-is@~1.0.0
+203 silly fetch manifest isarray@~1.0.0
+204 silly fetch manifest process-nextick-args@~2.0.0
+205 silly fetch manifest safe-buffer@~5.1.1
+206 silly fetch manifest string_decoder@~1.1.1
+207 silly fetch manifest util-deprecate@~1.0.1
+208 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 124ms (cache miss)
+209 http fetch GET 200 https://registry.npmjs.org/isarray 140ms (cache miss)
+210 http fetch GET 200 https://registry.npmjs.org/core-util-is 152ms (cache miss)
+211 http fetch GET 200 https://registry.npmjs.org/util-deprecate 149ms (cache miss)
+212 http fetch GET 200 https://registry.npmjs.org/string_decoder 162ms (cache miss)
+213 timing idealTree:node_modules/markdown-pdf/node_modules/concat-stream Completed in 177ms
+214 timing idealTree:node_modules/markdown-pdf/node_modules/buffer-from Completed in 1ms
+215 silly placeDep node_modules/markdown-pdf ms@2.0.0 OK for: debug@2.6.9 want: 2.0.0
+216 timing idealTree:node_modules/markdown-pdf/node_modules/debug Completed in 2ms
+217 silly placeDep node_modules/markdown-pdf graceful-fs@4.2.10 OK for: fs-extra@1.0.0 want: ^4.1.2
+218 silly placeDep node_modules/markdown-pdf jsonfile@2.4.0 OK for: fs-extra@1.0.0 want: ^2.1.0
+219 silly placeDep node_modules/markdown-pdf klaw@1.3.1 OK for: fs-extra@1.0.0 want: ^1.0.0
+220 timing idealTree:node_modules/markdown-pdf/node_modules/fs-extra Completed in 3ms
+221 timing idealTree:node_modules/markdown-pdf/node_modules/graceful-fs Completed in 0ms
+222 silly placeDep node_modules/markdown-pdf is-stream@1.1.0 OK for: hasha@2.2.0 want: ^1.0.1
+223 silly placeDep node_modules/markdown-pdf pinkie-promise@2.0.1 OK for: hasha@2.2.0 want: ^2.0.0
+224 silly fetch manifest pinkie@^2.0.0
+225 http fetch GET 200 https://registry.npmjs.org/pinkie 81ms (cache miss)
+226 timing idealTree:node_modules/markdown-pdf/node_modules/hasha Completed in 86ms
+227 timing idealTree:node_modules/markdown-pdf/node_modules/inherits Completed in 1ms
+228 timing idealTree:node_modules/markdown-pdf/node_modules/is-stream Completed in 0ms
+229 timing idealTree:node_modules/markdown-pdf/node_modules/jsonfile Completed in 0ms
+230 timing idealTree:node_modules/markdown-pdf/node_modules/kew Completed in 0ms
+231 timing idealTree:node_modules/markdown-pdf/node_modules/klaw Completed in 0ms
+232 silly placeDep node_modules/markdown-pdf minimist@1.2.7 OK for: mkdirp@0.5.6 want: ^1.2.6
+233 timing idealTree:node_modules/markdown-pdf/node_modules/mkdirp Completed in 1ms
+234 timing idealTree:node_modules/markdown-pdf/node_modules/minimist Completed in 0ms
+235 timing idealTree:node_modules/markdown-pdf/node_modules/ms Completed in 0ms
+236 silly placeDep node_modules/markdown-pdf pinkie@2.0.4 OK for: pinkie-promise@2.0.1 want: ^2.0.0
+237 timing idealTree:node_modules/markdown-pdf/node_modules/pinkie-promise Completed in 1ms
+238 timing idealTree:node_modules/markdown-pdf/node_modules/pinkie Completed in 0ms
+239 timing idealTree:node_modules/markdown-pdf/node_modules/progress Completed in 0ms
+240 silly placeDep node_modules/markdown-pdf core-util-is@1.0.3 OK for: readable-stream@2.3.7 want: ~1.0.0
+241 silly placeDep node_modules/markdown-pdf isarray@1.0.0 OK for: readable-stream@2.3.7 want: ~1.0.0
+242 silly placeDep node_modules/markdown-pdf process-nextick-args@2.0.1 OK for: readable-stream@2.3.7 want: ~2.0.0
+243 silly placeDep node_modules/markdown-pdf safe-buffer@5.1.2 OK for: readable-stream@2.3.7 want: ~5.1.1
+244 silly placeDep node_modules/markdown-pdf string_decoder@1.1.1 OK for: readable-stream@2.3.7 want: ~1.1.1
+245 silly placeDep node_modules/markdown-pdf util-deprecate@1.0.2 OK for: readable-stream@2.3.7 want: ~1.0.1
+246 timing idealTree:node_modules/markdown-pdf/node_modules/readable-stream Completed in 11ms
+247 timing idealTree:node_modules/markdown-pdf/node_modules/core-util-is Completed in 0ms
+248 timing idealTree:node_modules/markdown-pdf/node_modules/isarray Completed in 0ms
+249 timing idealTree:node_modules/markdown-pdf/node_modules/process-nextick-args Completed in 0ms
+250 silly placeDep node_modules/markdown-pdf argparse@1.0.10 OK for: remarkable@2.0.1 want: ^1.0.10
+251 silly placeDep node_modules/markdown-pdf autolinker@3.16.2 OK for: remarkable@2.0.1 want: ^3.11.0
+252 silly fetch manifest sprintf-js@~1.0.2
+253 silly fetch manifest tslib@^2.3.0
+254 http fetch GET 200 https://registry.npmjs.org/sprintf-js 109ms (cache miss)
+255 http fetch GET 200 https://registry.npmjs.org/tslib 127ms (cache miss)
+256 timing idealTree:node_modules/markdown-pdf/node_modules/remarkable Completed in 134ms
+257 silly placeDep node_modules/markdown-pdf sprintf-js@1.0.3 OK for: argparse@1.0.10 want: ~1.0.2
+258 timing idealTree:node_modules/markdown-pdf/node_modules/argparse Completed in 1ms
+259 silly placeDep node_modules/markdown-pdf tslib@2.4.1 OK for: autolinker@3.16.2 want: ^2.3.0
+260 timing idealTree:node_modules/markdown-pdf/node_modules/autolinker Completed in 1ms
+261 silly placeDep node_modules/markdown-pdf aws-sign2@0.7.0 OK for: request@2.88.2 want: ~0.7.0
+262 silly placeDep node_modules/markdown-pdf aws4@1.12.0 OK for: request@2.88.2 want: ^1.8.0
+263 silly placeDep node_modules/markdown-pdf caseless@0.12.0 OK for: request@2.88.2 want: ~0.12.0
+264 silly placeDep node_modules/markdown-pdf combined-stream@1.0.8 OK for: request@2.88.2 want: ~1.0.6
+265 silly placeDep node_modules/markdown-pdf forever-agent@0.6.1 OK for: request@2.88.2 want: ~0.6.1
+266 silly placeDep node_modules/markdown-pdf form-data@2.3.3 OK for: request@2.88.2 want: ~2.3.2
+267 silly placeDep node_modules/markdown-pdf har-validator@5.1.5 OK for: request@2.88.2 want: ~5.1.3
+268 silly placeDep node_modules/markdown-pdf http-signature@1.2.0 OK for: request@2.88.2 want: ~1.2.0
+269 silly placeDep node_modules/markdown-pdf is-typedarray@1.0.0 OK for: request@2.88.2 want: ~1.0.0
+270 silly placeDep node_modules/markdown-pdf isstream@0.1.2 OK for: request@2.88.2 want: ~0.1.2
+271 silly placeDep node_modules/markdown-pdf json-stringify-safe@5.0.1 OK for: request@2.88.2 want: ~5.0.1
+272 silly placeDep node_modules/markdown-pdf mime-types@2.1.35 OK for: request@2.88.2 want: ~2.1.19
+273 silly placeDep node_modules/markdown-pdf oauth-sign@0.9.0 OK for: request@2.88.2 want: ~0.9.0
+274 silly placeDep node_modules/markdown-pdf performance-now@2.1.0 OK for: request@2.88.2 want: ^2.1.0
+275 silly placeDep node_modules/markdown-pdf qs@6.5.3 OK for: request@2.88.2 want: ~6.5.2
+276 silly placeDep node_modules/markdown-pdf tough-cookie@2.5.0 OK for: request@2.88.2 want: ~2.5.0
+277 silly placeDep node_modules/markdown-pdf tunnel-agent@0.6.0 OK for: request@2.88.2 want: ^0.6.0
+278 silly placeDep node_modules/markdown-pdf uuid@3.4.0 OK for: request@2.88.2 want: ^3.3.2
+279 silly fetch manifest delayed-stream@~1.0.0
+280 silly fetch manifest asynckit@^0.4.0
+281 silly fetch manifest ajv@^6.12.3
+282 silly fetch manifest har-schema@^2.0.0
+283 silly fetch manifest assert-plus@^1.0.0
+284 silly fetch manifest jsprim@^1.2.2
+285 silly fetch manifest sshpk@^1.7.0
+286 silly fetch manifest mime-db@1.52.0
+287 silly fetch manifest psl@^1.1.28
+288 silly fetch manifest punycode@^2.1.1
+289 http fetch GET 200 https://registry.npmjs.org/assert-plus 223ms (cache miss)
+290 http fetch GET 200 https://registry.npmjs.org/asynckit 235ms (cache miss)
+291 http fetch GET 200 https://registry.npmjs.org/jsprim 260ms (cache miss)
+292 http fetch GET 200 https://registry.npmjs.org/har-schema 270ms (cache miss)
+293 http fetch GET 200 https://registry.npmjs.org/sshpk 276ms (cache miss)
+294 http fetch GET 200 https://registry.npmjs.org/delayed-stream 292ms (cache miss)
+295 http fetch GET 200 https://registry.npmjs.org/punycode 285ms (cache miss)
+296 http fetch GET 200 https://registry.npmjs.org/mime-db 289ms (cache miss)
+297 http fetch GET 200 https://registry.npmjs.org/psl 321ms (cache miss)
+298 http fetch GET 200 https://registry.npmjs.org/ajv 341ms (cache miss)
+299 timing idealTree:node_modules/markdown-pdf/node_modules/request Completed in 373ms
+300 timing idealTree:node_modules/markdown-pdf/node_modules/aws-sign2 Completed in 0ms
+301 timing idealTree:node_modules/markdown-pdf/node_modules/aws4 Completed in 0ms
+302 timing idealTree:node_modules/markdown-pdf/node_modules/caseless Completed in 0ms
+303 silly placeDep node_modules/markdown-pdf delayed-stream@1.0.0 OK for: combined-stream@1.0.8 want: ~1.0.0
+304 timing idealTree:node_modules/markdown-pdf/node_modules/combined-stream Completed in 2ms
+305 timing idealTree:node_modules/markdown-pdf/node_modules/delayed-stream Completed in 0ms
+306 timing idealTree:node_modules/markdown-pdf/node_modules/forever-agent Completed in 0ms
+307 silly placeDep node_modules/markdown-pdf asynckit@0.4.0 OK for: form-data@2.3.3 want: ^0.4.0
+308 timing idealTree:node_modules/markdown-pdf/node_modules/form-data Completed in 1ms
+309 timing idealTree:node_modules/markdown-pdf/node_modules/asynckit Completed in 0ms
+310 silly placeDep node_modules/markdown-pdf ajv@6.12.6 OK for: har-validator@5.1.5 want: ^6.12.3
+311 silly placeDep node_modules/markdown-pdf har-schema@2.0.0 OK for: har-validator@5.1.5 want: ^2.0.0
+312 silly fetch manifest fast-deep-equal@^3.1.1
+313 silly fetch manifest fast-json-stable-stringify@^2.0.0
+314 silly fetch manifest json-schema-traverse@^0.4.1
+315 silly fetch manifest uri-js@^4.2.2
+316 http fetch GET 200 https://registry.npmjs.org/json-schema-traverse 136ms (cache miss)
+317 http fetch GET 200 https://registry.npmjs.org/fast-json-stable-stringify 139ms (cache miss)
+318 http fetch GET 200 https://registry.npmjs.org/uri-js 146ms (cache miss)
+319 http fetch GET 200 https://registry.npmjs.org/fast-deep-equal 162ms (cache miss)
+320 timing idealTree:node_modules/markdown-pdf/node_modules/har-validator Completed in 166ms
+321 silly placeDep node_modules/markdown-pdf fast-deep-equal@3.1.3 OK for: ajv@6.12.6 want: ^3.1.1
+322 silly placeDep node_modules/markdown-pdf fast-json-stable-stringify@2.1.0 OK for: ajv@6.12.6 want: ^2.0.0
+323 silly placeDep node_modules/markdown-pdf json-schema-traverse@0.4.1 OK for: ajv@6.12.6 want: ^0.4.1
+324 silly placeDep node_modules/markdown-pdf uri-js@4.4.1 OK for: ajv@6.12.6 want: ^4.2.2
+325 silly fetch manifest punycode@^2.1.0
+326 timing idealTree:node_modules/markdown-pdf/node_modules/ajv Completed in 6ms
+327 timing idealTree:node_modules/markdown-pdf/node_modules/fast-deep-equal Completed in 0ms
+328 timing idealTree:node_modules/markdown-pdf/node_modules/fast-json-stable-stringify Completed in 0ms
+329 timing idealTree:node_modules/markdown-pdf/node_modules/har-schema Completed in 0ms
+330 silly placeDep node_modules/markdown-pdf assert-plus@1.0.0 OK for: http-signature@1.2.0 want: ^1.0.0
+331 silly placeDep node_modules/markdown-pdf jsprim@1.4.2 OK for: http-signature@1.2.0 want: ^1.2.2
+332 silly placeDep node_modules/markdown-pdf sshpk@1.17.0 OK for: http-signature@1.2.0 want: ^1.7.0
+333 silly fetch manifest extsprintf@1.3.0
+334 silly fetch manifest json-schema@0.4.0
+335 silly fetch manifest verror@1.10.0
+336 silly fetch manifest asn1@~0.2.3
+337 silly fetch manifest dashdash@^1.12.0
+338 silly fetch manifest getpass@^0.1.1
+339 silly fetch manifest safer-buffer@^2.0.2
+340 silly fetch manifest jsbn@~0.1.0
+341 silly fetch manifest tweetnacl@~0.14.0
+342 silly fetch manifest ecc-jsbn@~0.1.1
+343 silly fetch manifest bcrypt-pbkdf@^1.0.0
+344 http fetch GET 200 https://registry.npmjs.org/asn1 211ms (cache miss)
+345 http fetch GET 200 https://registry.npmjs.org/bcrypt-pbkdf 209ms (cache miss)
+346 http fetch GET 200 https://registry.npmjs.org/jsbn 214ms (cache miss)
+347 http fetch GET 200 https://registry.npmjs.org/tweetnacl 217ms (cache miss)
+348 http fetch GET 200 https://registry.npmjs.org/ecc-jsbn 218ms (cache miss)
+349 http fetch GET 200 https://registry.npmjs.org/extsprintf 228ms (cache miss)
+350 http fetch GET 200 https://registry.npmjs.org/json-schema 227ms (cache miss)
+351 http fetch GET 200 https://registry.npmjs.org/getpass 229ms (cache miss)
+352 http fetch GET 200 https://registry.npmjs.org/verror 233ms (cache miss)
+353 http fetch GET 200 https://registry.npmjs.org/safer-buffer 233ms (cache miss)
+354 http fetch GET 200 https://registry.npmjs.org/dashdash 241ms (cache miss)
+355 timing idealTree:node_modules/markdown-pdf/node_modules/http-signature Completed in 252ms
+356 timing idealTree:node_modules/markdown-pdf/node_modules/assert-plus Completed in 0ms
+357 timing idealTree:node_modules/markdown-pdf/node_modules/is-typedarray Completed in 0ms
+358 timing idealTree:node_modules/markdown-pdf/node_modules/isstream Completed in 0ms
+359 timing idealTree:node_modules/markdown-pdf/node_modules/json-schema-traverse Completed in 0ms
+360 timing idealTree:node_modules/markdown-pdf/node_modules/json-stringify-safe Completed in 0ms
+361 silly placeDep node_modules/markdown-pdf extsprintf@1.3.0 OK for: jsprim@1.4.2 want: 1.3.0
+362 silly placeDep node_modules/markdown-pdf json-schema@0.4.0 OK for: jsprim@1.4.2 want: 0.4.0
+363 silly placeDep node_modules/markdown-pdf verror@1.10.0 OK for: jsprim@1.4.2 want: 1.10.0
+364 silly fetch manifest core-util-is@1.0.2
+365 timing idealTree:node_modules/markdown-pdf/node_modules/jsprim Completed in 6ms
+366 timing idealTree:node_modules/markdown-pdf/node_modules/extsprintf Completed in 0ms
+367 timing idealTree:node_modules/markdown-pdf/node_modules/json-schema Completed in 0ms
+368 silly placeDep node_modules/markdown-pdf mime-db@1.52.0 OK for: mime-types@2.1.35 want: 1.52.0
+369 timing idealTree:node_modules/markdown-pdf/node_modules/mime-types Completed in 3ms
+370 timing idealTree:node_modules/markdown-pdf/node_modules/mime-db Completed in 0ms
+371 timing idealTree:node_modules/markdown-pdf/node_modules/oauth-sign Completed in 0ms
+372 timing idealTree:node_modules/markdown-pdf/node_modules/performance-now Completed in 0ms
+373 timing idealTree:node_modules/markdown-pdf/node_modules/qs Completed in 0ms
+374 silly placeDep node_modules/markdown-pdf throttleit@1.0.0 OK for: request-progress@2.0.1 want: ^1.0.0
+375 timing idealTree:node_modules/markdown-pdf/node_modules/request-progress Completed in 1ms
+376 timing idealTree:node_modules/markdown-pdf/node_modules/safe-buffer Completed in 0ms
+377 timing idealTree:node_modules/markdown-pdf/node_modules/sprintf-js Completed in 0ms
+378 silly placeDep node_modules/markdown-pdf asn1@0.2.6 OK for: sshpk@1.17.0 want: ~0.2.3
+379 silly placeDep node_modules/markdown-pdf bcrypt-pbkdf@1.0.2 OK for: sshpk@1.17.0 want: ^1.0.0
+380 silly placeDep node_modules/markdown-pdf dashdash@1.14.1 OK for: sshpk@1.17.0 want: ^1.12.0
+381 silly placeDep node_modules/markdown-pdf ecc-jsbn@0.1.2 OK for: sshpk@1.17.0 want: ~0.1.1
+382 silly placeDep node_modules/markdown-pdf getpass@0.1.7 OK for: sshpk@1.17.0 want: ^0.1.1
+383 silly placeDep node_modules/markdown-pdf jsbn@0.1.1 OK for: sshpk@1.17.0 want: ~0.1.0
+384 silly placeDep node_modules/markdown-pdf safer-buffer@2.1.2 OK for: sshpk@1.17.0 want: ^2.0.2
+385 silly placeDep node_modules/markdown-pdf tweetnacl@0.14.5 OK for: sshpk@1.17.0 want: ~0.14.0
+386 timing idealTree:node_modules/markdown-pdf/node_modules/sshpk Completed in 12ms
+387 timing idealTree:node_modules/markdown-pdf/node_modules/asn1 Completed in 0ms
+388 timing idealTree:node_modules/markdown-pdf/node_modules/bcrypt-pbkdf Completed in 0ms
+389 timing idealTree:node_modules/markdown-pdf/node_modules/dashdash Completed in 1ms
+390 timing idealTree:node_modules/markdown-pdf/node_modules/ecc-jsbn Completed in 0ms
+391 timing idealTree:node_modules/markdown-pdf/node_modules/getpass Completed in 0ms
+392 timing idealTree:node_modules/markdown-pdf/node_modules/jsbn Completed in 0ms
+393 timing idealTree:node_modules/markdown-pdf/node_modules/safer-buffer Completed in 0ms
+394 silly placeDep node_modules/markdown-pdf async@1.5.2 OK for: stream-from-to@1.4.3 want: ^1.5.2
+395 silly placeDep node_modules/markdown-pdf series-stream@1.0.1 OK for: stream-from-to@1.4.3 want: ^1.0.1
+396 timing idealTree:node_modules/markdown-pdf/node_modules/stream-from-to Completed in 2ms
+397 timing idealTree:node_modules/markdown-pdf/node_modules/async Completed in 0ms
+398 timing idealTree:node_modules/markdown-pdf/node_modules/series-stream Completed in 0ms
+399 timing idealTree:node_modules/markdown-pdf/node_modules/string_decoder Completed in 0ms
+400 timing idealTree:node_modules/markdown-pdf/node_modules/throttleit Completed in 0ms
+401 timing idealTree:node_modules/markdown-pdf/node_modules/through2 Completed in 0ms
+402 silly placeDep node_modules/markdown-pdf rimraf@2.7.1 OK for: tmp@0.1.0 want: ^2.6.3
+403 silly fetch manifest glob@^7.1.3
+404 http fetch GET 200 https://registry.npmjs.org/glob 103ms (cache miss)
+405 timing idealTree:node_modules/markdown-pdf/node_modules/tmp Completed in 107ms
+406 silly placeDep node_modules/markdown-pdf glob@7.2.3 OK for: rimraf@2.7.1 want: ^7.1.3
+407 silly fetch manifest fs.realpath@^1.0.0
+408 silly fetch manifest inflight@^1.0.4
+409 silly fetch manifest minimatch@^3.1.1
+410 silly fetch manifest once@^1.3.0
+411 silly fetch manifest path-is-absolute@^1.0.0
+412 http fetch GET 200 https://registry.npmjs.org/once 111ms (cache miss)
+413 http fetch GET 200 https://registry.npmjs.org/fs.realpath 119ms (cache miss)
+414 http fetch GET 200 https://registry.npmjs.org/inflight 119ms (cache miss)
+415 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 122ms (cache miss)
+416 http fetch GET 200 https://registry.npmjs.org/minimatch 136ms (cache miss)
+417 timing idealTree:node_modules/markdown-pdf/node_modules/rimraf Completed in 144ms
+418 silly placeDep node_modules/markdown-pdf fs.realpath@1.0.0 OK for: glob@7.2.3 want: ^1.0.0
+419 silly placeDep node_modules/markdown-pdf inflight@1.0.6 OK for: glob@7.2.3 want: ^1.0.4
+420 silly placeDep node_modules/markdown-pdf minimatch@3.1.2 OK for: glob@7.2.3 want: ^3.1.1
+421 silly placeDep node_modules/markdown-pdf once@1.4.0 OK for: glob@7.2.3 want: ^1.3.0
+422 silly placeDep node_modules/markdown-pdf path-is-absolute@1.0.1 OK for: glob@7.2.3 want: ^1.0.0
+423 silly fetch manifest wrappy@1
+424 silly fetch manifest brace-expansion@^1.1.7
+425 http fetch GET 200 https://registry.npmjs.org/wrappy 85ms (cache miss)
+426 http fetch GET 200 https://registry.npmjs.org/brace-expansion 115ms (cache miss)
+427 timing idealTree:node_modules/markdown-pdf/node_modules/glob Completed in 124ms
+428 timing idealTree:node_modules/markdown-pdf/node_modules/fs.realpath Completed in 0ms
+429 silly placeDep node_modules/markdown-pdf wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+430 timing idealTree:node_modules/markdown-pdf/node_modules/inflight Completed in 1ms
+431 silly placeDep node_modules/markdown-pdf brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+432 silly fetch manifest balanced-match@^1.0.0
+433 silly fetch manifest concat-map@0.0.1
+434 http fetch GET 200 https://registry.npmjs.org/balanced-match 84ms (cache miss)
+435 http fetch GET 200 https://registry.npmjs.org/concat-map 91ms (cache miss)
+436 timing idealTree:node_modules/markdown-pdf/node_modules/minimatch Completed in 96ms
+437 silly placeDep node_modules/markdown-pdf balanced-match@1.0.2 OK for: brace-expansion@1.1.11 want: ^1.0.0
+438 silly placeDep node_modules/markdown-pdf concat-map@0.0.1 OK for: brace-expansion@1.1.11 want: 0.0.1
+439 timing idealTree:node_modules/markdown-pdf/node_modules/brace-expansion Completed in 3ms
+440 timing idealTree:node_modules/markdown-pdf/node_modules/balanced-match Completed in 0ms
+441 timing idealTree:node_modules/markdown-pdf/node_modules/concat-map Completed in 0ms
+442 timing idealTree:node_modules/markdown-pdf/node_modules/once Completed in 0ms
+443 timing idealTree:node_modules/markdown-pdf/node_modules/path-is-absolute Completed in 0ms
+444 silly placeDep node_modules/markdown-pdf psl@1.9.0 OK for: tough-cookie@2.5.0 want: ^1.1.28
+445 silly placeDep node_modules/markdown-pdf punycode@2.2.0 OK for: tough-cookie@2.5.0 want: ^2.1.1
+446 timing idealTree:node_modules/markdown-pdf/node_modules/tough-cookie Completed in 8ms
+447 timing idealTree:node_modules/markdown-pdf/node_modules/psl Completed in 0ms
+448 timing idealTree:node_modules/markdown-pdf/node_modules/punycode Completed in 0ms
+449 timing idealTree:node_modules/markdown-pdf/node_modules/tslib Completed in 0ms
+450 timing idealTree:node_modules/markdown-pdf/node_modules/tunnel-agent Completed in 0ms
+451 timing idealTree:node_modules/markdown-pdf/node_modules/tweetnacl Completed in 1ms
+452 timing idealTree:node_modules/markdown-pdf/node_modules/typedarray Completed in 0ms
+453 timing idealTree:node_modules/markdown-pdf/node_modules/uri-js Completed in 0ms
+454 timing idealTree:node_modules/markdown-pdf/node_modules/util-deprecate Completed in 0ms
+455 timing idealTree:node_modules/markdown-pdf/node_modules/uuid Completed in 0ms
+456 silly placeDep node_modules/markdown-pdf/node_modules/verror core-util-is@1.0.2 OK for: verror@1.10.0 want: 1.0.2
+457 timing idealTree:node_modules/markdown-pdf/node_modules/verror Completed in 2ms
+458 silly placeDep node_modules/markdown-pdf isexe@2.0.0 OK for: which@1.3.1 want: ^2.0.0
+459 timing idealTree:node_modules/markdown-pdf/node_modules/which Completed in 1ms
+460 timing idealTree:node_modules/markdown-pdf/node_modules/isexe Completed in 0ms
+461 timing idealTree:node_modules/markdown-pdf/node_modules/wrappy Completed in 0ms
+462 silly placeDep node_modules/markdown-pdf buffer-crc32@0.2.13 OK for: yauzl@2.10.0 want: ~0.2.3
+463 silly placeDep node_modules/markdown-pdf fd-slicer@1.1.0 OK for: yauzl@2.10.0 want: ~1.1.0
+464 silly fetch manifest pend@~1.2.0
+465 http fetch GET 200 https://registry.npmjs.org/pend 75ms (cache miss)
+466 timing idealTree:node_modules/markdown-pdf/node_modules/yauzl Completed in 79ms
+467 timing idealTree:node_modules/markdown-pdf/node_modules/buffer-crc32 Completed in 0ms
+468 silly placeDep node_modules/markdown-pdf pend@1.2.0 OK for: fd-slicer@1.1.0 want: ~1.2.0
+469 timing idealTree:node_modules/markdown-pdf/node_modules/fd-slicer Completed in 1ms
+470 timing idealTree:node_modules/markdown-pdf/node_modules/pend Completed in 0ms
+471 timing idealTree:node_modules/markdown-pdf/node_modules/verror/node_modules/core-util-is Completed in 1ms
+472 timing idealTree:buildDeps Completed in 5623ms
+473 timing idealTree:fixDepFlags Completed in 1ms
+474 timing idealTree Completed in 5655ms
+475 timing reify:loadTrees Completed in 5657ms
+476 timing reify:diffTrees Completed in 1ms
+477 silly reify moves {}
+478 timing reify:retireShallow Completed in 2ms
+479 timing reify:createSparse Completed in 19ms
+480 timing reify:loadBundles Completed in 0ms
+481 silly audit bulk request {
+481 silly audit   'markdown-pdf': [ '11.0.0' ],
+481 silly audit   commander: [ '3.0.2' ],
+481 silly audit   duplexer: [ '0.1.2' ],
+481 silly audit   extend: [ '3.0.2' ],
+481 silly audit   'highlight.js': [ '10.7.3' ],
+481 silly audit   'phantomjs-prebuilt': [ '2.1.16' ],
+481 silly audit   remarkable: [ '2.0.1' ],
+481 silly audit   'stream-from-to': [ '1.4.3' ],
+481 silly audit   through2: [ '3.0.2' ],
+481 silly audit   tmp: [ '0.1.0' ],
+481 silly audit   'es6-promise': [ '4.2.8' ],
+481 silly audit   'extract-zip': [ '1.7.0' ],
+481 silly audit   'fs-extra': [ '1.0.0' ],
+481 silly audit   hasha: [ '2.2.0' ],
+481 silly audit   kew: [ '0.7.0' ],
+481 silly audit   progress: [ '1.1.8' ],
+481 silly audit   request: [ '2.88.2' ],
+481 silly audit   'request-progress': [ '2.0.1' ],
+481 silly audit   which: [ '1.3.1' ],
+481 silly audit   'concat-stream': [ '1.6.2' ],
+481 silly audit   debug: [ '2.6.9' ],
+481 silly audit   mkdirp: [ '0.5.6' ],
+481 silly audit   yauzl: [ '2.10.0' ],
+481 silly audit   'buffer-from': [ '1.1.2' ],
+481 silly audit   inherits: [ '2.0.4' ],
+481 silly audit   'readable-stream': [ '2.3.7' ],
+481 silly audit   typedarray: [ '0.0.6' ],
+481 silly audit   ms: [ '2.0.0' ],
+481 silly audit   'graceful-fs': [ '4.2.10' ],
+481 silly audit   jsonfile: [ '2.4.0' ],
+481 silly audit   klaw: [ '1.3.1' ],
+481 silly audit   'is-stream': [ '1.1.0' ],
+481 silly audit   'pinkie-promise': [ '2.0.1' ],
+481 silly audit   minimist: [ '1.2.7' ],
+481 silly audit   pinkie: [ '2.0.4' ],
+481 silly audit   'core-util-is': [ '1.0.3', '1.0.2' ],
+481 silly audit   isarray: [ '1.0.0' ],
+481 silly audit   'process-nextick-args': [ '2.0.1' ],
+481 silly audit   'safe-buffer': [ '5.1.2' ],
+481 silly audit   string_decoder: [ '1.1.1' ],
+481 silly audit   'util-deprecate': [ '1.0.2' ],
+481 silly audit   argparse: [ '1.0.10' ],
+481 silly audit   autolinker: [ '3.16.2' ],
+481 silly audit   'sprintf-js': [ '1.0.3' ],
+481 silly audit   tslib: [ '2.4.1' ],
+481 silly audit   'aws-sign2': [ '0.7.0' ],
+481 silly audit   aws4: [ '1.12.0' ],
+481 silly audit   caseless: [ '0.12.0' ],
+481 silly audit   'combined-stream': [ '1.0.8' ],
+481 silly audit   'forever-agent': [ '0.6.1' ],
+481 silly audit   'form-data': [ '2.3.3' ],
+481 silly audit   'har-validator': [ '5.1.5' ],
+481 silly audit   'http-signature': [ '1.2.0' ],
+481 silly audit   'is-typedarray': [ '1.0.0' ],
+481 silly audit   isstream: [ '0.1.2' ],
+481 silly audit   'json-stringify-safe': [ '5.0.1' ],
+481 silly audit   'mime-types': [ '2.1.35' ],
+481 silly audit   'oauth-sign': [ '0.9.0' ],
+481 silly audit   'performance-now': [ '2.1.0' ],
+481 silly audit   qs: [ '6.5.3' ],
+481 silly audit   'tough-cookie': [ '2.5.0' ],
+481 silly audit   'tunnel-agent': [ '0.6.0' ],
+481 silly audit   uuid: [ '3.4.0' ],
+481 silly audit   'delayed-stream': [ '1.0.0' ],
+481 silly audit   asynckit: [ '0.4.0' ],
+481 silly audit   ajv: [ '6.12.6' ],
+481 silly audit   'har-schema': [ '2.0.0' ],
+481 silly audit   'fast-deep-equal': [ '3.1.3' ],
+481 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+481 silly audit   'json-schema-traverse': [ '0.4.1' ],
+481 silly audit   'uri-js': [ '4.4.1' ],
+481 silly audit   'assert-plus': [ '1.0.0' ],
+481 silly audit   jsprim: [ '1.4.2' ],
+481 silly audit   sshpk: [ '1.17.0' ],
+481 silly audit   extsprintf: [ '1.3.0' ],
+481 silly audit   'json-schema': [ '0.4.0' ],
+481 silly audit   verror: [ '1.10.0' ],
+481 silly audit   'mime-db': [ '1.52.0' ],
+481 silly audit   throttleit: [ '1.0.0' ],
+481 silly audit   asn1: [ '0.2.6' ],
+481 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+481 silly audit   dashdash: [ '1.14.1' ],
+481 silly audit   'ecc-jsbn': [ '0.1.2' ],
+481 silly audit   getpass: [ '0.1.7' ],
+481 silly audit   jsbn: [ '0.1.1' ],
+481 silly audit   'safer-buffer': [ '2.1.2' ],
+481 silly audit   tweetnacl: [ '0.14.5' ],
+481 silly audit   async: [ '1.5.2' ],
+481 silly audit   'series-stream': [ '1.0.1' ],
+481 silly audit   rimraf: [ '2.7.1' ],
+481 silly audit   glob: [ '7.2.3' ],
+481 silly audit   'fs.realpath': [ '1.0.0' ],
+481 silly audit   inflight: [ '1.0.6' ],
+481 silly audit   minimatch: [ '3.1.2' ],
+481 silly audit   once: [ '1.4.0' ],
+481 silly audit   'path-is-absolute': [ '1.0.1' ],
+481 silly audit   wrappy: [ '1.0.2' ],
+481 silly audit   'brace-expansion': [ '1.1.11' ],
+481 silly audit   'balanced-match': [ '1.0.2' ],
+481 silly audit   'concat-map': [ '0.0.1' ],
+481 silly audit   psl: [ '1.9.0' ],
+481 silly audit   punycode: [ '2.2.0' ],
+481 silly audit   isexe: [ '2.0.0' ],
+481 silly audit   'buffer-crc32': [ '0.2.13' ],
+481 silly audit   'fd-slicer': [ '1.1.0' ],
+481 silly audit   pend: [ '1.2.0' ]
+481 silly audit }
+482 silly tarball no local data for markdown-pdf@https://registry.npmjs.org/markdown-pdf/-/markdown-pdf-11.0.0.tgz. Extracting by manifest.
+483 silly tarball no local data for buffer-crc32@https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.13.tgz. Extracting by manifest.
+484 silly tarball no local data for fd-slicer@https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.1.0.tgz. Extracting by manifest.
+485 silly tarball no local data for pend@https://registry.npmjs.org/pend/-/pend-1.2.0.tgz. Extracting by manifest.
+486 silly tarball no local data for isexe@https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz. Extracting by manifest.
+487 silly tarball no local data for psl@https://registry.npmjs.org/psl/-/psl-1.9.0.tgz. Extracting by manifest.
+488 silly tarball no local data for punycode@https://registry.npmjs.org/punycode/-/punycode-2.2.0.tgz. Extracting by manifest.
+489 silly tarball no local data for concat-map@https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz. Extracting by manifest.
+490 silly tarball no local data for brace-expansion@https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz. Extracting by manifest.
+491 silly tarball no local data for balanced-match@https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz. Extracting by manifest.
+492 silly tarball no local data for wrappy@https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz. Extracting by manifest.
+493 silly tarball no local data for once@https://registry.npmjs.org/once/-/once-1.4.0.tgz. Extracting by manifest.
+494 silly tarball no local data for path-is-absolute@https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz. Extracting by manifest.
+495 silly tarball no local data for minimatch@https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz. Extracting by manifest.
+496 silly tarball no local data for fs.realpath@https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz. Extracting by manifest.
+497 silly tarball no local data for glob@https://registry.npmjs.org/glob/-/glob-7.2.3.tgz. Extracting by manifest.
+498 silly tarball no local data for rimraf@https://registry.npmjs.org/rimraf/-/rimraf-2.7.1.tgz. Extracting by manifest.
+499 silly tarball no local data for inflight@https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz. Extracting by manifest.
+500 silly tarball no local data for series-stream@https://registry.npmjs.org/series-stream/-/series-stream-1.0.1.tgz. Extracting by manifest.
+501 silly tarball no local data for async@https://registry.npmjs.org/async/-/async-1.5.2.tgz. Extracting by manifest.
+502 silly tarball no local data for tweetnacl@https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz. Extracting by manifest.
+503 silly tarball no local data for safer-buffer@https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz. Extracting by manifest.
+504 silly tarball no local data for jsbn@https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz. Extracting by manifest.
+505 silly tarball no local data for getpass@https://registry.npmjs.org/getpass/-/getpass-0.1.7.tgz. Extracting by manifest.
+506 silly tarball no local data for ecc-jsbn@https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz. Extracting by manifest.
+507 silly tarball no local data for dashdash@https://registry.npmjs.org/dashdash/-/dashdash-1.14.1.tgz. Extracting by manifest.
+508 silly tarball no local data for bcrypt-pbkdf@https://registry.npmjs.org/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz. Extracting by manifest.
+509 silly tarball no local data for asn1@https://registry.npmjs.org/asn1/-/asn1-0.2.6.tgz. Extracting by manifest.
+510 silly tarball no local data for throttleit@https://registry.npmjs.org/throttleit/-/throttleit-1.0.0.tgz. Extracting by manifest.
+511 silly tarball no local data for mime-db@https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz. Extracting by manifest.
+512 silly tarball no local data for verror@https://registry.npmjs.org/verror/-/verror-1.10.0.tgz. Extracting by manifest.
+513 silly tarball no local data for core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz. Extracting by manifest.
+514 silly tarball no local data for json-schema@https://registry.npmjs.org/json-schema/-/json-schema-0.4.0.tgz. Extracting by manifest.
+515 silly tarball no local data for extsprintf@https://registry.npmjs.org/extsprintf/-/extsprintf-1.3.0.tgz. Extracting by manifest.
+516 silly tarball no local data for sshpk@https://registry.npmjs.org/sshpk/-/sshpk-1.17.0.tgz. Extracting by manifest.
+517 silly tarball no local data for jsprim@https://registry.npmjs.org/jsprim/-/jsprim-1.4.2.tgz. Extracting by manifest.
+518 silly tarball no local data for uri-js@https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz. Extracting by manifest.
+519 silly tarball no local data for assert-plus@https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz. Extracting by manifest.
+520 silly tarball no local data for json-schema-traverse@https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz. Extracting by manifest.
+521 silly tarball no local data for fast-json-stable-stringify@https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz. Extracting by manifest.
+522 silly tarball no local data for fast-deep-equal@https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz. Extracting by manifest.
+523 silly tarball no local data for ajv@https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz. Extracting by manifest.
+524 silly tarball no local data for har-schema@https://registry.npmjs.org/har-schema/-/har-schema-2.0.0.tgz. Extracting by manifest.
+525 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz. Extracting by manifest.
+526 silly tarball no local data for asynckit@https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz. Extracting by manifest.
+527 silly tarball no local data for delayed-stream@https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz. Extracting by manifest.
+528 silly tarball no local data for tough-cookie@https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.5.0.tgz. Extracting by manifest.
+529 silly tarball no local data for qs@https://registry.npmjs.org/qs/-/qs-6.5.3.tgz. Extracting by manifest.
+530 silly tarball no local data for tunnel-agent@https://registry.npmjs.org/tunnel-agent/-/tunnel-agent-0.6.0.tgz. Extracting by manifest.
+531 silly tarball no local data for performance-now@https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz. Extracting by manifest.
+532 silly tarball no local data for oauth-sign@https://registry.npmjs.org/oauth-sign/-/oauth-sign-0.9.0.tgz. Extracting by manifest.
+533 silly tarball no local data for mime-types@https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz. Extracting by manifest.
+534 silly tarball no local data for json-stringify-safe@https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz. Extracting by manifest.
+535 silly tarball no local data for is-typedarray@https://registry.npmjs.org/is-typedarray/-/is-typedarray-1.0.0.tgz. Extracting by manifest.
+536 silly tarball no local data for http-signature@https://registry.npmjs.org/http-signature/-/http-signature-1.2.0.tgz. Extracting by manifest.
+537 silly tarball no local data for isstream@https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz. Extracting by manifest.
+538 silly tarball no local data for har-validator@https://registry.npmjs.org/har-validator/-/har-validator-5.1.5.tgz. Extracting by manifest.
+539 silly tarball no local data for form-data@https://registry.npmjs.org/form-data/-/form-data-2.3.3.tgz. Extracting by manifest.
+540 silly tarball no local data for forever-agent@https://registry.npmjs.org/forever-agent/-/forever-agent-0.6.1.tgz. Extracting by manifest.
+541 silly tarball no local data for combined-stream@https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz. Extracting by manifest.
+542 silly tarball no local data for aws-sign2@https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.7.0.tgz. Extracting by manifest.
+543 silly tarball no local data for caseless@https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz. Extracting by manifest.
+544 silly tarball no local data for aws4@https://registry.npmjs.org/aws4/-/aws4-1.12.0.tgz. Extracting by manifest.
+545 silly tarball no local data for sprintf-js@https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz. Extracting by manifest.
+546 silly tarball no local data for autolinker@https://registry.npmjs.org/autolinker/-/autolinker-3.16.2.tgz. Extracting by manifest.
+547 silly tarball no local data for tslib@https://registry.npmjs.org/tslib/-/tslib-2.4.1.tgz. Extracting by manifest.
+548 silly tarball no local data for argparse@https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz. Extracting by manifest.
+549 silly tarball no local data for util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz. Extracting by manifest.
+550 silly tarball no local data for string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz. Extracting by manifest.
+551 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz. Extracting by manifest.
+552 silly tarball no local data for process-nextick-args@https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz. Extracting by manifest.
+553 silly tarball no local data for isarray@https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz. Extracting by manifest.
+554 silly tarball no local data for core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz. Extracting by manifest.
+555 silly tarball no local data for minimist@https://registry.npmjs.org/minimist/-/minimist-1.2.7.tgz. Extracting by manifest.
+556 silly tarball no local data for pinkie-promise@https://registry.npmjs.org/pinkie-promise/-/pinkie-promise-2.0.1.tgz. Extracting by manifest.
+557 silly tarball no local data for is-stream@https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz. Extracting by manifest.
+558 silly tarball no local data for pinkie@https://registry.npmjs.org/pinkie/-/pinkie-2.0.4.tgz. Extracting by manifest.
+559 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.0.0.tgz. Extracting by manifest.
+560 silly tarball no local data for graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz. Extracting by manifest.
+561 silly tarball no local data for jsonfile@https://registry.npmjs.org/jsonfile/-/jsonfile-2.4.0.tgz. Extracting by manifest.
+562 silly tarball no local data for klaw@https://registry.npmjs.org/klaw/-/klaw-1.3.1.tgz. Extracting by manifest.
+563 silly tarball no local data for inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz. Extracting by manifest.
+564 silly tarball no local data for readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.7.tgz. Extracting by manifest.
+565 silly tarball no local data for buffer-from@https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz. Extracting by manifest.
+566 silly tarball no local data for typedarray@https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz. Extracting by manifest.
+567 silly tarball no local data for concat-stream@https://registry.npmjs.org/concat-stream/-/concat-stream-1.6.2.tgz. Extracting by manifest.
+568 silly tarball no local data for mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz. Extracting by manifest.
+569 silly tarball no local data for debug@https://registry.npmjs.org/debug/-/debug-2.6.9.tgz. Extracting by manifest.
+570 silly tarball no local data for yauzl@https://registry.npmjs.org/yauzl/-/yauzl-2.10.0.tgz. Extracting by manifest.
+571 silly tarball no local data for which@https://registry.npmjs.org/which/-/which-1.3.1.tgz. Extracting by manifest.
+572 silly tarball no local data for request-progress@https://registry.npmjs.org/request-progress/-/request-progress-2.0.1.tgz. Extracting by manifest.
+573 silly tarball no local data for progress@https://registry.npmjs.org/progress/-/progress-1.1.8.tgz. Extracting by manifest.
+574 silly tarball no local data for request@https://registry.npmjs.org/request/-/request-2.88.2.tgz. Extracting by manifest.
+575 silly tarball no local data for kew@https://registry.npmjs.org/kew/-/kew-0.7.0.tgz. Extracting by manifest.
+576 silly tarball no local data for fs-extra@https://registry.npmjs.org/fs-extra/-/fs-extra-1.0.0.tgz. Extracting by manifest.
+577 silly tarball no local data for hasha@https://registry.npmjs.org/hasha/-/hasha-2.2.0.tgz. Extracting by manifest.
+578 silly tarball no local data for extract-zip@https://registry.npmjs.org/extract-zip/-/extract-zip-1.7.0.tgz. Extracting by manifest.
+579 silly tarball no local data for tmp@https://registry.npmjs.org/tmp/-/tmp-0.1.0.tgz. Extracting by manifest.
+580 silly tarball no local data for es6-promise@https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.8.tgz. Extracting by manifest.
+581 silly tarball no local data for through2@https://registry.npmjs.org/through2/-/through2-3.0.2.tgz. Extracting by manifest.
+582 silly tarball no local data for stream-from-to@https://registry.npmjs.org/stream-from-to/-/stream-from-to-1.4.3.tgz. Extracting by manifest.
+583 silly tarball no local data for remarkable@https://registry.npmjs.org/remarkable/-/remarkable-2.0.1.tgz. Extracting by manifest.
+584 silly tarball no local data for highlight.js@https://registry.npmjs.org/highlight.js/-/highlight.js-10.7.3.tgz. Extracting by manifest.
+585 silly tarball no local data for extend@https://registry.npmjs.org/extend/-/extend-3.0.2.tgz. Extracting by manifest.
+586 silly tarball no local data for phantomjs-prebuilt@https://registry.npmjs.org/phantomjs-prebuilt/-/phantomjs-prebuilt-2.1.16.tgz. Extracting by manifest.
+587 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-3.0.2.tgz. Extracting by manifest.
+588 silly tarball no local data for duplexer@https://registry.npmjs.org/duplexer/-/duplexer-0.1.2.tgz. Extracting by manifest.
+589 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 311ms
+590 timing auditReport:getReport Completed in 317ms
+591 silly audit report {}
+592 timing auditReport:init Completed in 0ms
+593 timing reify:audit Completed in 320ms
+594 http fetch GET 200 https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz 706ms (cache miss)
+595 timing reifyNode:node_modules/markdown-pdf/node_modules/wrappy Completed in 807ms
+596 http fetch GET 200 https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.13.tgz 902ms (cache miss)
+597 timing reifyNode:node_modules/markdown-pdf/node_modules/buffer-crc32 Completed in 988ms
+598 http fetch GET 200 https://registry.npmjs.org/pend/-/pend-1.2.0.tgz 966ms (cache miss)
+599 timing reifyNode:node_modules/markdown-pdf/node_modules/pend Completed in 1054ms
+600 http fetch GET 200 https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz 957ms (cache miss)
+601 timing reifyNode:node_modules/markdown-pdf/node_modules/fs.realpath Completed in 1064ms
+602 http fetch GET 200 https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.1.0.tgz 995ms (cache miss)
+603 timing reifyNode:node_modules/markdown-pdf/node_modules/fd-slicer Completed in 1084ms
+604 http fetch GET 200 https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz 993ms (cache miss)
+605 timing reifyNode:node_modules/markdown-pdf/node_modules/balanced-match Completed in 1092ms
+606 http fetch GET 200 https://registry.npmjs.org/once/-/once-1.4.0.tgz 1030ms (cache miss)
+607 timing reifyNode:node_modules/markdown-pdf/node_modules/once Completed in 1131ms
+608 http fetch GET 200 https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz 1046ms (cache miss)
+609 timing reifyNode:node_modules/markdown-pdf/node_modules/concat-map Completed in 1146ms
+610 http fetch GET 200 https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz 1047ms (cache miss)
+611 timing reifyNode:node_modules/markdown-pdf/node_modules/ecc-jsbn Completed in 1175ms
+612 http fetch GET 200 https://registry.npmjs.org/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz 1048ms (cache miss)
+613 timing reifyNode:node_modules/markdown-pdf/node_modules/bcrypt-pbkdf Completed in 1179ms
+614 http fetch GET 200 https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz 1105ms (cache miss)
+615 timing reifyNode:node_modules/markdown-pdf/node_modules/isexe Completed in 1195ms
+616 http fetch GET 200 https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz 1161ms (cache miss)
+617 timing reifyNode:node_modules/markdown-pdf/node_modules/brace-expansion Completed in 1257ms
+618 http fetch GET 200 https://registry.npmjs.org/throttleit/-/throttleit-1.0.0.tgz 1129ms (cache miss)
+619 timing reifyNode:node_modules/markdown-pdf/node_modules/throttleit Completed in 1261ms
+620 http fetch GET 200 https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz 1217ms (cache miss)
+621 timing reifyNode:node_modules/markdown-pdf/node_modules/minimatch Completed in 1333ms
+622 http fetch GET 200 https://registry.npmjs.org/glob/-/glob-7.2.3.tgz 1229ms (cache miss)
+623 timing reifyNode:node_modules/markdown-pdf/node_modules/glob Completed in 1338ms
+624 http fetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz 1217ms (cache miss)
+625 timing reifyNode:node_modules/markdown-pdf/node_modules/verror/node_modules/core-util-is Completed in 1355ms
+626 http fetch GET 200 https://registry.npmjs.org/series-stream/-/series-stream-1.0.1.tgz 1247ms (cache miss)
+627 timing reifyNode:node_modules/markdown-pdf/node_modules/series-stream Completed in 1365ms
+628 http fetch GET 200 https://registry.npmjs.org/rimraf/-/rimraf-2.7.1.tgz 1262ms (cache miss)
+629 timing reifyNode:node_modules/markdown-pdf/node_modules/rimraf Completed in 1375ms
+630 http fetch GET 200 https://registry.npmjs.org/punycode/-/punycode-2.2.0.tgz 1304ms (cache miss)
+631 timing reifyNode:node_modules/markdown-pdf/node_modules/punycode Completed in 1398ms
+632 http fetch GET 200 https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz 1275ms (cache miss)
+633 timing reifyNode:node_modules/markdown-pdf/node_modules/json-schema-traverse Completed in 1476ms
+634 http fetch GET 200 https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz 1381ms (cache miss)
+635 timing reifyNode:node_modules/markdown-pdf/node_modules/path-is-absolute Completed in 1483ms
+636 http fetch GET 200 https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz 1401ms (cache miss)
+637 timing reifyNode:node_modules/markdown-pdf/node_modules/safer-buffer Completed in 1518ms
+638 http fetch GET 200 https://registry.npmjs.org/har-schema/-/har-schema-2.0.0.tgz 1362ms (cache miss)
+639 http fetch GET 200 https://registry.npmjs.org/verror/-/verror-1.10.0.tgz 1445ms (cache miss)
+640 timing reifyNode:node_modules/markdown-pdf/node_modules/verror Completed in 1581ms
+641 http fetch GET 200 https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz 1487ms (cache miss)
+642 timing reifyNode:node_modules/markdown-pdf/node_modules/inflight Completed in 1604ms
+643 http fetch GET 200 https://registry.npmjs.org/oauth-sign/-/oauth-sign-0.9.0.tgz 1458ms (cache miss)
+644 timing reifyNode:node_modules/markdown-pdf/node_modules/oauth-sign Completed in 1630ms
+645 http fetch GET 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz 1462ms (cache miss)
+646 timing reifyNode:node_modules/markdown-pdf/node_modules/mime-types Completed in 1640ms
+647 http fetch GET 200 https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz 1474ms (cache miss)
+648 http fetch GET 200 https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz 1471ms (cache miss)
+649 timing reifyNode:node_modules/markdown-pdf/node_modules/json-stringify-safe Completed in 1645ms
+650 http fetch GET 200 https://registry.npmjs.org/getpass/-/getpass-0.1.7.tgz 1523ms (cache miss)
+651 timing reifyNode:node_modules/markdown-pdf/node_modules/getpass Completed in 1648ms
+652 http fetch GET 200 https://registry.npmjs.org/jsprim/-/jsprim-1.4.2.tgz 1507ms (cache miss)
+653 timing reifyNode:node_modules/markdown-pdf/node_modules/jsprim Completed in 1659ms
+654 http fetch GET 200 https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz 1531ms (cache miss)
+655 timing reifyNode:node_modules/markdown-pdf/node_modules/assert-plus Completed in 1683ms
+656 http fetch GET 200 https://registry.npmjs.org/json-schema/-/json-schema-0.4.0.tgz 1569ms (cache miss)
+657 timing reifyNode:node_modules/markdown-pdf/node_modules/json-schema Completed in 1711ms
+658 http fetch GET 200 https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz 1571ms (cache miss)
+659 timing reifyNode:node_modules/markdown-pdf/node_modules/delayed-stream Completed in 1736ms
+660 http fetch GET 200 https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz 1647ms (cache miss)
+661 timing reifyNode:node_modules/markdown-pdf/node_modules/jsbn Completed in 1773ms
+662 http fetch GET 200 https://registry.npmjs.org/extsprintf/-/extsprintf-1.3.0.tgz 1642ms (cache miss)
+663 timing reifyNode:node_modules/markdown-pdf/node_modules/extsprintf Completed in 1784ms
+664 http fetch GET 200 https://registry.npmjs.org/async/-/async-1.5.2.tgz 1679ms (cache miss)
+665 timing reifyNode:node_modules/markdown-pdf/node_modules/async Completed in 1796ms
+666 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz 1640ms (cache miss)
+667 http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-1.2.7.tgz 1597ms (cache miss)
+668 http fetch GET 200 https://registry.npmjs.org/tunnel-agent/-/tunnel-agent-0.6.0.tgz 1651ms (cache miss)
+669 timing reifyNode:node_modules/markdown-pdf/node_modules/tunnel-agent Completed in 1821ms
+670 http fetch GET 200 https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz 1704ms (cache miss)
+671 http fetch GET 200 https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz 1635ms (cache miss)
+672 timing reifyNode:node_modules/markdown-pdf/node_modules/is-stream Completed in 1851ms
+673 http fetch GET 200 https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.5.0.tgz 1712ms (cache miss)
+674 http fetch GET 200 https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz 1654ms (cache miss)
+675 timing reifyNode:node_modules/markdown-pdf/node_modules/buffer-from Completed in 1882ms
+676 http fetch GET 200 https://registry.npmjs.org/is-typedarray/-/is-typedarray-1.0.0.tgz 1738ms (cache miss)
+677 timing reifyNode:node_modules/markdown-pdf/node_modules/is-typedarray Completed in 1919ms
+678 timing reifyNode:node_modules/markdown-pdf/node_modules/tough-cookie Completed in 1922ms
+679 http fetch GET 200 https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz 1745ms (cache miss)
+680 timing reifyNode:node_modules/markdown-pdf/node_modules/isstream Completed in 1927ms
+681 timing reifyNode:node_modules/markdown-pdf/node_modules/mime-db Completed in 1944ms
+682 http fetch GET 200 https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz 1719ms (cache miss)
+683 timing reifyNode:node_modules/markdown-pdf/node_modules/typedarray Completed in 1946ms
+684 http fetch GET 200 https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz 1792ms (cache miss)
+685 timing reifyNode:node_modules/markdown-pdf/node_modules/fast-deep-equal Completed in 1950ms
+686 http fetch GET 200 https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz 1798ms (cache miss)
+687 http fetch GET 200 https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz 1778ms (cache miss)
+688 http fetch GET 200 https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz 1782ms (cache miss)
+689 timing reifyNode:node_modules/markdown-pdf/node_modules/caseless Completed in 1975ms
+690 http fetch GET 200 https://registry.npmjs.org/aws4/-/aws4-1.12.0.tgz 1784ms (cache miss)
+691 timing reifyNode:node_modules/markdown-pdf/node_modules/aws4 Completed in 1979ms
+692 http fetch GET 200 https://registry.npmjs.org/tslib/-/tslib-2.4.1.tgz 1786ms (cache miss)
+693 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 1785ms (cache miss)
+694 timing reifyNode:node_modules/markdown-pdf/node_modules/string_decoder Completed in 1994ms
+695 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 1789ms (cache miss)
+696 timing reifyNode:node_modules/markdown-pdf/node_modules/isarray Completed in 1999ms
+697 http fetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 1791ms (cache miss)
+698 timing reifyNode:node_modules/markdown-pdf/node_modules/core-util-is Completed in 2004ms
+699 http fetch GET 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 1804ms (cache miss)
+700 timing reifyNode:node_modules/markdown-pdf/node_modules/process-nextick-args Completed in 2008ms
+701 http fetch GET 200 https://registry.npmjs.org/tmp/-/tmp-0.1.0.tgz 1757ms (cache miss)
+702 timing reifyNode:node_modules/markdown-pdf/node_modules/tmp Completed in 2013ms
+703 http fetch GET 200 https://registry.npmjs.org/pinkie/-/pinkie-2.0.4.tgz 1801ms (cache miss)
+704 timing reifyNode:node_modules/markdown-pdf/node_modules/pinkie Completed in 2021ms
+705 http fetch GET 200 https://registry.npmjs.org/klaw/-/klaw-1.3.1.tgz 1818ms (cache miss)
+706 timing reifyNode:node_modules/markdown-pdf/node_modules/klaw Completed in 2040ms
+707 http fetch GET 200 https://registry.npmjs.org/form-data/-/form-data-2.3.3.tgz 1856ms (cache miss)
+708 http fetch GET 200 https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.7.0.tgz 1857ms (cache miss)
+709 timing reifyNode:node_modules/markdown-pdf/node_modules/aws-sign2 Completed in 2049ms
+710 http fetch GET 200 https://registry.npmjs.org/concat-stream/-/concat-stream-1.6.2.tgz 1822ms (cache miss)
+711 timing reifyNode:node_modules/markdown-pdf/node_modules/concat-stream Completed in 2050ms
+712 timing reifyNode:node_modules/markdown-pdf/node_modules/asynckit Completed in 2057ms
+713 http fetch GET 200 https://registry.npmjs.org/forever-agent/-/forever-agent-0.6.1.tgz 1879ms (cache miss)
+714 timing reifyNode:node_modules/markdown-pdf/node_modules/forever-agent Completed in 2071ms
+715 http fetch GET 200 https://registry.npmjs.org/request-progress/-/request-progress-2.0.1.tgz 1843ms (cache miss)
+716 timing reifyNode:node_modules/markdown-pdf/node_modules/request-progress Completed in 2079ms
+717 timing reifyNode:node_modules/markdown-pdf/node_modules/form-data Completed in 2082ms
+718 http fetch GET 200 https://registry.npmjs.org/progress/-/progress-1.1.8.tgz 1847ms (cache miss)
+719 timing reifyNode:node_modules/markdown-pdf/node_modules/progress Completed in 2087ms
+720 http fetch GET 200 https://registry.npmjs.org/which/-/which-1.3.1.tgz 1856ms (cache miss)
+721 timing reifyNode:node_modules/markdown-pdf/node_modules/which Completed in 2088ms
+722 http fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 1870ms (cache miss)
+723 timing reifyNode:node_modules/markdown-pdf/node_modules/inherits Completed in 2093ms
+724 timing reifyNode:node_modules/markdown-pdf/node_modules/performance-now Completed in 2096ms
+725 http fetch GET 200 https://registry.npmjs.org/dashdash/-/dashdash-1.14.1.tgz 1972ms (cache miss)
+726 timing reifyNode:node_modules/markdown-pdf/node_modules/dashdash Completed in 2100ms
+727 http fetch GET 200 https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz 1912ms (cache miss)
+728 timing reifyNode:node_modules/markdown-pdf/node_modules/combined-stream Completed in 2102ms
+729 http fetch GET 200 https://registry.npmjs.org/har-validator/-/har-validator-5.1.5.tgz 1921ms (cache miss)
+730 warn deprecated har-validator@5.1.5: this library is no longer supported
+731 timing reifyNode:node_modules/markdown-pdf/node_modules/har-validator Completed in 2107ms
+732 timing reifyNode:node_modules/markdown-pdf/node_modules/tslib Completed in 2112ms
+733 http fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 1914ms (cache miss)
+734 timing reifyNode:node_modules/markdown-pdf/node_modules/util-deprecate Completed in 2116ms
+735 http fetch GET 200 https://registry.npmjs.org/through2/-/through2-3.0.2.tgz 1859ms (cache miss)
+736 timing reifyNode:node_modules/markdown-pdf/node_modules/through2 Completed in 2121ms
+737 http fetch GET 200 https://registry.npmjs.org/yauzl/-/yauzl-2.10.0.tgz 1891ms (cache miss)
+738 timing reifyNode:node_modules/markdown-pdf/node_modules/yauzl Completed in 2123ms
+739 http fetch GET 200 https://registry.npmjs.org/jsonfile/-/jsonfile-2.4.0.tgz 1914ms (cache miss)
+740 timing reifyNode:node_modules/markdown-pdf/node_modules/jsonfile Completed in 2135ms
+741 http fetch GET 200 https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz 1919ms (cache miss)
+742 timing reifyNode:node_modules/markdown-pdf/node_modules/graceful-fs Completed in 2138ms
+743 http fetch GET 200 https://registry.npmjs.org/duplexer/-/duplexer-0.1.2.tgz 1869ms (cache miss)
+744 timing reifyNode:node_modules/markdown-pdf/node_modules/duplexer Completed in 2141ms
+745 http fetch GET 200 https://registry.npmjs.org/pinkie-promise/-/pinkie-promise-2.0.1.tgz 1930ms (cache miss)
+746 timing reifyNode:node_modules/markdown-pdf/node_modules/pinkie-promise Completed in 2145ms
+747 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.0.0.tgz 1930ms (cache miss)
+748 timing reifyNode:node_modules/markdown-pdf/node_modules/ms Completed in 2147ms
+749 warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+750 timing reifyNode:node_modules/markdown-pdf/node_modules/uuid Completed in 2161ms
+751 http fetch GET 200 https://registry.npmjs.org/extend/-/extend-3.0.2.tgz 1904ms (cache miss)
+752 timing reifyNode:node_modules/markdown-pdf/node_modules/extend Completed in 2173ms
+753 http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz 1948ms (cache miss)
+754 timing reifyNode:node_modules/markdown-pdf/node_modules/mkdirp Completed in 2187ms
+755 http fetch GET 200 https://registry.npmjs.org/http-signature/-/http-signature-1.2.0.tgz 2012ms (cache miss)
+756 timing reifyNode:node_modules/markdown-pdf/node_modules/http-signature Completed in 2190ms
+757 timing reifyNode:node_modules/markdown-pdf/node_modules/har-schema Completed in 2191ms
+758 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-3.0.2.tgz 1927ms (cache miss)
+759 timing reifyNode:node_modules/markdown-pdf/node_modules/commander Completed in 2198ms
+760 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-2.6.9.tgz 1977ms (cache miss)
+761 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 2007ms (cache miss)
+762 timing reifyNode:node_modules/markdown-pdf/node_modules/safe-buffer Completed in 2210ms
+763 http fetch GET 200 https://registry.npmjs.org/kew/-/kew-0.7.0.tgz 1969ms (cache miss)
+764 http fetch GET 200 https://registry.npmjs.org/stream-from-to/-/stream-from-to-1.4.3.tgz 1958ms (cache miss)
+765 timing reifyNode:node_modules/markdown-pdf/node_modules/stream-from-to Completed in 2221ms
+766 http fetch GET 200 https://registry.npmjs.org/extract-zip/-/extract-zip-1.7.0.tgz 1973ms (cache miss)
+767 timing reifyNode:node_modules/markdown-pdf/node_modules/extract-zip Completed in 2227ms
+768 http fetch GET 200 https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz 2080ms (cache miss)
+769 http fetch GET 200 https://registry.npmjs.org/hasha/-/hasha-2.2.0.tgz 1989ms (cache miss)
+770 timing reifyNode:node_modules/markdown-pdf/node_modules/hasha Completed in 2236ms
+771 timing reifyNode:node_modules/markdown-pdf/node_modules/sprintf-js Completed in 2239ms
+772 timing reifyNode:node_modules/markdown-pdf/node_modules/fast-json-stable-stringify Completed in 2240ms
+773 timing reifyNode:node_modules/markdown-pdf/node_modules/debug Completed in 2243ms
+774 timing reifyNode:node_modules/markdown-pdf/node_modules/kew Completed in 2244ms
+775 http fetch GET 200 https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz 2134ms (cache miss)
+776 timing reifyNode:node_modules/markdown-pdf/node_modules/tweetnacl Completed in 2250ms
+777 http fetch GET 200 https://registry.npmjs.org/asn1/-/asn1-0.2.6.tgz 2123ms (cache miss)
+778 timing reifyNode:node_modules/markdown-pdf/node_modules/asn1 Completed in 2254ms
+779 http fetch GET 200 https://registry.npmjs.org/phantomjs-prebuilt/-/phantomjs-prebuilt-2.1.16.tgz 1997ms (cache miss)
+780 warn deprecated phantomjs-prebuilt@2.1.16: this package is now deprecated
+781 timing reifyNode:node_modules/markdown-pdf/node_modules/phantomjs-prebuilt Completed in 2293ms
+782 timing reifyNode:node_modules/markdown-pdf/node_modules/minimist Completed in 2299ms
+783 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.7.tgz 2092ms (cache miss)
+784 timing reifyNode:node_modules/markdown-pdf/node_modules/readable-stream Completed in 2335ms
+785 http fetch GET 200 https://registry.npmjs.org/psl/-/psl-1.9.0.tgz 2255ms (cache miss)
+786 timing reifyNode:node_modules/markdown-pdf/node_modules/psl Completed in 2347ms
+787 http fetch GET 200 https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz 2180ms (cache miss)
+788 timing reifyNode:node_modules/markdown-pdf/node_modules/argparse Completed in 2410ms
+789 http fetch GET 200 https://registry.npmjs.org/request/-/request-2.88.2.tgz 2171ms (cache miss)
+790 warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+791 timing reifyNode:node_modules/markdown-pdf/node_modules/request Completed in 2414ms
+792 http fetch GET 200 https://registry.npmjs.org/qs/-/qs-6.5.3.tgz 2253ms (cache miss)
+793 timing reifyNode:node_modules/markdown-pdf/node_modules/qs Completed in 2422ms
+794 http fetch GET 200 https://registry.npmjs.org/sshpk/-/sshpk-1.17.0.tgz 2316ms (cache miss)
+795 http fetch GET 200 https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.8.tgz 2201ms (cache miss)
+796 timing reifyNode:node_modules/markdown-pdf/node_modules/sshpk Completed in 2474ms
+797 timing reifyNode:node_modules/markdown-pdf/node_modules/es6-promise Completed in 2474ms
+798 http fetch GET 200 https://registry.npmjs.org/fs-extra/-/fs-extra-1.0.0.tgz 2232ms (cache miss)
+799 timing reifyNode:node_modules/markdown-pdf/node_modules/fs-extra Completed in 2480ms
+800 http fetch GET 200 https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz 2393ms (cache miss)
+801 timing reifyNode:node_modules/markdown-pdf/node_modules/uri-js Completed in 2544ms
+802 http fetch GET 200 https://registry.npmjs.org/markdown-pdf/-/markdown-pdf-11.0.0.tgz 2491ms (cache miss)
+803 timing reifyNode:node_modules/markdown-pdf Completed in 2558ms
+804 http fetch GET 200 https://registry.npmjs.org/remarkable/-/remarkable-2.0.1.tgz 2346ms (cache miss)
+805 timing reifyNode:node_modules/markdown-pdf/node_modules/remarkable Completed in 2612ms
+806 http fetch GET 200 https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz 2536ms (cache miss)
+807 timing reifyNode:node_modules/markdown-pdf/node_modules/ajv Completed in 2694ms
+808 http fetch GET 200 https://registry.npmjs.org/autolinker/-/autolinker-3.16.2.tgz 2626ms (cache miss)
+809 timing reifyNode:node_modules/markdown-pdf/node_modules/autolinker Completed in 2824ms
+810 http fetch GET 200 https://registry.npmjs.org/highlight.js/-/highlight.js-10.7.3.tgz 2676ms (cache miss)
+811 timing reifyNode:node_modules/markdown-pdf/node_modules/highlight.js Completed in 2941ms
+812 timing reify:unpack Completed in 2945ms
+813 timing reify:unretire Completed in 0ms
+814 timing build:queue Completed in 8ms
+815 timing build:link:node_modules/markdown-pdf Completed in 12ms
+816 timing build:link:node_modules/markdown-pdf/node_modules/extract-zip Completed in 9ms
+817 timing build:link:node_modules/markdown-pdf/node_modules/phantomjs-prebuilt Completed in 10ms
+818 timing build:link:node_modules/markdown-pdf/node_modules/remarkable Completed in 11ms
+819 timing build:link:node_modules/markdown-pdf/node_modules/rimraf Completed in 12ms
+820 timing build:link:node_modules/markdown-pdf/node_modules/mkdirp Completed in 13ms
+821 timing build:link:node_modules/markdown-pdf/node_modules/sshpk Completed in 12ms
+822 timing build:link:node_modules/markdown-pdf/node_modules/which Completed in 13ms
+823 timing build:link:node_modules/markdown-pdf/node_modules/uuid Completed in 15ms
+824 timing build:link Completed in 22ms
+825 info run phantomjs-prebuilt@2.1.16 install node_modules/markdown-pdf/node_modules/phantomjs-prebuilt node install.js
+826 info run phantomjs-prebuilt@2.1.16 install { code: 1, signal: null }
+827 timing reify:rollback:createSparse Completed in 174ms
+828 timing reify:rollback:retireShallow Completed in 1ms
+829 timing command:install Completed in 9271ms
+830 notice
+830 notice New [31mmajor[39m version of npm available! [31m8.19.2[39m -> [32m9.3.0[39m
+830 notice Changelog: [36mhttps://github.com/npm/cli/releases/tag/v9.3.0[39m
+830 notice Run [32mnpm install -g npm@9.3.0[39m to update!
+830 notice
+831 verbose stack Error: command failed
+831 verbose stack     at ChildProcess.<anonymous> (/opt/conda/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:63:27)
+831 verbose stack     at ChildProcess.emit (node:events:513:28)
+831 verbose stack     at maybeClose (node:internal/child_process:1091:16)
+831 verbose stack     at ChildProcess._handle.onexit (node:internal/child_process:302:5)
+832 verbose pkgid phantomjs-prebuilt@2.1.16
+833 verbose cwd /home/jovyan
+834 verbose Linux 5.10.124-linuxkit
+835 verbose node v18.12.1
+836 verbose npm  v8.19.2
+837 error code 1
+838 error path /opt/conda/lib/node_modules/markdown-pdf/node_modules/phantomjs-prebuilt
+839 error command failed
+840 error command sh -c -- node install.js
+841 error PhantomJS not found on PATH
+842 error Unexpected platform or architecture: linux/arm64
+842 error It seems there is no binary available for your platform/architecture
+842 error Try to install PhantomJS globally
+843 verbose exit 1
+844 timing npm Completed in 9443ms
+845 verbose unfinished npm timer reify 1673791959522
+846 verbose unfinished npm timer reify:build 1673791968171
+847 verbose unfinished npm timer build 1673791968171
+848 verbose unfinished npm timer build:deps 1673791968172
+849 verbose unfinished npm timer build:run:install 1673791968206
+850 verbose unfinished npm timer build:run:install:node_modules/markdown-pdf/node_modules/phantomjs-prebuilt 1673791968206
+851 verbose code 1
+852 error A complete log of this run can be found in:
+852 error     /home/jovyan/.npm/_logs/2023-01-15T14_12_39_391Z-debug-0.log
