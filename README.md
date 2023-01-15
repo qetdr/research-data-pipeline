@@ -25,8 +25,30 @@ We use `postgres` as the relational database. The database schema is presented i
 ## 1.2. Graph Database Schema
 We use Neo4J as the graph database. The database schema is similar to the schema shown in Figure 2; however, the main difference is that the yellow tables in Figure 2 (`journal`, `article`, `author`, and `category`) are treated as nodes, where the other two tables, `authorship` and `article_category` are relationships `AUTHORED` and `BELONG_TO`, linking authors-articles and articles-categories, respectively, in Neo4J. the aim of this database was primarily to allow us to extract and visualize (in Neo4J) the ego-network of given researcher. For instance, when given a researcher's name, we wanted to create the possibility to see with whom and on what the person has collaborated.
 
+![[Figure 3. Graph database schema]](images/graph_db_schema.png)
+
 ## 1.3. Data Cleaning and Transformations
-TBW 
+Below is the step-by step description of data cleaning and transformations done within the pipeline.The following steps are in the functionality of `dags/scripts/raw_to_tables.py` module.
+
+1. Data are downloaded from kaggle, unzipped, and only the necessary columns are extracted and converted to a `pandas DataFrame`.
+2. Initial cleaning is perfoemd: records with a missing DOI are removed, , duplicates (based on `article_id`) are dropped, only the articles that include the category `cs` (stands for 'computer science') are included.
+3. Initial table extraction:
+    - `authorship` and `author`: names are parsed from the dataset extracted in previous step. For each author, first, last, and middle names are extracted. Names are cleaned (removing non-alphabetical characters). Author identifier is created (in the form LastnameF where 'F' stands for first name initial). `authorship` table is a long-format table with each author corresponding to each article. `author table` is extracted so that unique name identifiers create their own table.
+    - `article_category` and `category`: similarly, lists of article categories are parsed and `article_category` (long-format table with each vcateogry label correspodning to article) and unique categories forming a table with super- and subdomain identifiers.
+    - initial `article` and `journal` tables are created. 
+4. Once these tables are prepared, these tables are then cleaned for missing values, NaN-values, etc. Authors with too long last names are removed. Tables are written to `.csv` format in the `dags/tables` directory.
+
+Next the clean data for use in databases are created and augmented. Here, the module `/dags/scripts/final_tables.py` is relevant. Here, the process starts with prearing and augmenting the `article` table, since it defines what parts of other tables are included. 
+
+5. We query the DOIs of articles against Crossref API to receive the work type, number of citations and journal ISSN. for that, we use the helper-function `fetch_article_augments()` from `/dags/scripts/augmentations.py`. The querying is done in batches of 2000, where after each batch, the data are udpated in the .csv file. **WARNING!** This process is very slow, since too many queries per second may result in the IP being blocked. Hence, we chose the stable but slow option over fast but highly risky. After the `article` table is augmented, we select only the works where type is `journal-article`. Other tables are updated accordingly
+
+6. `journal` table is then augmented. We ad the source-normalizedd impact factors from the CWTS website. However, for convenience, we have downloaded the Excel workbook and use this a source locally. The helper-functions `check_or_prepare_journal_metrics()` and `find_journal_stats()` from `/dags/scripts/augmentations.py` are used.
+
+7. Finally, we augment the `author` table. We start by including genders for authors based on their first name. The names are retrieved from a static dataset which is included in the  `dags/augmentation/` directory. First names from `author` table are matched with the names in data. If a match is found, gender is updated; otherwise, gender remains a NaN. Then, we also compute various statistics for each author. Additionally, we compute the h-index for each author based on the metrics from the database. For h-index computation, we use the `hindex()` function from `/dags/scripts/augmentations.py`.
+
+8. Finally, we update all tables to be in coherence with each other (meaning that each entity/node has relations, etc).
+
+9. Clean data tables are saved in `.csv` format to `dags/data_ready/` directory from where it can be used for loading to databases.
 
 ## 1.4. Data Augmentations
 TBW
