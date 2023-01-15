@@ -10,21 +10,16 @@ journal_issn,journal_title,snip_latest
 0001-8678,Advances in Applied Probability,0.994308947939432
 0001-8708,Advances in Mathematics,2.06940964421886
 0001-8732,Advances in Physics,5.59810836024503
-0001-9054,Aequationes Mathematicae,1.5223526213045
 0001-9240,Aeronautical Journal,0.783451944630517
 0002-1962,Agronomy Journal,1.17556475373073
 0002-5240,Algebra Universalis,0.962347193492282
 0002-7642,American Behavioral Scientist,1.65576855878901
-0002-7820,Journal of the American Ceramic Society,1.12550945869825
-0002-8282,American Economic Review,7.90056282739714
 0002-9505,American Journal of Physics,0.973203730995829
 0002-9890,American Mathematical Monthly,1.02477651308436
-0002-9920,Notices of the American Mathematical Society,0.736352289750857
 0002-9939,Proceedings of the American Mathematical Society,1.05300296744409
 0002-9947,Transactions of the American Mathematical Society,1.73390350368668
 0003-1224,American Sociological Review,6.40899145520275
 0003-1305,American Statistician,3.69913219875
-0003-2654,"Analyst, The",0.925874936717911
 0003-2700,Analytical Chemistry,1.42087264936848
 0003-3804,Annalen der Physik,0.84855905358831
 0003-4347,Annales des Telecommunications/Annals of Telecommunications,0.690018728817978
@@ -48,13 +43,8 @@ journal_issn,journal_title,snip_latest
 0005-1179,Automation and Remote Control,0.738441668031236
 0006-291X,Biochemical and Biophysical Research Communications,0.723290057559602
 0006-341X,Biometrics,1.43611582817465
-0006-3444,Biometrika,2.10234321729344
-0006-3495,Biophysical Journal,0.984766377800206
-0006-3592,Biotechnology and Bioengineering,1.07164605069242
 0006-3835,BIT Numerical Mathematics,1.36384341707683
 0007-0882,British Journal for the Philosophy of Science,4.32049247356643
-0007-0963,British Journal of Dermatology,2.81331696953967
-0007-1013,British Journal of Educational Technology,2.63426911671242
 0007-4497,Bulletin des Sciences Mathematiques,1.07018309104665
 0007-8506,CIRP Annals - Manufacturing Technology,2.34202877016751
 0008-0624,Calcolo,1.67972801255075
@@ -62,26 +52,20 @@ journal_issn,journal_title,snip_latest
 0008-4395,Canadian Mathematical Bulletin,1.11850858197173
 0008-7041,Cartographic Journal,0.761371377996779
 0009-2509,Chemical Engineering Science,1.37476655452255
-0009-2665,Chemical Reviews,12.3131685653898
 0009-9260,Clinical Radiology,1.09024878886895
 0010-0277,Cognition,1.9268715741442
 0010-0757,Collectanea Mathematica,1.23087530685737
 0010-1354,Colloquium Mathematicum,0.917567742310859
 0010-3616,Communications in Mathematical Physics,1.69717202294055
-0010-3640,Communications on Pure and Applied Mathematics,2.36372269013496
 0010-4485,CAD Computer Aided Design,1.53571134811675
 0010-4620,Computer Journal,0.879983754821165
 0010-4655,Computer Physics Communications,2.23781447516959
 0010-4825,Computers in Biology and Medicine,1.94464114385645
 0010-485X,Computing (Vienna/New York),1.28565297864306
 0010-7514,Contemporary Physics,1.61690366142553
-0010-938X,Corrosion Science,2.23030042947069
 0011-3891,Current Science,0.677097105280891
 0012-365X,Discrete Mathematics,1.23870004428833
-0012-7094,Duke Mathematical Journal,2.66242873171712
-0012-9682,Econometrica,5.1714192336201
 0013-0915,Proceedings of the Edinburgh Mathematical Society,1.04654575684988
-0013-4651,Journal of the Electrochemical Society,0.940967455918419
 0013-5194,Electronics Letters,0.601737116292676
 0013-7944,Engineering Fracture Mechanics,1.7160628268004
 0014-2921,European Economic Review,1.71594954429965
@@ -91,14 +75,9 @@ journal_issn,journal_title,snip_latest
 0015-9018,Foundations of Physics,0.956440037834662
 0016-0032,Journal of the Franklin Institute,1.21252580044418
 0016-2361,Fuel,1.90584666273799
-0016-2736,Fundamenta Mathematicae,0.895919643123648
-0016-8033,Geophysics,1.86148399183303
-0017-0895,Glasgow Mathematical Journal,0.81315064281593
-0017-9310,International Journal of Heat and Mass Transfer,1.82925921832059
 0018-1560,Higher Education,3.08845596822286
 0018-6368,Houille Blanche,0.206566337753171
 0018-9162,Computer,1.6725075366637
-0018-9197,IEEE Journal of Quantum Electronics,0.861769536238305
 0018-9200,IEEE Journal of Solid-State Circuits,2.64322952054865
 0018-9219,Proceedings of the IEEE,4.36609996027683
 0018-9251,IEEE Transactions on Aerospace and Electronic Systems,1.70981462718564
@@ -108,7 +87,6 @@ journal_issn,journal_title,snip_latest
 0018-9316,IEEE Transactions on Broadcasting,1.97066312573807
 0018-9340,IEEE Transactions on Computers,1.7071263508406
 0018-9359,IEEE Transactions on Education,2.45325738677882
-0018-9375,IEEE Transactions on Electromagnetic Compatibility,1.4913106820362
 0018-9383,IEEE Transactions on Electron Devices,1.36363901089937
 0018-9391,IEEE Transactions on Engineering Management,1.38791802570509
 0018-9448,IEEE Transactions on Information Theory,1.73502047730278
@@ -128,30 +106,22 @@ journal_issn,journal_title,snip_latest
 0020-7047,International Journal for Philosophy of Religion,1.87435436097819
 0020-7160,International Journal of Computer Mathematics,1.06473870957408
 0020-7179,International Journal of Control,1.15265500211277
-0020-7209,International Journal of Electrical Engineering and Education,1.32446958869219
 0020-7217,International Journal of Electronics,0.744977063617336
 0020-7225,International Journal of Engineering Science,1.80931942171365
 0020-7276,International Journal of Game Theory,0.752244192213251
-0020-7403,International Journal of Mechanical Sciences,1.99520668813876
 0020-7462,International Journal of Non-Linear Mechanics,1.25196203504831
 0020-7543,International Journal of Production Research,2.90121607093786
-0020-7683,International Journal of Solids and Structures,1.53953533945161
 0020-7721,International Journal of Systems Science,0.715797758005049
 0020-7748,International Journal of Theoretical Physics,0.615625161994828
-0020-9910,Inventiones Mathematicae,3.99391143628036
 0021-2172,Israel Journal of Mathematics,1.2732213879236
 0021-4922,Japanese Journal of Applied Physics,0.611655147129213
-0021-7824,Journal des Mathematiques Pures et Appliquees,1.90117288476368
 0021-8464,Journal of Adhesion,1.19019065358687
-0021-8669,Journal of Aircraft,1.337586032417
 0021-8693,Journal of Algebra,1.33902128618781
-0021-8898,Journal of Applied Crystallography,2.16992105676323
 0021-8936,"Journal of Applied Mechanics, Transactions ASME",0.907947217454344
 0021-8979,Journal of Applied Physics,0.963802760872601
 0021-9002,Journal of Applied Probability,1.0909514198928
 0021-9045,Journal of Approximation Theory,1.29531610769981
 0021-9142,Journal of the Astronautical Sciences,1.01645505515648
-0021-9290,Journal of Biomechanics,1.33872137161653
 0021-9568,Journal of Chemical & Engineering Data,0.879728052604501
 0021-9606,Journal of Chemical Physics,1.07248476735622
 0021-9673,Journal of Chromatography A,1.09806784774238
@@ -159,11 +129,9 @@ journal_issn,journal_title,snip_latest
 0021-9916,Journal of Communication,3.55470887790981
 0021-9991,Journal of Computational Physics,1.93301913337755
 0022-0000,Journal of Computer and System Sciences,1.30467360970077
-0022-0396,Journal of Differential Equations,1.90338464664466
 0022-0418,Journal of Documentation,1.55661496791611
 0022-0434,"Journal of Dynamic Systems, Measurement and Control, Transactions of the ASME",0.891429877417182
 0022-0531,Journal of Economic Theory,1.73699702610136
-0022-0833,Journal of Engineering Mathematics,0.805199610693691
 0022-1120,Journal of Fluid Mechanics,1.78978951165044
 0022-1198,Journal of Forensic Sciences,1.04824447929771
 0022-1236,Journal of Functional Analysis,1.88319800464191
@@ -172,97 +140,64 @@ journal_issn,journal_title,snip_latest
 0022-2488,Journal of Mathematical Physics,0.983510325546696
 0022-2496,Journal of Mathematical Psychology,1.17988538468772
 0022-250X,Journal of Mathematical Sociology,1.10892659132082
-0022-2623,Journal of Medicinal Chemistry,1.84064349063283
 0022-314X,Journal of Number Theory,1.14621635669037
 0022-3239,Journal of Optimization Theory and Applications,1.35570199122658
 0022-3611,Journal of Philosophical Logic,2.72910735233722
 0022-3727,Journal Physics D: Applied Physics,0.999291354769951
-0022-3778,Journal of Plasma Physics,1.04126823538366
 0022-3808,Journal of Political Economy,7.20366798022697
 0022-4049,Journal of Pure and Applied Algebra,1.22259776745146
 0022-4065,Journal of Quality Technology,1.7558945386344
-0022-4073,Journal of Quantitative Spectroscopy and Radiative Transfer,0.975578899520452
-0022-4375,Journal of Safety Research,1.86289457605127
 0022-460X,Journal of Sound and Vibration,1.96309979503398
-0022-4650,Journal of Spacecraft and Rockets,1.2945902445963
 0022-4715,Journal of Statistical Physics,0.989065457657517
 0022-4812,Journal of Symbolic Logic,1.16447675946002
 0022-4898,Journal of Terramechanics,1.61548719898695
 0022-5010,Journal of the History of Biology,1.09531762642949
 0022-5096,Journal of the Mechanics and Physics of Solids,1.85036377135011
 0022-5193,Journal of Theoretical Biology,0.808601960500646
-0022-5223,Journal of Thoracic and Cardiovascular Surgery,2.07522883470366
 0023-5954,Kybernetika,0.483643515423228
-0023-6438,LWT - Food Science and Technology,1.51851865210599
-0023-6837,Laboratory Investigation,1.34196996208315
 0024-094X,Leonardo,0.376702009098221
 0024-3795,Linear Algebra and Its Applications,1.51551932149302
 0024-6093,Bulletin of the London Mathematical Society,1.50742430977837
 0024-6107,Journal of the London Mathematical Society,1.2252665845856
 0024-6115,Proceedings of the London Mathematical Society,2.07007502218317
-0024-9297,Macromolecules,1.31210604014846
 0025-1909,Management Science,3.18536752823194
 0025-326X,Marine Pollution Bulletin,1.5170773950193
-0025-5327,Materials Evaluation,1.59478953161313
-0025-5564,Mathematical Biosciences,1.37592960176567
 0025-5610,Mathematical Programming,2.52218116061988
-0025-570X,Mathematics Magazine,0.425342822384355
 0025-5718,Mathematics of Computation,1.99367078429129
 0025-5793,Mathematika,0.960777219051363
-0025-5831,Mathematische Annalen,1.77355517937013
 0026-1068,Metaphilosophy,1.20240807938722
-0026-1270,Methods of Information in Medicine,0.837770075625603
-0026-1335,Metrika,1.28869003153977
-0026-1394,Metrologia,1.40584483881143
 0026-1424,Metron,0.810413528731592
 0026-2714,Microelectronics Reliability,0.851012774374816
 0026-8976,Molecular Physics,0.616480345294394
-0026-9255,Monatshefte fur Mathematik,1.11084320593984
 0027-8424,Proceedings of the National Academy of Sciences of the United States of America,3.06250660316765
 0028-0836,Nature,11.3420785367819
 0028-3045,Networks,1.60335844591979
 0029-4527,Notre Dame Journal of Formal Logic,1.24897391184245
-0029-5493,Nuclear Engineering and Design,1.47491970116772
 0029-5981,International Journal for Numerical Methods in Engineering,1.28498345216996
 0029-599X,Numerische Mathematik,1.62138501636667
 0029-8018,Ocean Engineering,2.09497503792033
 0030-364X,Operations Research,2.10301282966187
-0030-3992,Optics and Laser Technology,1.47839443114304
 0030-4018,Optics Communications,0.88177270810411
 0030-4026,Optik,0.882639245805674
-0030-8730,Pacific Journal of Mathematics,1.09635947906739
 0031-3203,Pattern Recognition,3.08879778584076
-0031-5125,Perceptual and Motor Skills,0.991541651200915
 0031-8205,Philosophy and Phenomenological Research,3.49320462002321
 0031-8248,Philosophy of Science,1.58185268799186
-0031-868X,Photogrammetric Record,1.04898201443654
 0031-8949,Physica Scripta,0.908743919097421
 0031-9007,Physical Review Letters,2.28644204505029
 0031-9015,Journal of the Physical Society of Japan,0.709018472657642
 0031-9155,Physics in Medicine and Biology,1.26254469566969
-0032-0633,Planetary and Space Science,0.927365366863811
 0032-2687,Policy Sciences,2.63155123730436
-0032-3217,Political Studies,2.03779367701184
-0032-5155,Portugaliae Mathematica,0.454552291048952
 0032-5910,Powder Technology,1.66768669800531
 0032-9460,Problems of Information Transmission,1.19018303285204
-0033-0124,Professional Geographer,1.24371002792153
-0033-2097,Przeglad Elektrotechniczny,0.369149508575357
-0033-3298,Public Administration,2.23833765107999
-0033-3549,Public Health Reports,1.09523282623036
 0033-5177,Quality and Quantity,2.24781096893235
-0033-5606,Quarterly Journal of Mathematics,0.894178767722707
 0033-569X,Quarterly of Applied Mathematics,0.628018062638514
 0033-6807,R and D Management,1.87699820213449
-0033-8419,Radiology,5.24872816149848
 0034-4257,Remote Sensing of Environment,3.25218393769099
 0034-4877,Reports on Mathematical Physics,0.72548216601081
 0034-6527,Review of Economic Studies,5.20376769443101
 0034-6535,Review of Economics and Statistics,4.48385871046241
-0034-6748,Review of Scientific Instruments,0.913472466952732
 0034-6861,Reviews of Modern Physics,16.2619933376647
 0035-8711,Monthly Notices of the Royal Astronomical Society,0.998587726041654
-0035-9009,Quarterly Journal of the Royal Meteorological Society,2.2169264937288
 0035-9254,Journal of the Royal Statistical Society. Series C: Applied Statistics,1.2935358711414
 0036-0279,Russian Mathematical Surveys,1.22048917281217
 0036-1399,SIAM Journal on Applied Mathematics,1.18653987297819
@@ -270,26 +205,19 @@ journal_issn,journal_title,snip_latest
 0036-1429,SIAM Journal on Numerical Analysis,1.73857843071813
 0036-1445,SIAM Review,6.3061199224436
 0036-8075,Science,9.11552677630541
-0037-0738,Sedimentary Geology,1.27227205306921
 0037-1912,Semigroup Forum,1.02523078755143
-0037-5497,Simulation,0.948974086636512
 0038-0644,Software - Practice and Experience,1.11894740286019
 0038-092X,Solar Energy,1.66782919437862
 0038-0938,Solar Physics,1.07229373969345
 0038-1101,Solid-State Electronics,0.789536931930962
 0039-0402,Statistica Neerlandica,1.23932205818071
 0039-2480,Strojniski Vestnik/Journal of Mechanical Engineering,0.599801023589377
-0039-3193,Studia Linguistica,0.852821303446969
 0039-3215,Studia Logica,1.64800801460563
-0039-3223,Studia Mathematica,1.13601888752564
 0039-7857,Synthese,2.61243675472474
 0039-9140,Talanta,1.18555895971852
 0040-1625,Technological Forecasting and Social Change,3.09730418262996
-0040-1706,Technometrics,2.52274287525514
 0040-5779,Theoretical and Mathematical Physics(Russian Federation),0.6386179532193
 0040-5833,Theory and Decision,0.984363279411075
-0040-585X,Theory of Probability and its Applications,1.3899917270352
-0040-8166,Tissue and Cell,0.639041503502214
 0040-8735,Tohoku Mathematical Journal,0.706848331396425
 0041-1655,Transportation Science,2.29232837473046
 0041-624X,Ultrasonics,1.5934411330662
@@ -297,37 +225,29 @@ journal_issn,journal_title,snip_latest
 0042-6989,Vision Research,0.957946654954939
 0043-1354,Water Research,2.49895501657613
 0043-1397,Water Resources Research,1.67278855747453
-0043-1648,Wear,1.99813552368018
 0044-2267,ZAMM Zeitschrift fur Angewandte Mathematik und Mechanik,1.00325043025058
-0044-2275,Zeitschrift fur Angewandte Mathematik und Physik,1.41547046523421
-0045-6535,Chemosphere,1.60317432087461
 0045-7825,Computer Methods in Applied Mechanics and Engineering,2.03877532829834
 0045-7906,Computers and Electrical Engineering,1.75515325471463
 0045-7930,Computers and Fluids,1.40598062461465
 0045-7949,Computers and Structures,2.04019343660557
 0046-5755,Geometriae Dedicata,0.93615521706153
 0047-2352,Journal of Criminal Justice,1.90257653587525
-0047-2468,Journal of Geometry,1.01034818543419
 0047-259X,Journal of Multivariate Analysis,1.32729349420033
 0048-5829,Public Choice,1.47335540465434
 0048-6604,Radio Science,0.957712363293343
 0048-7333,Research Policy,3.622623130627
-0048-9697,Science of the Total Environment,2.17464359091575
 0049-4488,Transportation,1.86652229885736
 0065-1036,Acta Arithmetica,1.01234809127618
 0065-9266,Memoirs of the American Mathematical Society,2.90920311734881
 0067-0049,"Astrophysical Journal, Supplement Series",2.33895446847963
 0077-8923,Annals of the New York Academy of Sciences,1.9317056854783
 0079-6107,Progress in Biophysics and Molecular Biology,1.20896307692575
-0081-5438,Proceedings of the Steklov Institute of Mathematics,0.678692939610487
 0090-5364,Annals of Statistics,3.85582109697679
 0090-6964,Annals of Biomedical Engineering,1.42253484532103
 0091-1798,Annals of Probability,2.32984013247401
 0091-3286,Optical Engineering,0.702011968520725
-0091-7710,Journal of Anthropological Research,0.618808618836162
 0092-7872,Communications in Algebra,0.992152132824847
 0092-8240,Bulletin of Mathematical Biology,0.910430224009544
-0093-6413,Mechanics Research Communications,0.964669277583331
 0093-6502,Communication Research,3.01087278117283
 0093-9994,IEEE Transactions on Industry Applications,1.76577467978078
 0094-114X,Mechanism and Machine Theory,2.29429924091267
@@ -347,16 +267,7 @@ journal_issn,journal_title,snip_latest
 0098-3063,IEEE Transactions on Consumer Electronics,1.6021970553247
 0098-3500,ACM Transactions on Mathematical Software,1.89673521425703
 0098-5589,IEEE Transactions on Software Engineering,3.35512515933427
-0098-6445,Chemical Engineering Communications,0.747375866188247
-0098-7913,Serials Review,0.519453050894109
-0098-8847,Earthquake Engineering and Structural Dynamics,2.54271204246763
-0098-9886,International Journal of Circuit Theory and Applications,0.962645841115432
 0099-1333,Journal of Academic Librarianship,1.43007876169673
-0099-1767,Journal of Emergency Nursing,0.724272364924448
-0101-7438,Pesquisa Operacional,0.704814339804951
-0103-9733,Brazilian Journal of Physics,0.705189314859034
-0119-5646,Asia-Pacific Education Researcher,1.43617265052441
-0126-6705,Bulletin of the Malaysian Mathematical Sciences Society,1.22192762021582
 0129-0541,International Journal of Foundations of Computer Science,0.684983678628501
 0129-055X,Reviews in Mathematical Physics,1.04945020772887
 0129-0657,International Journal of Neural Systems,1.56291239192698
@@ -373,33 +284,23 @@ journal_issn,journal_title,snip_latest
 0141-9382,Displays,1.31872723552059
 0142-0615,International Journal of Electrical Power and Energy Systems,1.58128406871663
 0142-3312,Transactions of the Institute of Measurement and Control,0.787891278356767
-0142-694X,Design Studies,2.40558700529676
 0143-1161,International Journal of Remote Sensing,1.14549462611271
 0143-2087,Optimal Control Applications and Methods,0.896878386491176
 0143-3857,Ergodic Theory and Dynamical Systems,1.36192480342179
 0143-4632,Journal of Multilingual and Multicultural Development,1.64173507874048
-0143-8166,Optics and Lasers in Engineering,2.10546637019998
 0143-991X,Industrial Robot,0.718589856250254
-0144-1647,Transport Reviews,3.88727011632999
-0144-5154,Assembly Automation,0.862376571033235
 0144-929X,Behaviour and Information Technology,1.38726624412246
 0145-7632,Heat Transfer Engineering,1.2525646466722
-0146-1672,Personality and Social Psychology Bulletin,2.56733256579574
 0146-4116,Automatic Control and Computer Sciences,0.6568584880576
 0146-4833,Computer Communication Review,1.1261800800168
 0146-8030,Fiber and Integrated Optics,0.499313346902444
-0146-9428,Journal of Food Quality,1.15521333532408
 0146-9592,Optics Letters,1.34251775036882
-0147-6882,Scientific and Technical Information Processing,0.687968462710223
-0148-0731,Journal of Biomechanical Engineering,0.89686728145958
 0148-396X,Neurosurgery,1.76487565640369
 0148-5598,Journal of Medical Systems,1.74153945708164
 0148-9267,Computer Music Journal,1.07124013320275
 0160-5682,Journal of the Operational Research Society,1.32220499005191
-0160-791X,Technology in Society,2.07787222815537
 0161-1194,Cryptologia,1.98461538461538
 0161-6420,Ophthalmology,4.8087580404374
-0161-8105,Sleep,1.8112992328462
 0162-1459,Journal of the American Statistical Association,3.78609810038641
 0162-3257,Journal of Autism and Developmental Disorders,1.86156529860555
 0162-8828,IEEE Transactions on Pattern Analysis and Machine Intelligence,7.33767581878428
@@ -428,14 +329,12 @@ journal_issn,journal_title,snip_latest
 0166-4972,Technovation,3.50105563035032
 0166-5316,Performance Evaluation,1.47616057488359
 0166-8641,Topology and its Applications,0.900164019898772
-0167-2681,Journal of Economic Behavior and Organization,1.21232074933343
 0167-2789,Physica D: Nonlinear Phenomena,1.45635404639287
 0167-4048,Computers and Security,2.30189940320729
 0167-4730,Structural Safety,2.50395696227694
 0167-6377,Operations Research Letters,0.974100471859588
 0167-6393,Speech Communication,1.32230257288385
 0167-6423,Science of Computer Programming,1.00839191151768
-0167-6636,Mechanics of Materials,1.32112384357376
 0167-6911,Systems and Control Letters,1.52376665243643
 0167-7055,Computer Graphics Forum,1.29000998233866
 0167-7152,Statistics and Probability Letters,0.878022418674071
@@ -449,12 +348,9 @@ journal_issn,journal_title,snip_latest
 0167-8655,Pattern Recognition Letters,1.78636530912229
 0167-9236,Decision Support Systems,2.66051349939623
 0167-9260,"Integration, the VLSI Journal",0.842842767672336
-0167-9295,"Earth, Moon and Planets",0.444417121393026
 0167-9473,Computational Statistics and Data Analysis,1.5234991049393
 0168-0072,Annals of Pure and Applied Logic,1.47592773028825
 0168-1699,Computers and Electronics in Agriculture,2.37981714413842
-0168-3659,Journal of Controlled Release,1.68872077706887
-0168-583X,"Nuclear Instruments and Methods in Physics Research, Section B: Beam Interactions with Materials and Atoms",0.712754942760976
 0168-7433,Journal of Automated Reasoning,1.41123486675961
 0168-874X,Finite Elements in Analysis and Design,1.12418750965354
 0168-9002,"Nuclear Instruments and Methods in Physics Research, Section A: Accelerators, Spectrometers, Detectors and Associated Equipment",0.944063099272315
@@ -464,18 +360,14 @@ journal_issn,journal_title,snip_latest
 0169-2070,International Journal of Forecasting,2.79189489189984
 0169-2607,Computer Methods and Programs in Biomedicine,2.07889696451326
 0169-2968,Fundamenta Informaticae,0.767494379587684
-0169-3913,Transport in Porous Media,1.20079914584242
 0169-4332,Applied Surface Science,1.26238849263721
 0169-555X,Geomorphology,1.50366849433224
-0169-6149,Origins of Life and Evolution of Biospheres,0.514861117616286
 0169-7439,Chemometrics and Intelligent Laboratory Systems,1.31557049958794
-0169-796X,Journal of Developing Societies,0.971490931903028
 0169-8141,International Journal of Industrial Ergonomics,1.65750655738629
 0170-4214,Mathematical Methods in the Applied Sciences,1.14803330905522
 0170-6012,Informatik-Spektrum,0.271943342536302
 0171-6468,OR Spectrum,1.1069269944961
 0176-1714,Social Choice and Welfare,1.08689884069026
-0176-4225,Diachronica,1.23288944113572
 0176-4268,Journal of Classification,0.889501624597974
 0176-4276,Constructive Approximation,1.59800086689858
 0177-0667,Engineering with Computers,1.86228099344137
@@ -494,18 +386,12 @@ journal_issn,journal_title,snip_latest
 0196-2892,IEEE Transactions on Geoscience and Remote Sensing,2.38840460218115
 0196-8858,Advances in Applied Mathematics,1.05104308268373
 0196-8904,Energy Conversion and Management,2.36867071370158
-0196-9722,Cybernetics and Systems,1.03572585439214
 0197-1360,Journal of The American Institute for Conservation,0.502766752727218
-0197-2243,Information Society,1.88016104454374
 0197-3975,Habitat International,1.80025446149227
 0197-6729,Journal of Advanced Transportation,1.03820198066444
 0198-9715,"Computers, Environment and Urban Systems",2.16398413731422
 0209-9683,Combinatorica,1.80705619910935
-0213-1315,Revista Internacional de Metodos Numericos para Calculo y Diseno en Ingenieria,0.366497928353987
-0213-2230,Revista Matematica Iberoamericana,1.50087880360483
-0214-1493,Publicacions Matematiques,1.47999036255407
 0217-7323,Modern Physics Letters A,0.557518738563216
-0217-751X,International Journal of Modern Physics A,0.622426005884909
 0217-9792,International Journal of Modern Physics B,0.474127571912009
 0217-9849,Modern Physics Letters B,0.524611125954362
 0218-0006,Annals of Combinatorics,1.44797850026173
@@ -517,19 +403,12 @@ journal_issn,journal_title,snip_latest
 0218-1967,International Journal of Algebra and Computation,0.844997150975879
 0218-2025,Mathematical Models and Methods in Applied Sciences,1.74661001802865
 0218-2130,International Journal on Artificial Intelligence Tools,0.647400661193074
-0218-3013,International Journal of Modern Physics E,0.463118013591172
 0218-348X,Fractals,1.28364659393349
-0218-4885,"International Journal of Uncertainty, Fuzziness and Knowlege-Based Systems",0.548369993230048
-0218-5393,"International Journal of Reliability, Quality and Safety Engineering",0.522659965176107
-0219-0249,International Journal of Theoretical and Applied Finance,0.507554936948244
-0219-0257,"Infinite Dimensional Analysis, Quantum Probability and Related Topics",0.716294665647957
 0219-0613,Journal of Mathematical Logic,1.90256335634683
 0219-1377,Knowledge and Information Systems,1.41313361873574
-0219-1989,International Game Theory Review,0.372506373883259
 0219-1997,Communications in Contemporary Mathematics,1.44862243375103
 0219-4678,International Journal of Image and Graphics,0.638534529547269
 0219-4775,Fluctuation and Noise Letters,0.614162130560194
-0219-4937,Stochastics and Dynamics,1.19827292133372
 0219-4988,Journal of Algebra and its Applications,1.15545036811197
 0219-5259,Advances in Complex Systems,0.703295519111103
 0219-5305,Analysis and Applications,1.23868557447988
@@ -538,22 +417,14 @@ journal_issn,journal_title,snip_latest
 0219-7200,Journal of Bioinformatics and Computational Biology,0.362780489357107
 0219-7499,International Journal of Quantum Information,0.354594147745937
 0219-8436,International Journal of Humanoid Robotics,0.793263254508224
-0219-8762,International Journal of Computational Methods,0.789785598453645
-0219-8878,International Journal of Geometric Methods in Modern Physics,0.913068722274109
 0232-2064,Zeitschrift fur Analysis und ihre Anwendung,1.09854372658519
-0233-1888,Statistics,1.25598643729312
 0233-1934,Optimization,1.42032960920801
 0236-5294,Acta Mathematica Hungarica,1.26434039958798
-0239-7528,Bulletin of the Polish Academy of Sciences: Technical Sciences,0.743806675510729
 0246-0203,Annales de l'institut Henri Poincare (B) Probability and Statistics,1.17081666089102
 0250-6335,Journal of Astrophysics and Astronomy,0.679847655275251
 0253-6102,Communications in Theoretical Physics,0.632810528140798
 0254-5330,Annals of Operations Research,1.73172552427582
 0254-9409,Journal of Computational Mathematics,0.830641776122251
-0255-660X,Journal of the Indian Society of Remote Sensing,0.724461749049786
-0256-2499,Sadhana - Academy Proceedings in Engineering Sciences,0.774477141355928
-0256-307X,Chinese Physics Letters,0.569953657239404
-0256-4602,"IETE Technical Review (Institution of Electronics and Telecommunication Engineers, India)",0.935053537643912
 0257-0130,Queueing Systems,1.01063599220108
 0258-6770,World Bank Economic Review,2.22504613139316
 0259-9791,Journal of Mathematical Chemistry,1.13036554809966
@@ -564,16 +435,11 @@ journal_issn,journal_title,snip_latest
 0263-5747,Robotica,1.14280855918915
 0263-8223,Composite Structures,1.99116987838265
 0263-8231,Thin-Walled Structures,1.97873130666874
-0263-8762,Chemical Engineering Research and Design,1.22020868235769
-0264-0414,Journal of Sports Sciences,1.55261040134306
 0264-2751,Cities,2.30092796792533
 0264-4401,Engineering Computations,0.768535964959361
 0264-9381,Classical and Quantum Gravity,1.11380813642726
 0265-0754,IMA Journal of Mathematical Control and Information,0.79669402568471
-0265-9646,Space Policy,1.17335368951659
-0266-3821,Business Information Review,0.408884339063328
 0266-4720,Expert Systems,0.949473102528767
-0266-4909,Journal of Computer Assisted Learning,1.96433702668758
 0266-5611,Inverse Problems,1.28365109806553
 0266-8920,Probabilistic Engineering Mechanics,1.13465432595039
 0267-3649,Computer Law and Security Review,2.76718315561922
@@ -587,14 +453,11 @@ journal_issn,journal_title,snip_latest
 0271-2091,International Journal for Numerical Methods in Fluids,1.07479026938165
 0272-1716,IEEE Computer Graphics and Applications,0.980160455876741
 0272-1732,IEEE Micro,2.15003623254257
-0272-4332,Risk Analysis,1.6391881075603
-0272-4960,IMA Journal of Applied Mathematics,0.652032770431386
 0272-4979,IMA Journal of Numerical Analysis,1.6311240576897
 0273-0979,Bulletin of the American Mathematical Society,2.73044895176307
 0273-1177,Advances in Space Research,1.28266099543007
 0275-5319,Research in International Business and Finance,1.85566490003905
 0276-7783,MIS Quarterly: Management Information Systems,3.16294844074858
-0277-6693,Journal of Forecasting,0.947769217484894
 0277-6715,Statistics in Medicine,1.41287899195218
 0278-0046,IEEE Transactions on Industrial Electronics,3.11663449738324
 0278-0062,IEEE Transactions on Medical Imaging,3.9086509297473
@@ -605,90 +468,59 @@ journal_issn,journal_title,snip_latest
 0278-6125,Journal of Manufacturing Systems,3.43876496123556
 0288-3635,New Generation Computing,0.532336655936606
 0295-5075,Europhysics Letters,0.619228288200189
-0301-0066,Perception,0.676196802416695
-0301-0104,Chemical Physics,0.619884562730842
-0301-4215,Energy Policy,2.03402376135061
 0301-4797,Journal of Environmental Management,1.90703238665959
 0301-5629,Ultrasound in Medicine and Biology,1.28723014763216
 0301-679X,Tribology International,2.13997247836519
-0302-2838,European Urology,6.05764583472426
 0302-3427,Science and Public Policy,1.28619363895424
 0303-2647,BioSystems,0.901844992599351
-0303-6758,Journal of the Royal Society of New Zealand,1.37968563200795
 0303-6812,Journal of Mathematical Biology,1.29145392365945
-0303-8300,Social Indicators Research,1.56347563832839
 0304-3800,Ecological Modelling,1.02449717823413
 0304-3975,Theoretical Computer Science,1.0558436289531
-0304-3991,Ultramicroscopy,1.17099632245304
 0304-4068,Journal of Mathematical Economics,0.960968942296626
-0304-4076,Journal of Econometrics,2.47486427220945
 0304-4149,Stochastic Processes and their Applications,1.24037091174557
-0304-422X,Poetics,1.74573307794265
 0304-4289,Pramana - Journal of Physics,0.843405340622607
 0304-8853,Journal of Magnetism and Magnetic Materials,0.958132077715524
 0305-0041,Mathematical Proceedings of the Cambridge Philosophical Society,1.13049787024169
 0305-0483,Omega,3.11699965426512
 0305-0548,Computers and Operations Research,2.2771502281793
 0305-1048,Nucleic Acids Research,5.19045651536535
-0305-215X,Engineering Optimization,1.23968078838748
-0305-4403,Journal of Archaeological Science,1.74086309913077
 0306-2619,Applied Energy,2.65213961539066
 0306-4379,Information Systems,1.90296000378082
-0306-4522,Neuroscience,0.966901152571999
 0306-4573,Information Processing and Management,3.00960453700277
-0306-7734,International Statistical Review,2.11296721864957
-0306-9877,Medical Hypotheses,0.731488573199707
 0307-5079,Studies in Higher Education,2.62473377452065
 0307-904X,Applied Mathematical Modelling,1.84325567036628
 0308-0188,Interdisciplinary Science Reviews,0.685388251034697
 0308-1079,International Journal of General Systems,1.39673126699097
-0308-1087,Linear and Multilinear Algebra,1.3452382798928
 0309-1708,Advances in Water Resources,1.69739479419977
 0309-1902,Journal of Medical Engineering and Technology,0.716284320150245
-0315-0860,Historia Mathematica,0.722682082585423
-0319-5724,Canadian Journal of Statistics,0.92992017409644
-0324-721X,Acta Cybernetica,0.627863183597972
-0332-1649,COMPEL - The International Journal for Computation and Mathematics in Electrical and Electronic Engineering,0.45486657013887
 0332-7353,"Modeling, Identification and Control",0.48443559837805
-0340-0727,Psychological Research,1.34430282146741
 0340-1200,Biological Cybernetics,1.14955136803834
-0341-8162,Catena,1.74787834778003
 0343-6993,Mathematical Intelligencer,0.959604069476961
-0346-1238,Scandinavian Actuarial Journal,1.69838197905783
 0354-0243,Yugoslav Journal of Operations Research,0.656945008172919
 0354-5180,Filomat,0.818290754291287
 0360-0300,ACM Computing Surveys,7.76592553425501
 0360-1315,Computers and Education,5.20690153368742
 0360-1323,Building and Environment,2.22759751508677
-0360-3199,International Journal of Hydrogen Energy,1.36818961931574
 0360-5442,Energy,2.03826858802655
 0360-8352,Computers and Industrial Engineering,2.21537579563722
 0361-0365,Research in Higher Education,2.18375815841896
 0361-0918,Communications in Statistics Part B: Simulation and Computation,0.929193103547287
-0361-0926,Communications in Statistics - Theory and Methods,0.953304653001898
 0361-1981,Transportation Research Record,0.787271422284454
 0361-2317,Color Research and Application,1.15605798154004
 0361-526X,Serials Librarian,0.895138762164195
 0361-7688,Programming and Computer Software,1.09587609319271
-0362-546X,"Nonlinear Analysis, Theory, Methods and Applications",1.33516767771905
 0362-5915,ACM Transactions on Database Systems,1.47080785631132
 0363-0129,SIAM Journal on Control and Optimization,1.71522586728859
-0363-8111,Public Relations Review,1.94189441449738
 0363-9061,International Journal for Numerical and Analytical Methods in Geomechanics,1.96388703302657
 0363-907X,International Journal of Energy Research,1.1162369805947
-0364-0213,Cognitive Science,1.59234586372796
 0364-765X,Mathematics of Operations Research,2.22924042734517
 0364-9024,Journal of Graph Theory,1.42379454199901
 0364-9059,IEEE Journal of Oceanic Engineering,1.9130745507866
-0370-1573,Physics Reports,8.71969129253627
-0370-1972,Physica Status Solidi (B): Basic Research,0.605306213208621
 0370-2693,"Physics Letters, Section B: Nuclear, Elementary Particle and High-Energy Physics",1.30378136424063
 0373-3114,Annali di Matematica Pura ed Applicata,1.31399514135728
-0373-4633,Journal of Navigation,1.24573803363815
 0374-3535,Journal of Elasticity,1.01401966658233
 0374-4884,Journal of the Korean Physical Society,0.374588121432922
 0375-9601,"Physics Letters, Section A: General, Atomic and Solid State Physics",0.91693642141553
-0376-9429,International Journal of Fracture,1.00108992153467
 0377-0257,Journal of Non-Newtonian Fluid Mechanics,1.34171534250834
 0377-0427,Journal of Computational and Applied Mathematics,1.50341383097033
 0377-2217,European Journal of Operational Research,2.81490739673403
@@ -696,7 +528,6 @@ journal_issn,journal_title,snip_latest
 0378-3758,Journal of Statistical Planning and Inference,1.2050214798594
 0378-4371,Physica A: Statistical Mechanics and its Applications,1.20767825600341
 0378-4754,Mathematics and Computers in Simulation,1.25758764035848
-0378-5173,International Journal of Pharmaceutics,1.29841289335082
 0378-5955,Hearing Research,1.45851318243213
 0378-620X,Integral Equations and Operator Theory,1.03647539326377
 0378-7206,Information and Management,3.09207657418229
@@ -704,71 +535,46 @@ journal_issn,journal_title,snip_latest
 0378-7788,Energy and Buildings,2.06879638249107
 0378-7796,Electric Power Systems Research,1.34237712007886
 0378-8733,Social Networks,2.01457579205538
-0379-0738,Forensic Science International,1.32232557181103
 0385-4035,Hokkaido Mathematical Journal,0.668961823398301
-0385-4221,"IEEJ Transactions on Electronics, Information and Systems",0.285197259885678
-0385-7417,Behaviormetrika,0.825283110104672
 0386-216X,Kagaku Kogaku Ronbunshu,0.375507911431261
 0386-2208,Proceedings of the Japan Academy Series B: Physical and Biological Sciences,1.65760268628568
-0393-0440,Journal of Geometry and Physics,1.10574302096465
-0393-2990,European Journal of Epidemiology,4.42536337402616
 0399-0559,RAIRO - Operations Research,1.13329998168124
-0424-267X,Economic Computation and Economic Cybernetics Studies and Research,0.649210448055103
 0430-3202,Annali dell'Universita di Ferrara,0.918984942185443
 0550-3213,Nuclear Physics B,0.920526499146438
-0577-9073,Chinese Journal of Physics,1.03348990690343
-0584-8547,"Spectrochimica Acta, Part B: Atomic Spectroscopy",1.15047988888765
 0587-4254,Acta Physica Polonica B,0.248671914947227
-0703-8992,Canadian Journal of Remote Sensing,0.545154379826948
 0723-0869,Expositiones Mathematicae,1.18157484328928
 0723-4864,Experiments in Fluids,1.51829104944213
 0730-0301,ACM Transactions on Graphics,2.67606847606132
-0730-2312,Journal of Cellular Biochemistry,0.909434629300028
 0730-725X,Magnetic Resonance Imaging,0.85631377529978
 0730-7829,Music Perception,1.54558872604258
 0730-9384,Politics and the Life Sciences,0.492406343099466
 0731-5090,"Journal of Guidance, Control, and Dynamics",1.74576706923819
-0731-7131,Technical Services Quarterly,0.593005200789343
 0733-8716,IEEE Journal on Selected Areas in Communications,3.55876026126946
 0733-8724,Journal of Lightwave Technology,1.68939087883845
 0733-9399,Journal of Engineering Mechanics - ASCE,1.17954120934641
 0733-9445,Journal of Structural Engineering,1.76036353566237
 0733-9496,Journal of Water Resources Planning and Management - ASCE,1.23033782672432
 0734-2071,ACM Transactions on Computer Systems,1.9960788619443
-0735-0015,Journal of Business and Economic Statistics,4.38906897679719
 0735-6331,Journal of Educational Computing Research,1.88928150374009
 0736-0266,Journal of Orthopaedic Research,1.31528952553753
 0736-2994,Stochastic Analysis and Applications,1.03847146044121
-0736-3761,Journal of Consumer Marketing,1.01137175607158
 0736-5845,Robotics and Computer-Integrated Manufacturing,3.36521079302645
 0736-5853,Telematics and Informatics,3.06668518862865
 0737-8831,Library Hi Tech,1.18307432628313
 0738-4602,AI Magazine,1.64534341649958
-0739-456X,Journal of Planning Education and Research,1.4130664180869
 0740-3194,Magnetic Resonance in Medicine,1.34720988012134
 0740-3224,Journal of the Optical Society of America B: Optical Physics,0.759289719689584
-0740-624X,Government Information Quarterly,3.67359718284423
 0740-7459,IEEE Software,1.89658382850047
-0740-8188,Library and Information Science Research,1.74458335438055
 0741-3106,IEEE Electron Device Letters,1.64922493676723
-0741-3335,Plasma Physics and Controlled Fusion,1.15224343898002
-0741-6261,RAND Journal of Economics,1.7803626240788
-0742-1222,Journal of Management Information Systems,3.53986697724332
 0743-7315,Journal of Parallel and Distributed Computing,1.6332912339512
 0743-7463,Langmuir,0.97776390677128
 0747-5632,Computers in Human Behavior,3.23371058075291
 0747-7171,Journal of Symbolic Computation,1.57044946062688
-0747-9360,Design Issues,0.917999436700938
 0748-8017,Quality and Reliability Engineering International,1.51083175342474
-0749-1581,Magnetic Resonance in Chemistry,0.720848305676236
 0749-159X,Numerical Methods for Partial Differential Equations,1.1192786064238
 0764-583X,ESAIM: Mathematical Modelling and Numerical Analysis,1.26428628004795
 0765-0019,Traitement du Signal,0.942905528156713
 0824-7935,Computational Intelligence,1.00381499202474
-0840-8688,Canadian Journal of Electrical and Computer Engineering,0.779876308883343
-0860-8229,Metrology and Measurement Systems,0.652810712763061
-0863-1042,Contributions to Plasma Physics,0.629996957938302
-0868-4952,Informatica,0.814312658533281
 0883-4237,Statistical Science,1.64571486662255
 0883-9514,Applied Artificial Intelligence,1.03118383706001
 0884-8173,International Journal of Intelligent Systems,1.91164642608202
@@ -783,65 +589,51 @@ journal_issn,journal_title,snip_latest
 0885-8977,IEEE Transactions on Power Delivery,2.47475268192659
 0885-8985,IEEE Aerospace and Electronic Systems Magazine,1.20123635784483
 0885-8993,IEEE Transactions on Power Electronics,2.77681619263419
-0886-9383,Journal of Chemometrics,0.959660898557139
 0887-3585,"Proteins: Structure, Function and Bioinformatics",1.02991920565256
 0887-3801,Journal of Computing in Civil Engineering,1.82478167852095
 0888-3270,Mechanical Systems and Signal Processing,3.23424069008397
 0888-5885,Industrial & Engineering Chemistry Research,0.970890248040909
 0888-613X,International Journal of Approximate Reasoning,1.7148610719525
 0888-7543,Genomics,1.02637572868227
-0889-1591,"Brain, Behavior, and Immunity",2.77000539659474
 0889-8480,Mathematical Population Studies,1.04815373376009
 0889-9746,Journal of Fluids and Structures,1.65669819352656
 0890-0604,"Artificial Intelligence for Engineering Design, Analysis and Manufacturing: AIEDAM",0.823878371738639
 0890-5401,Information and Computation,1.06314404261216
 0890-6327,International Journal of Adaptive Control and Signal Processing,0.915863328420526
-0890-6955,International Journal of Machine Tools and Manufacture,3.41988141491842
 0890-8044,IEEE Network,3.14908814623098
 0891-2017,Computational Linguistics,2.67935357083137
 0891-2513,Complex Systems,0.32851031174133
 0892-6638,FASEB Journal,1.10357309424564
-0892-7790,Journal of Endourology,1.47423766328184
-0892-9882,Science and Global Security,0.96270110830129
 0892-9912,Journal of Technology Transfer,2.50882933969116
 0893-133X,Neuropsychopharmacology,2.01014805952362
-0893-3952,Modern Pathology,2.62178034483919
 0893-6080,Neural Networks,2.80771769401138
 0893-9659,Applied Mathematics Letters,1.66539181478426
 0894-0347,Journal of the American Mathematical Society,4.57356726666363
 0894-3370,"International Journal of Numerical Modelling: Electronic Networks, Devices and Fields",0.596091457776301
-0894-4393,Social Science Computer Review,2.39973547480958
 0894-6507,IEEE Transactions on Semiconductor Manufacturing,1.42904393907179
 0894-9840,Journal of Theoretical Probability,0.939991820225431
 0895-4356,Journal of Clinical Epidemiology,2.50080403977785
 0895-4798,SIAM Journal on Matrix Analysis and Applications,1.71679734121022
 0895-4801,SIAM Journal on Discrete Mathematics,1.21497037733674
 0895-6111,Computerized Medical Imaging and Graphics,2.03255551923627
-0896-0267,Brain Topography,1.23580988485441
-0896-6273,Neuron,3.64396028403473
 0897-1889,Journal of Digital Imaging,1.62073598326678
 0897-3962,Journal of Integral Equations and Applications,0.6740945164627
 0897-7151,Journal of Neurotrauma,1.50788318516397
 0898-1221,Computers and Mathematics with Applications,1.31226126882653
-0898-929X,Journal of Cognitive Neuroscience,0.987640105606511
 0899-7667,Neural Computation,1.90381884120403
 0899-8256,Games and Economic Behavior,1.19136108283391
 0899-9457,International Journal of Imaging Systems and Technology,0.916712038189197
-0909-752X,Skin Research and Technology,1.15087652322128
 0911-0119,Graphs and Combinatorics,0.832554824209616
-0914-4935,Sensors and Materials,0.40459727743664
 0916-7005,Japan Journal of Industrial and Applied Mathematics,0.622517830635163
 0916-8508,"IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences",0.326600206681172
 0916-8516,IEICE Transactions on Communications,0.415666487982163
 0916-8532,IEICE Transactions on Information and Systems,0.418041236154992
-0920-3796,Fusion Engineering and Design,1.07140963598474
 0920-4105,Journal of Petroleum Science and Engineering,1.70412139328283
 0920-5489,Computer Standards and Interfaces,1.88986412026384
 0920-5691,International Journal of Computer Vision,4.16799937630164
 0920-654X,Journal of Computer-Aided Molecular Design,0.942888489786703
 0920-8542,Journal of Supercomputing,1.15794697365647
 0921-0296,Journal of Intelligent and Robotic Systems: Theory and Applications,1.36459862608055
-0921-030X,Natural Hazards,1.19154758050024
 0921-4526,Physica B: Condensed Matter,0.766518395117183
 0921-8890,Robotics and Autonomous Systems,1.68362326507338
 0922-6435,Experimental Astronomy,0.967247587678968
@@ -851,7 +643,6 @@ journal_issn,journal_title,snip_latest
 0923-4748,Journal of Engineering and Technology Management - JET-M,1.94901052538466
 0923-5965,Signal Processing: Image Communication,1.30171068042287
 0923-6082,Multidimensional Systems and Signal Processing,0.743421424650192
-0923-8174,Journal of Electronic Testing: Theory and Applications (JETTA),0.585043680075413
 0924-0136,Journal of Materials Processing Technology,2.16777348282626
 0924-090X,Nonlinear Dynamics,1.64540466397783
 0924-1868,User Modeling and User-Adapted Interaction,3.18789424047203
@@ -861,15 +652,12 @@ journal_issn,journal_title,snip_latest
 0924-669X,Applied Intelligence,1.72890694092875
 0924-6703,Discrete Event Dynamic Systems: Theory and Applications,1.09044377972199
 0924-8463,Artificial Intelligence and Law,3.43894401150772
-0924-9265,Discrete Mathematics and Applications,0.627107952443745
 0924-9907,Journal of Mathematical Imaging and Vision,1.18912134190428
 0925-1022,"Designs, Codes, and Cryptography",1.53316526186007
 0925-1030,Analog Integrated Circuits and Signal Processing,0.723412534226752
 0925-2312,Neurocomputing,1.8502440002545
 0925-4005,Sensors and Actuators B: Chemical,1.34029494316522
-0925-4560,Journal for General Philosophy of Science,1.04231420380756
 0925-5001,Journal of Global Optimization,1.53501227605733
-0925-7535,Safety Science,2.29730934794724
 0925-7721,Computational Geometry: Theory and Applications,0.930633091771587
 0925-8531,"Journal of Logic, Language and Information",1.19478866714502
 0925-9724,Computer Supported Cooperative Work,1.36513582548344
@@ -879,16 +667,9 @@ journal_issn,journal_title,snip_latest
 0926-2644,Group Decision and Negotiation,1.04246156323832
 0926-5805,Automation in Construction,3.16695537303264
 0926-6003,Computational Optimization and Applications,1.45206196556106
-0926-6801,Journal of High Speed Networks,0.375498891135985
-0926-8782,Distributed and Parallel Databases,0.643921402216949
-0926-9851,Journal of Applied Geophysics,1.12279361346136
-0927-0248,Solar Energy Materials and Solar Cells,1.57798742834311
 0927-0256,Computational Materials Science,1.07802403756269
 0927-2852,Applied Categorical Structures,1.15942310392344
-0927-6505,Astroparticle Physics,1.02318902540519
 0927-7099,Computational Economics,1.01487438734111
-0927-796X,Materials Science and Engineering: R: Reports,6.59286277057439
-0928-0219,Journal of Inverse and Ill-Posed Problems,1.21512840900165
 0928-7329,Technology and Health Care,0.537440399814038
 0928-8910,Automated Software Engineering,1.40078479856844
 0929-5313,Journal of Computational Neuroscience,0.749067376211954
@@ -897,7 +678,6 @@ journal_issn,journal_title,snip_latest
 0929-6212,Wireless Personal Communications,0.872973749348666
 0929-8215,Journal of New Music Research,0.941522146510533
 0929-8673,Current Medicinal Chemistry,1.04938539791157
-0929-9629,Monte Carlo Methods and Applications,0.632220438594059
 0932-4194,"Mathematics of Control, Signals, and Systems",1.40828967856338
 0932-8092,Machine Vision and Applications,1.04543288582453
 0933-1875,KI - Kunstliche Intelligenz,1.12779238233615
@@ -907,12 +687,10 @@ journal_issn,journal_title,snip_latest
 0934-5043,Formal Aspects of Computing,1.19147667811456
 0935-1175,Continuum Mechanics and Thermodynamics,1.30854996082412
 0935-4964,Theoretical and Computational Fluid Dynamics,1.11722282562782
-0936-5907,Cognitive Linguistics,2.04251309131855
 0936-7195,GAMM Mitteilungen,0.982381150397275
 0937-7255,Ship Technology Research,1.67328126796987
 0938-1279,"Applicable Algebra in Engineering, Communications and Computing",0.804342349861102
 0938-2259,Economic Theory,1.67023419511776
-0938-7994,European Radiology,2.15770161338793
 0938-8974,Journal of Nonlinear Science,1.65273973761425
 0939-1533,Archive of Applied Mechanics,1.1018857152254
 0939-3889,Zeitschrift fur Medizinische Physik,1.65889389173441
@@ -924,38 +702,28 @@ journal_issn,journal_title,snip_latest
 0947-3580,European Journal of Control,1.14290294441962
 0947-3602,Requirements Engineering,2.04651997900843
 0948-4280,Journal of Marine Science and Technology,1.44002138744062
-0948-7921,Electrical Engineering,0.803059758975523
-0949-7714,Journal of Geodesy,2.42321182142041
 0950-0340,Journal of Modern Optics,0.558972197279037
 0950-0618,Construction and Building Materials,2.36209935496226
-0950-0804,Journal of Economic Surveys,3.47620939469478
-0950-3293,Food Quality and Preference,1.93021357952343
 0950-5849,Information and Software Technology,2.2713460818863
 0950-7051,Knowledge-Based Systems,2.6112734950373
 0951-5666,AI and Society,1.29523107152251
 0951-7715,Nonlinearity,1.39628427611681
 0951-8320,Reliability Engineering and System Safety,2.46826462686026
 0952-1976,Engineering Applications of Artificial Intelligence,2.30071866445707
-0952-3480,NMR in Biomedicine,1.11864668825233
 0952-813X,Journal of Experimental and Theoretical Artificial Intelligence,0.804619517791409
 0953-1513,Learned Publishing,1.25087709972176
 0953-2048,Superconductor Science and Technology,1.48302840007385
-0953-4075,"Journal of Physics B: Atomic, Molecular and Optical Physics",0.686999207515217
 0953-4180,Behavioural Neurology,1.31039654799637
 0953-5438,Interacting with Computers,1.0955485300128
-0953-8984,Journal of Physics Condensed Matter,0.780570627154503
 0954-0091,Connection Science,1.18956517413933
 0954-3899,Journal of Physics G: Nuclear and Particle Physics,0.921590592588632
-0954-4070,"Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering",1.16071614199822
 0954-4100,"Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering",0.782505827325419
 0954-4119,"Proceedings of the Institution of Mechanical Engineers, Part H: Journal of Engineering in Medicine",0.882565895815613
 0954-4828,Journal of Engineering Design,1.37563739543938
 0955-792X,Journal of Logic and Computation,0.886479560984113
 0955-7997,Engineering Analysis with Boundary Elements,1.24683620328048
-0956-053X,Waste Management,2.16682170070649
 0956-540X,Geophysical Journal International,1.4121260540674
 0956-5515,Journal of Intelligent Manufacturing,2.68958665104604
-0956-7135,Food Control,1.70768670464661
 0956-7925,European Journal of Applied Mathematics,0.876791594106077
 0956-7968,Journal of Functional Programming,1.13147911246221
 0957-0233,Measurement Science and Technology,1.05398932110513
@@ -968,12 +736,8 @@ journal_issn,journal_title,snip_latest
 0959-6526,Journal of Cleaner Production,2.44428890580721
 0960-0779,"Chaos, Solitons and Fractals",2.28920662784558
 0960-0833,Software Testing Verification and Reliability,0.954655770195998
-0960-085X,European Journal of Information Systems,2.87943446333711
 0960-1295,Mathematical Structures in Computer Science,1.20237847719765
-0960-1317,Journal of Micromechanics and Microengineering,0.757102282302107
 0960-1481,Renewable Energy,2.1075787147469
-0960-1627,Mathematical Finance,2.03571206337691
-0960-2011,Neuropsychological Rehabilitation,1.4421892577722
 0960-3174,Statistics and Computing,1.63937416702708
 0960-9822,Current Biology,2.17089229769524
 0961-0006,Journal of Librarianship and Information Science,1.65534348825315
@@ -988,36 +752,28 @@ journal_issn,journal_title,snip_latest
 0964-1998,Journal of the Royal Statistical Society. Series A: Statistics in Society,1.71263583614145
 0965-0393,Modelling and Simulation in Materials Science and Engineering,0.886757206350915
 0965-5425,Computational Mathematics and Mathematical Physics,0.850901121328034
-0965-8211,Memory,1.15695757129095
 0965-8564,"Transportation Research, Part A: Policy and Practice",2.2252540252142
 0965-9978,Advances in Engineering Software,1.76350618735251
-0966-0879,Journal of Contingencies and Crisis Management,1.97513861194429
 0966-6362,Gait and Posture,1.23951819237184
 0966-6923,Journal of Transport Geography,2.13228325229584
 0966-9760,International Journal of Early Years Education,1.51198902679205
 0967-0661,Control Engineering Practice,1.70156529149334
 0967-3334,Physiological Measurement,1.22704022006545
 0968-090X,Transportation Research Part C: Emerging Technologies,3.28713111280509
-0968-4328,Micron,0.920494494521548
 0969-6016,International Transactions in Operational Research,1.73165258967583
 0969-6997,Journal of Air Transport Management,2.20163151578837
 0970-4140,Journal of the Indian Institute of Science,0.654626801184774
 0971-3514,Differential Equations and Dynamical Systems,0.924133319843708
-0972-0529,Journal of Discrete Mathematical Sciences and Cryptography,1.20403259856444
 0972-8600,AKCE International Journal of Graphs and Combinatorics,1.30386869434907
 0973-5348,Mathematical Modelling of Natural Phenomena,1.16278103635813
 0975-2293,International Journal of Computer Networks and Communications,0.44248519350807
-0976-836X,Sankhya A,0.622412390687573
 0988-3754,RAIRO - Theoretical Informatics and Applications,0.671806397819473
 0992-499X,Revue d'Intelligence Artificielle,0.54280684942
 0997-7538,"European Journal of Mechanics, A/Solids",1.50811456245826
 1000-9000,Journal of Computer Science and Technology,0.980025362311634
 1004-3756,Journal of Systems Science and Systems Engineering,0.582562459576889
-1004-8979,Numerical Mathematics,0.533658245358624
 1007-0214,Tsinghua Science and Technology,1.50797458537367
-1007-1172,Journal of Shanghai Jiaotong University (Science),0.447696148436167
 1007-5704,Communications in Nonlinear Science and Numerical Simulation,1.62619603758748
-1009-6124,Journal of Systems Science and Complexity,0.865949066856445
 1012-2443,Annals of Mathematics and Artificial Intelligence,0.973774300301745
 1016-3328,Computational Complexity,1.51368037353662
 1016-443X,Geometric and Functional Analysis,2.43225314856425
@@ -1028,14 +784,9 @@ journal_issn,journal_title,snip_latest
 1018-4864,Telecommunication Systems,0.906585596023235
 1019-6781,Electronic Markets,1.87322757460981
 1019-7168,Advances in Computational Mathematics,1.45935203398079
-1021-9722,Nonlinear Differential Equations and Applications,1.00881987651366
 1022-0038,Wireless Networks,0.926729914338495
 1022-1824,"Selecta Mathematica, New Series",1.48854583145356
-1022-4653,Chinese Journal of Electronics,0.717628410916028
-1023-6198,Journal of Difference Equations and Applications,0.852131400280328
 1024-123X,Mathematical Problems in Engineering,0.638334812010192
-1025-5842,Computer Methods in Biomechanics and Biomedical Engineering,0.926252496365681
-1040-0435,Assistive Technology,0.779427487816017
 1040-6190,Electricity Journal,0.787209481926422
 1040-7790,"Numerical Heat Transfer, Part B: Fundamentals",0.755671543907642
 1041-1135,IEEE Photonics Technology Letters,0.963157152165512
@@ -1046,8 +797,6 @@ journal_issn,journal_title,snip_latest
 1045-9219,IEEE Transactions on Parallel and Distributed Systems,1.70822258810797
 1045-9243,IEEE Antennas and Propagation Magazine,1.18092007796436
 1045-926X,Journal of Visual Languages and Computing,1.91961173215972
-1046-2023,Methods,0.888132751516596
-1046-6673,Journal of the American Society of Nephrology : JASN,3.01071679536436
 1046-8188,ACM Transactions on Information Systems,2.70685144115263
 1047-1987,Political Analysis,5.12164790719894
 1047-3203,Journal of Visual Communication and Image Representation,1.13072622756179
@@ -1058,32 +807,23 @@ journal_issn,journal_title,snip_latest
 1049-3301,ACM Transactions on Modeling and Computer Simulation,0.993299236773545
 1049-331X,ACM Transactions on Software Engineering and Methodology,2.47228227756974
 1049-4820,Interactive Learning Environments,1.76094027615987
-1049-6505,Journal of Agricultural and Food Information,0.44505222241339
 1049-8923,International Journal of Robust and Nonlinear Control,1.32968505753397
 1050-0472,"Journal of Mechanical Design, Transactions Of the ASME",1.43512889333554
 1050-5164,Annals of Applied Probability,1.74396361189941
-1051-1482,Housing Policy Debate,1.30186444186274
 1051-2004,Digital Signal Processing: A Review Journal,1.38274482006956
 1051-8215,IEEE Transactions on Circuits and Systems for Video Technology,1.83852549435208
 1051-8223,IEEE Transactions on Applied Superconductivity,0.962049050691403
 1052-6234,SIAM Journal on Optimization,2.20852640580117
-1053-1858,Journal of Public Administration Research and Theory,3.50344721562234
 1053-587X,IEEE Transactions on Signal Processing,2.10889955357642
 1053-5888,IEEE Signal Processing Magazine,5.33878221763871
-1053-8100,Consciousness and Cognition,1.10329416840764
 1053-8119,NeuroImage,2.09911800508847
-1053-8569,Pharmacoepidemiology and Drug Safety,1.03288472246891
 1054-1500,Chaos,1.20930429909107
-1054-660X,Laser Physics,0.536863716443345
 1054-6618,Pattern Recognition and Image Analysis,0.827974202556811
 1054-7460,Presence: Teleoperators and Virtual Environments,0.963767498180003
-1055-4181,Technology and Disability,0.410676547719462
 1055-6788,Optimization Methods and Software,1.28930335263017
 1055-7148,International Journal of Network Management,0.66395004454117
 1057-7149,IEEE Transactions on Image Processing,3.13104591350748
-1057-7157,Journal of Microelectromechanical Systems,1.12458662293487
 1057-7408,Journal of Consumer Psychology,2.02753646393374
-1058-0530,Information Systems Management,1.49786239524817
 1058-6458,Experimental Mathematics,0.752063213950723
 1059-7123,Adaptive Behavior,1.10958211210058
 1059-910X,Microscopy Research and Technique,1.09136934628708
@@ -1091,9 +831,7 @@ journal_issn,journal_title,snip_latest
 1061-3773,Computer Applications in Engineering Education,1.27968935685971
 1061-8562,International Journal of Computational Fluid Dynamics,0.682455250996518
 1061-8600,Journal of Computational and Graphical Statistics,1.78536935472312
-1061-9208,Russian Journal of Mathematical Physics,1.54023707033403
 1062-7995,Progress in Photovoltaics: Research and Applications,2.15240557607392
-1063-0732,Journal of Urban Technology,2.38527693524972
 1063-4584,Osteoarthritis and Cartilage,2.20323014870495
 1063-5157,Systematic Biology,5.25738382560638
 1063-5203,Applied and Computational Harmonic Analysis,2.0800570863628
@@ -1102,27 +840,21 @@ journal_issn,journal_title,snip_latest
 1063-6692,IEEE/ACM Transactions on Networking,1.7971495752555
 1063-6706,IEEE Transactions on Fuzzy Systems,3.14295988636636
 1063-7710,Acoustical Physics,1.22849319497691
-1063-7729,Astronomy Reports,0.567750853212536
-1063-7818,Quantum Electronics,0.803314981485486
 1063-8210,IEEE Transactions on Very Large Scale Integration (VLSI) Systems,1.47434778915335
 1063-8539,Journal of Combinatorial Designs,1.16335234938036
 1064-1246,Journal of Intelligent and Fuzzy Systems,0.698146353079959
 1064-2269,Journal of Communications Technology and Electronics,0.689651443153619
 1064-5462,Artificial Life,0.670245661393634
-1064-5616,Sbornik Mathematics,1.25585394541733
-1064-5624,Doklady Mathematics,0.703176404924764
 1064-5632,Izvestiya Mathematics,0.902879656423593
 1064-7570,Journal of Network and Systems Management,0.875811818581473
 1064-8275,SIAM Journal of Scientific Computing,1.6036950844085
 1065-9471,Human Brain Mapping,1.55118837237044
 1066-033X,IEEE Control Systems,2.67288094720408
 1066-2243,Internet Research,2.18643105557541
-1066-5277,Journal of Computational Biology,0.560053619429746
 1066-8888,VLDB Journal,2.7687715124617
 1067-5027,Journal of the American Medical Informatics Association : JAMIA,2.62757982416962
 1068-9605,International Journal of Wireless Information Networks,0.868556741477199
 1068-9613,Electronic Transactions on Numerical Analysis,0.842535322208302
-1069-2509,Integrated Computer-Aided Engineering,1.49265877242499
 1069-5869,Journal of Fourier Analysis and Applications,1.36595462418358
 1070-5325,Numerical Linear Algebra with Applications,1.34276326879628
 1070-6631,Physics of Fluids,1.67554734174186
@@ -1132,11 +864,9 @@ journal_issn,journal_title,snip_latest
 1071-2836,Journal of Russian Laser Research,0.509212231654048
 1071-5797,Finite Fields and Their Applications,1.42789480524712
 1071-5819,International Journal of Human Computer Studies,2.41417861528302
-1072-3374,Journal of Mathematical Sciences,0.596977722376088
 1072-5520,Interactions,1.15199255026913
 1072-8325,Journal of Women and Minorities in Science and Engineering,0.999535046500416
 1073-0516,ACM Transactions on Computer-Human Interaction,2.67504012118072
-1073-5623,Metallurgical and Materials Transactions A: Physical Metallurgy and Materials Science,1.11162759163483
 1073-7928,International Mathematics Research Notices,1.44405974583674
 1074-5351,International Journal of Communication Systems,0.762402228309076
 1076-0342,Journal of Infrastructure Systems,1.26379650999292
@@ -1148,12 +878,10 @@ journal_issn,journal_title,snip_latest
 1077-5463,JVC/Journal of Vibration and Control,1.38150994040829
 1077-6990,Journalism and Mass Communication Quarterly,2.03588058400774
 1077-8926,Electronic Journal of Combinatorics,1.08728752275815
-1078-0947,Discrete and Continuous Dynamical Systems,1.17749724216055
 1078-8174,Radiography,1.26558957203149
 1078-8956,Nature Medicine,12.1666343510583
 1079-8587,Intelligent Automation and Soft Computing,0.945659745935246
 1079-8986,Bulletin of Symbolic Logic,1.76260925336421
-1080-5370,GPS Solutions,2.20818807525531
 1081-3810,Electronic Journal of Linear Algebra,1.02039333277175
 1083-3668,Journal of Biomedical Optics,1.33717805374865
 1083-4435,IEEE/ASME Transactions on Mechatronics,2.16776124465005
@@ -1165,16 +893,11 @@ journal_issn,journal_title,snip_latest
 1084-7529,"Journal of the Optical Society of America A: Optics and Image Science, and Vision",1.14102463425154
 1084-8045,Journal of Network and Computer Applications,2.5122349992265
 1086-9379,Meteoritics and Planetary Science,0.833277121499319
-1087-0156,Nature Biotechnology,9.58482325463964
-1087-1357,"Journal of Manufacturing Science and Engineering, Transactions of the ASME",1.2866687530443
 1088-467X,Intelligent Data Analysis,0.531818105202484
 1089-778X,IEEE Transactions on Evolutionary Computation,5.61740560181218
 1089-7798,IEEE Communications Letters,1.35669874340005
 1089-7801,IEEE Internet Computing,1.3886410668128
-1089-9995,Journal of Geoscience Education,1.01641598754995
-1090-7807,Journal of Magnetic Resonance,0.892344153608121
 1090-8471,Human Factors and Ergonomics In Manufacturing,0.873095059704551
-1090-9443,Research in Economics,0.712782591680368
 1091-9856,INFORMS Journal on Computing,1.82285398451667
 1093-3263,Journal of Molecular Graphics and Modelling,0.751013812336025
 1093-9687,Computer-Aided Civil and Infrastructure Engineering,3.18694428033175
@@ -1182,11 +905,8 @@ journal_issn,journal_title,snip_latest
 1094-4087,Optics Express,1.48394249836811
 1094-6136,Journal of Scheduling,1.66140143471927
 1094-6969,IEEE Instrumentation and Measurement Magazine,0.683691475813078
-1094-9968,Journal of Interactive Marketing,3.26616293475128
 1095-4244,Wind Energy,1.34801818138625
-1097-1475,Chinese Economy,0.897534972390473
 1097-6256,Nature Neuroscience,5.22623955589254
-1097-8526,Latin American Business Review,0.449430176454951
 1098-1241,Systems Engineering,1.14717152036691
 1098-3058,Information Technology and Tourism,1.62550490344423
 1099-4300,Entropy,1.08419364199862
@@ -1198,11 +918,7 @@ journal_issn,journal_title,snip_latest
 1120-6330,"Atti della Accademia Nazionale dei Lincei, Classe di Scienze Fisiche, Matematiche e Naturali, Rendiconti Lincei Matematica E Applicazioni",0.935310204738232
 1122-1151,Axiomathes,0.691323197634842
 1134-3060,Archives of Computational Methods in Engineering,3.25273756984774
-1134-3478,Comunicar,3.0781839615218
 1134-5764,TOP,1.77117405063841
-1166-3081,Journal of Applied Non-Classical Logics,1.37772770665187
-1176-2322,Applied Bionics and Biomechanics,1.12226754161165
-1181-8700,Environmental Reviews,1.78600605362987
 1187-7863,Journal of Agricultural and Environmental Ethics,1.14276660800891
 1206-212X,International Journal of Computers and Applications,0.677458047886949
 1210-0552,Neural Network World,0.625389090878003
@@ -1210,16 +926,12 @@ journal_issn,journal_title,snip_latest
 1225-6463,ETRI Journal,0.759907644996457
 1226-7988,KSCE Journal of Civil Engineering,1.02750267733135
 1229-2370,Journal of Communications and Networks,0.959059591541842
-1229-9138,International Journal of Automotive Technology,1.12823347914953
 1230-1612,Open Systems and Information Dynamics,0.413247539685442
 1230-3402,Opto-electronics Review,0.970543788227565
 1233-1821,Foundations of Science,1.06841729538439
 1234-2238,Psychology of Language and Communication,0.754597369322503
 1234-3099,Discussiones Mathematicae - Graph Theory,1.15664327275746
-1246-0125,Journal of Decision Systems,0.570784650561826
-1246-7405,Journal de Theorie des Nombres de Bordeaux,0.879600643408743
 1270-9638,Aerospace Science and Technology,2.04078636712152
-1279-5127,Document Numerique,0.0446418977004083
 1281-2463,Philosophia Scientiae,0.36997858299514
 1286-0042,EPJ Applied Physics,0.407561708629234
 1290-0729,International Journal of Thermal Sciences,1.71367616798182
@@ -1227,61 +939,38 @@ journal_issn,journal_title,snip_latest
 1292-8119,"ESAIM - Control, Optimisation and Calculus of Variations",1.09745402772465
 1300-0098,Turkish Journal of Mathematics,0.995929050042173
 1300-0632,Turkish Journal of Electrical Engineering and Computer Sciences,0.532135703129232
-1303-5150,NeuroQuantology,1.03841233900299
 1311-0454,Fractional Calculus and Applied Analysis,1.92403568560147
 1314-3247,"Geometry, Integrability and Quantization",0.574388178735772
 1319-1578,Journal of King Saud University - Computer and Information Sciences,2.04559425004352
-1323-3580,Publications of the Astronomical Society of Australia,0.748337008367194
 1330-3651,Tehnicki Vjesnik,0.493146272155811
-1335-8871,Measurement Science Review,0.668524008958722
-1337-7892,Glottotheory,1.04447354803562
-1340-6000,Optical Review,0.766422757527065
-1343-8875,Journal of Visualization,0.807965759174336
 1346-0714,Transactions of the Japanese Society for Artificial Intelligence,0.101202469829605
-1347-3182,Magnetic Resonance in Medical Sciences,1.02253634371592
 1350-4533,Medical Engineering and Physics,1.09114657883504
-1350-486X,Applied Mathematical Finance,1.0374596970363
-1350-6285,Visual Cognition,0.693202904102664
 1350-6307,Engineering Failure Analysis,1.71103986821434
 1350-7265,Bernoulli,1.57041172491972
 1351-3249,Natural Language Engineering,1.1668529516619
-1352-4739,Japanese Economic Review,0.40507252457468
 1353-3452,Science and Engineering Ethics,1.99426685372311
-1353-8292,Health and Place,1.61080847040801
 1354-0688,Party Politics,1.98469915976653
-1355-0306,Science and Justice - Journal of the Forensic Science Society,1.12466103564884
 1355-2546,Rapid Prototyping Journal,1.19274768141537
 1359-4184,Molecular Psychiatry,3.48405578188602
-1359-4311,Applied Thermal Engineering,1.88782723980994
 1359-4338,Virtual Reality,2.63291883332119
-1359-6446,Drug Discovery Today,1.91959198701508
 1359-6454,Acta Materialia,2.68985733878944
 1359-835X,Composites - Part A: Applied Science and Manufacturing,2.03278761979036
 1359-8368,Composites Part B: Engineering,2.51060547262894
-1360-2357,Education and Information Technologies,2.12091907418158
-1360-6441,Journal of Sociolinguistics,1.89788015806859
 1361-1682,Transactions in GIS,1.1584901844122
 1361-4533,New Review of Academic Librarianship,0.784597528779768
 1361-4568,New Review of Hypermedia and Multimedia,0.581402382103
 1361-8415,Medical Image Analysis,4.04238864827514
-1361-9209,"Transportation Research, Part D: Transport and Environment",2.10990386513077
 1364-0321,Renewable and Sustainable Energy Reviews,4.53461896800305
 1364-5021,"Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences",1.29276296125244
 1364-503X,"Philosophical transactions. Series A, Mathematical, physical, and engineering sciences",1.43988871965353
-1364-6613,Trends in Cognitive Sciences,6.62674899023723
 1364-8152,Environmental Modelling and Software,1.78018474732485
-1365-1609,International Journal of Rock Mechanics and Minings Sciences,2.66693712488905
 1365-8816,International Journal of Geographical Information Science,1.75329767138551
-1366-5545,"Transportation Research, Part E: Logistics and Transportation Review",2.69597355855012
 1367-0751,Logic Journal of the IGPL,1.19580935205037
 1367-4803,Bioinformatics,2.27242956135578
 1367-5788,Annual Reviews in Control,4.45404367299308
 1368-2148,International Journal of Manufacturing Technology and Management,0.23705438386006
 1368-2199,Imaging Science Journal,0.466946829576092
 1368-4221,Econometrics Journal,2.93916269807704
-1369-1058,"Culture, Health and Sexuality",1.32965521742685
-1369-1465,Social Science Japan Journal,0.952015312341388
-1369-7021,Materials Today,4.20215545922269
 1369-7412,Journal of the Royal Statistical Society. Series B: Statistical Methodology,3.94068757982898
 1370-4621,Neural Processing Letters,0.800079202671875
 1380-7501,Multimedia Tools and Applications,1.05491068121581
@@ -1297,67 +986,44 @@ journal_issn,journal_title,snip_latest
 1384-5640,Multibody System Dynamics,1.88006333785924
 1384-5810,Data Mining and Knowledge Discovery,2.52991893846395
 1384-6175,GeoInformatica,1.33719273261993
-1384-6655,International Journal of Corpus Linguistics,1.37682510124133
 1385-0172,Mathematical Physics Analysis and Geometry,0.847969634183441
-1385-2256,Precision Agriculture,1.94664590592503
-1385-9587,NETNOMICS: Economic Research and Electronic Networking,0.992431341038519
-1386-4157,Experimental Economics,1.70375828360541
 1386-4564,Information Retrieval,1.62003455335494
-1386-5056,International Journal of Medical Informatics,1.92855133267001
-1386-6710,Profesional de la Informacion,1.49716168449479
 1386-7857,Cluster Computing,1.00185124441159
 1386-9477,Physica E: Low-Dimensional Systems and Nanostructures,0.842135322258939
 1386-9620,Health Care Management Science,1.4805951153753
 1387-1307,Journal of Clinical Monitoring and Computing,1.0370115392251
 1387-2532,Autonomous Agents and Multi-Agent Systems,1.6376686875499
-1387-2877,Journal of Alzheimer's Disease,1.12110805014762
 1387-3326,Information Systems Frontiers,2.30836766843706
 1387-5841,Methodology and Computing in Applied Probability,1.0376367364574
-1387-5868,Spatial Cognition and Computation,0.691659780624091
 1387-974X,Photonic Network Communications,0.905175418095544
-1388-0764,Journal of Nanoparticle Research,0.527108563816738
-1388-1957,Ethics and Information Technology,2.92152517192516
 1389-0417,Cognitive Systems Research,1.76029182590491
 1389-1286,Computer Networks,1.8033452220027
 1389-2576,Genetic Programming and Evolvable Machines,1.03579032280557
 1389-4420,Optimization and Engineering,1.43168682398714
 1392-5113,Nonlinear Analysis: Modelling and Control,1.11156876342172
 1392-6292,Mathematical Modelling and Analysis,1.0949496741463
-1394-6234,Malaysian Journal of Library and Information Science,0.986759133044022
 1420-0597,Computational Geosciences,1.23825930150033
 1422-6383,Results in Mathematics,1.32077189314287
 1422-6928,Journal of Mathematical Fluid Mechanics,1.34926134393167
 1424-0637,Annales Henri Poincare,1.05405273973018
 1424-8247,Pharmaceuticals,1.22313415665368
-1424-9286,Milan Journal of Mathematics,1.16842019499377
-1425-6908,Journal of Applied Analysis,0.394304979721472
 1431-7613,Theory in Biosciences,0.872500212804322
 1431-9276,Microscopy and Microanalysis,0.455353438018411
-1432-2994,Mathematical Methods of Operations Research,0.862235099324174
 1432-4350,Theory of Computing Systems,1.00354260199793
 1432-5012,International Journal on Digital Libraries,1.10367279170658
 1432-7643,Soft Computing,1.37939745388077
 1432-9360,Computing and Visualization in Science,1.56703102774979
 1433-2779,International Journal on Software Tools for Technology Transfer,1.15101557161806
 1433-2833,International Journal on Document Analysis and Recognition,2.08679371331728
-1433-5298,Artificial Life and Robotics,0.442298242079116
-1433-5883,Journal of Group Theory,1.17844666021372
 1433-7541,Pattern Analysis and Applications,1.02969315226435
-1433-7851,Angewandte Chemie - International Edition,2.3227783663821
-1434-4742,Review of Economic Design,0.954017104264497
 1434-6028,European Physical Journal B,0.543972813767411
 1434-6044,European Physical Journal C,1.27761048272467
 1434-6060,European Physical Journal D,0.64242928785712
 1434-8411,AEU - International Journal of Electronics and Communications,1.34880256558561
-1435-246X,Central European Journal of Operations Research,1.53017975447099
 1435-5558,"Cognition, Technology and Work",1.25225567513946
 1435-9855,Journal of the European Mathematical Society,2.7304571711686
-1436-3240,Stochastic Environmental Research and Risk Assessment,1.20532187696374
 1439-4235,ChemPhysChem,0.77683826915907
-1446-1811,ANZIAM Journal,0.576146468657771
 1446-7887,Journal of the Australian Mathematical Society,1.02484435490089
-1449-8618,Australasian Journal of Information Systems,0.721966219486431
-1452-8630,Applicable Analysis and Discrete Mathematics,1.05234838645222
 1460-4582,Health Informatics Journal,1.1311630350861
 1460-7425,JASSS,2.05119646287891
 1461-4448,New Media and Society,4.28197893533429
@@ -1367,7 +1033,6 @@ journal_issn,journal_title,snip_latest
 1463-9076,Physical Chemistry Chemical Physics,0.947393624944229
 1467-2960,Fish and Fisheries,2.91513039974019
 1467-5463,Briefings in Bioinformatics,3.29291907850509
-1468-0777,Feminist Media Studies,1.73591844478623
 1468-0874,International Journal of Engine Research,2.30634415662179
 1468-1218,Nonlinear Analysis: Real World Applications,1.48224994281513
 1468-4527,Online Information Review,1.07673187728577
@@ -1376,19 +1041,15 @@ journal_issn,journal_title,snip_latest
 1469-7688,Quantitative Finance,1.52821059179726
 1470-160X,Ecological Indicators,1.66537903726563
 1470-2045,"Lancet Oncology, The",11.4175491720726
-1470-3297,Innovations in Education and Teaching International,1.44633189926084
-1470-6067,International Journal of Electronic Business,0.534903456118257
 1470-8396,"Law, Probability and Risk",0.418103782406522
 1471-0684,Theory and Practice of Logic Programming,1.44678428032998
 1471-2105,BMC Bioinformatics,1.10531354520928
 1471-2164,BMC Genomics,1.23714356806507
 1471-2288,BMC Medical Research Methodology,2.74244734683151
 1471-2342,BMC Medical Imaging,1.1915969554038
-1471-2407,BMC Cancer,1.30757436761541
 1471-678X,IMA Journal of Management Mathematics,0.983594304255261
 1472-6947,BMC Medical Informatics and Decision Making,1.38683037025722
 1473-5504,International Journal of Astrobiology,0.459954913466532
-1473-804X,"International Journal of Simulation: Systems, Science and Technology",0.290660144687548
 1473-8716,Information Visualization,1.46490150139084
 1474-0346,Advanced Engineering Informatics,2.20188608523476
 1475-2875,Malaria Journal,1.27710497871513
@@ -1396,33 +1057,23 @@ journal_issn,journal_title,snip_latest
 1475-7516,Journal of Cosmology and Astroparticle Physics,0.986396522704124
 1475-9217,Structural Health Monitoring,2.26722342892608
 1476-1122,Nature Materials,6.44583478063082
-1476-8186,International Journal of Automation and Computing,1.60995043939352
 1476-9271,Computational Biology and Chemistry,0.870712751756269
-1476-945X,Ecological Complexity,0.967637979018023
 1477-7487,Surveillance & Society,1.20147595459946
 1477-7835,Management of Environmental Quality,1.18946181035826
 1477-8424,"Computer Languages, Systems and Structures",1.30196665160793
 1477-8599,Mathematical Medicine and Biology,0.810832985723348
-1477-9056,International Journal of Product Development,0.381331938699097
 1477-965X,Technoetic Arts,0.206203698494691
 1478-0771,International Journal of Architectural Computing,1.02142585187369
-1478-3967,Physical Biology,0.751767443353206
-1478-4505,Health Research Policy and Systems,1.65809169596436
 1479-8409,Journal of Financial Econometrics,2.34867532965441
 1492-3831,International Review of Research in Open and Distance Learning,2.08891294904079
 1508-2806,Computer Science,0.474618265932738
-1513-1874,ScienceAsia,0.553243057180284
-1520-6106,Journal of Physical Chemistry B,0.910686917600137
 1520-9202,IT Professional,1.04472360584717
 1520-9210,IEEE Transactions on Multimedia,2.49032135660785
 1521-9615,Computing in Science and Engineering,0.846592474823235
 1524-0703,Graphical Models,0.552398942013529
-1524-1904,Applied Stochastic Models in Business and Industry,1.0160157164703
 1524-9050,IEEE Transactions on Intelligent Transportation Systems,2.92827162292251
-1525-2027,"Geochemistry, Geophysics, Geosystems",1.44489252992338
 1526-1719,Journal of Graph Algorithms and Applications,0.778780133949736
 1526-6125,Journal of Manufacturing Processes,1.798682503259
-1527-0025,Journal of Sports Economics,1.4174045090398
 1529-3181,Communications of the Association for Information Systems,1.0671775891869
 1529-3785,ACM Transactions on Computational Logic,0.987349781733566
 1530-437X,IEEE Sensors Journal,1.50478549667716
@@ -1430,11 +1081,8 @@ journal_issn,journal_title,snip_latest
 1530-6984,Nano Letters,1.9699517621668
 1530-8669,Wireless Communications and Mobile Computing,0.923478825566265
 1530-9827,Journal of Computing and Information Science in Engineering,0.988134195686786
-1531-1309,IEEE Microwave and Wireless Components Letters,1.4240304025339
-1531-636X,IEEE Circuits and Systems Magazine,1.46831829041104
 1532-0464,Journal of Biomedical Informatics,1.78788725510117
 1532-0626,Concurrency Computation Practice and Experience,0.835114154050187
-1532-6349,Stochastic Models,0.963030268365678
 1533-2861,Journal of Internet Commerce,1.62374824872984
 1533-5399,ACM Transactions on Internet Technology,1.43212455767293
 1533-7146,Quantum Information and Computation,0.696918804998098
@@ -1448,22 +1096,17 @@ journal_issn,journal_title,snip_latest
 1536-1276,IEEE Transactions on Wireless Communications,2.32097006167412
 1536-1284,IEEE Wireless Communications,3.37555798005326
 1537-5110,Biosystems Engineering,1.86131409298712
-1538-9588,Traffic Injury Prevention,1.09131707434787
 1539-2791,Neuroinformatics,1.34090806638514
 1539-6746,Communications in Mathematical Sciences,0.817864469626644
 1539-9087,Transactions on Embedded Computing Systems,0.896680358826493
 1540-3459,Multiscale Modeling and Simulation,0.930550037750784
-1540-7063,Integrative and Comparative Biology,0.99528091510067
 1540-7977,IEEE Power and Energy Magazine,1.24593502519363
 1540-7993,IEEE Security and Privacy,1.4821423558033
 1540-9589,Journal of Web Engineering,0.757416823734761
 1541-1672,IEEE Intelligent Systems,2.13786774526982
-1542-0973,International Journal of Satellite Communications and Networking,1.10570199593623
 1542-7951,Internet Mathematics,0.0
 1543-8384,Molecular Pharmaceutics,1.0849965572545
-1544-3558,ACM Transactions on Applied Perception,0.927570360791464
 1544-3566,Transactions on Architecture and Code Optimization,1.07734231773434
-1544-6115,Statistical Applications in Genetics and Molecular Biology,0.454563563461769
 1544-6123,Finance Research Letters,2.53027458239912
 1545-2255,Structural Control and Health Monitoring,2.19219053820792
 1545-5955,IEEE Transactions on Automation Science and Engineering,2.08228021189686
@@ -1476,13 +1119,11 @@ journal_issn,journal_title,snip_latest
 1547-5816,Journal of Industrial and Management Optimization,0.733846464213607
 1548-0992,IEEE Latin America Transactions,0.504667966942709
 1548-3908,International Journal of Technology and Human Interaction,0.739027032352328
-1548-3924,International Journal of Data Warehousing and Mining,0.710170080043578
 1548-5129,Journal of Defense Modeling and Simulation,0.537753558241319
 1548-7091,Nature Methods,8.13062005968741
 1548-7660,Journal of Statistical Software,4.01841838123969
 1549-3636,Journal of Computer Science,0.36623489203246
 1549-4950,AES: Journal of the Audio Engineering Society,0.702614864924706
-1549-5787,Probability Surveys,3.34101124465328
 1549-6325,ACM Transactions on Algorithms,1.72516137611355
 1549-7747,IEEE Transactions on Circuits and Systems II: Express Briefs,1.46740956283855
 1549-8328,IEEE Transactions on Circuits and Systems I: Regular Papers,1.68781254706358
@@ -1495,7 +1136,6 @@ journal_issn,journal_title,snip_latest
 1550-4859,ACM Transactions on Sensor Networks,1.15184059420677
 1551-305X,Foundations and Trends in Theoretical Computer Science,1.75709336897522
 1551-3203,IEEE Transactions on Industrial Informatics,3.47121484593713
-1551-3777,Integrated Environmental Assessment and Management,0.876797288076001
 1551-6857,"ACM Transactions on Multimedia Computing, Communications and Applications",1.36843874810621
 1552-3098,IEEE Transactions on Robotics,3.59712368816663
 1552-4922,Cytometry. Part A : the journal of the International Society for Analytical Cytology,1.26632573190486
@@ -1503,9 +1143,6 @@ journal_issn,journal_title,snip_latest
 1553-3506,Surgical Innovation,0.876648322664559
 1553-877X,IEEE Communications Surveys and Tutorials,11.3147836538624
 1554-0669,Foundations and Trends in Information Retrieval,6.54274396241693
-1554-351X,Behavior Research Methods,3.57185231242679
-1554-7191,International Entrepreneurship and Management Journal,2.46801814552346
-1555-1229,"Interdisciplinary Journal of Information, Knowledge, and Management",1.58233290299127
 1556-1801,Networks and Heterogeneous Media,0.855310017668705
 1556-4665,ACM Transactions on Autonomous and Adaptive Systems,1.06169636026767
 1556-4673,Journal on Computing and Cultural Heritage,1.9715878706935
@@ -1515,27 +1152,18 @@ journal_issn,journal_title,snip_latest
 1556-603X,IEEE Computational Intelligence Magazine,5.75101591300129
 1556-6056,IEEE Computer Architecture Letters,0.907567444579185
 1556-6072,IEEE Vehicular Technology Magazine,2.83402592379246
-1556-8318,International Journal of Sustainable Transportation,1.51850915363514
 1556-8598,PET Clinics,0.755383818543474
 1557-2064,Sensing and Imaging,0.585421701073597
 1557-3958,International Journal of Cognitive Informatics and Natural Intelligence,0.333584710427728
-1558-8424,Journal of Applied Meteorology and Climatology,1.11417865659297
 1559-1131,ACM Transactions on the Web,1.47092017277952
 1559-128X,Applied Optics,0.990652872228522
 1559-2332,Simulation in Healthcare,1.22348906688426
 1560-3547,Regular and Chaotic Dynamics,1.13048092081228
-1560-4292,International Journal of Artificial Intelligence in Education,2.71560777761611
-1560-4624,International Journal of Continuing Engineering Education and Life-Long Learning,0.499486238681962
 1560-7534,Journal of Computational Technologies,0.49778482960308
-1561-4263,Police Practice and Research,1.29530498701631
 1561-8625,Asian Journal of Control,1.30714416495985
 1562-2479,International Journal of Fuzzy Systems,1.25030273677709
-1565-1339,International Journal of Nonlinear Sciences and Numerical Simulation,0.9668613213601
-1566-113X,Networks and Spatial Economics,1.34803276241519
-1566-1199,Organic Electronics,0.71990815404299
 1566-2535,Information Fusion,5.03158393200541
 1567-133X,Gene Expression Patterns,0.408236811807238
-1567-1348,"Infection, Genetics and Evolution",1.12160890992622
 1567-2190,Foundations and Trends in Communications and Information Theory,4.40646467063418
 1567-4223,Electronic Commerce Research and Applications,1.99076049453235
 1567-567X,Journal of Pharmacokinetics and Pharmacodynamics,0.999767301826871
@@ -1546,7 +1174,6 @@ journal_issn,journal_title,snip_latest
 1569-8025,Journal of Computational Electronics,0.991310386352251
 1569-8432,International Journal of Applied Earth Observation and Geoinformation,2.02458198931076
 1570-0755,Quantum Information Processing,0.805192324169256
-1570-0844,Semantic Web,2.92897887493321
 1570-2820,Journal of Numerical Mathematics,2.72408776812941
 1570-7873,Journal of Grid Computing,1.5907468729014
 1570-8268,Web Semantics,2.47008703522665
@@ -1555,11 +1182,8 @@ journal_issn,journal_title,snip_latest
 1571-0645,Physics of Life Reviews,3.46355158266919
 1571-0653,Electronic Notes in Discrete Mathematics,0.711554899682152
 1571-0661,Electronic Notes in Theoretical Computer Science,0.885465593506906
-1572-0373,Interaction Studies,0.660838775660413
 1572-2740,Foundations and Trends in Computer Graphics and Vision,4.07423006569401
 1572-5286,Discrete Optimization,1.22449119827964
-1572-9176,Georgian Mathematical Journal,0.852458798388113
-1573-3882,Metabolomics,1.16007772250076
 1573-4056,Current Medical Imaging,0.402739586913415
 1573-4277,Optical Switching and Networking,1.14699868610727
 1574-0137,Computer Science Review,4.79037396655754
@@ -1571,53 +1195,35 @@ journal_issn,journal_title,snip_latest
 1582-7445,Advances in Electrical and Computer Engineering,0.544940758361811
 1598-0316,Journal of Information Display,1.20636544043874
 1598-6446,"International Journal of Control, Automation and Systems",1.07497525493983
-1607-3606,Quaestiones Mathematicae,1.045761748316
 1607-9264,Journal of Internet Technology,0.442778759832944
 1609-4840,Computational Methods in Applied Mathematics,0.961554600365078
-1610-2940,Journal of Molecular Modeling,0.62478444188684
-1611-2776,IT - Information Technology,0.482921740894955
 1612-2011,Laser Physics Letters,0.670325784732842
-1612-4782,Cognitive Processing,1.00327294071214
-1613-7027,Corpus Linguistics and Linguistic Theory,2.47480283183631
-1614-5046,Innovations in Systems and Software Engineering,0.9176291799553
 1615-147X,Structural and Multidisciplinary Optimization,1.68065944793922
 1615-3375,Foundations of Computational Mathematics,2.48655817411131
 1615-5262,International Journal of Information Security,1.29592281831263
 1615-5289,Universal Access in the Information Society,2.01467559513235
 1615-9853,Proteomics,0.831073950950485
-1616-301X,Advanced Functional Materials,2.46043683010687
 1617-4909,Personal and Ubiquitous Computing,1.13566698700512
 1617-7959,Biomechanics and Modeling in Mechanobiology,1.33403181402384
-1617-9447,Computational Methods and Function Theory,1.41147632699586
 1617-9625,Tobacco Induced Diseases,1.36963690399622
 1617-9846,Information Systems and e-Business Management,1.21060676505044
 1619-1366,Software and Systems Modeling,1.74362178263795
-1619-4500,4OR,1.49912607608269
 1619-697X,Computational Management Science,0.741689748820326
 1631-0705,Comptes Rendus Physique,0.140900716060814
 1631-0721,Comptes Rendus - Mecanique,0.84708813220159
 1631-073X,Comptes Rendus Mathematique,0.882788588337552
 1633-1311,Ingenierie des Systemes d'Information,0.579109437218667
-1641-876X,International Journal of Applied Mathematics and Computer Science,0.98108201432964
-1644-9665,Archives of Civil and Mechanical Engineering,1.72162549983859
 1646-9895,RISTI - Revista Iberica de Sistemas e Tecnologias de Informacao,0.257258191580697
 1647-0818,Linguamatica,0.405705965181772
-1648-7788,Aviation,0.87682129760104
 1658-0311,Scientific Journal of King Faisal University,0.174501223937699
-1660-1769,Journal of Object Technology,0.667889098687666
-1661-7738,Journal of Fixed Point Theory and Applications,1.49551609737751
 1661-8270,Mathematics in Computer Science,0.737625758432951
-1661-8297,Logica Universalis,0.837897628800457
 1662-5099,Frontiers in Molecular Neuroscience,1.32713942925484
 1662-5110,Frontiers in Neural Circuits,1.11857594458141
-1662-5129,Frontiers in Neuroanatomy,1.188625751127
 1662-5137,Frontiers in Systems Neuroscience,1.01629397563821
-1662-5153,Frontiers in Behavioral Neuroscience,1.16588639121691
 1662-5161,Frontiers in Human Neuroscience,1.24945070233685
 1662-5188,Frontiers in Computational Neuroscience,1.11392086659271
 1662-5196,Frontiers in Neuroinformatics,1.56340877465836
 1662-5218,Frontiers in Neurorobotics,1.3643266341948
-1663-487X,Quantum Topology,1.02707940355769
 1664-042X,Frontiers in Physiology,1.42203882970467
 1664-1078,Frontiers in Psychology,1.60463805520151
 1664-2295,Frontiers in Neurology,1.28021633495189
@@ -1625,92 +1231,48 @@ journal_issn,journal_title,snip_latest
 1664-302X,Frontiers in Microbiology,1.49731991200763
 1664-462X,Frontiers in Plant Science,1.82721824813144
 1671-9433,Journal of Marine Science and Application,1.00597101724762
-1672-6529,Journal of Bionic Engineering,1.05975152857769
-1673-3452,Frontiers of Mathematics in China,0.612774244608428
 1673-5447,China Communications,1.14873253105536
-1673-565X,Journal of Zhejiang University: Science A,0.949356708068122
 1674-0068,Chinese Journal of Chemical Physics,0.3224693164166
 1674-1056,Chinese Physics B,0.529171709451611
-1674-4527,Research in Astronomy and Astrophysics,0.5703817727209
 1674-7283,Science China Mathematics,1.06444524750895
-1674-7321,Science China Technological Sciences,1.25648096334228
 1674-733X,Science China Information Sciences,1.49442307719077
 1674-7348,"Science China: Physics, Mechanics and Astronomy",1.21714763903547
-1676-3939,Musica Hodie,0.371401809888252
 1678-5878,Journal of the Brazilian Society of Mechanical Sciences and Engineering,0.88805995927825
-1683-1470,Data Science Journal,0.889420366010255
 1684-4769,International Journal of Computer Science in Sport,0.813133707272266
 1686-4360,Computer-Aided Design and Applications,0.485378481480829
 1687-4188,International Journal of Biomedical Imaging,1.59440114594136
-1687-4714,"Eurasip Journal on Audio, Speech, and Music Processing",0.951881477352848
-1687-5176,Eurasip Journal on Image and Video Processing,1.47758414263228
-1687-5265,Computational Intelligence and Neuroscience,1.55880450453389
-1687-5869,International Journal of Antennas and Propagation,0.723585658702733
 1687-5966,International Journal of Aerospace Engineering,0.850843342299842
-1687-6415,International Journal of Telemedicine and Applications,0.678257169923448
 1687-7047,International Journal of Computer Games Technology,2.59440427029137
-1687-725X,Journal of Sensors,0.869638436094729
 1687-7357,Advances in High Energy Physics,0.622710808619263
-1687-8086,Advances in Civil Engineering,0.796961655994072
 1687-9120,Advances in Mathematical Physics,0.560043321758558
-1687-9147,Advances in Operations Research,1.33375213141847
 1687-9384,International Journal of Optics,0.565369506470995
-1708-5284,World Journal of Engineering,0.663036137568543
-1726-2135,Journal of Environmental Informatics,1.69337432461853
 1738-494X,Journal of Mechanical Science and Technology,0.946336793307874
-1740-8865,International Journal of Intelligent Systems Technologies and Applications,0.267972023209412
-1741-0401,International Journal of Productivity and Performance Management,1.31004380069823
-1741-1106,International Journal of Web and Grid Services,2.64224179706578
 1741-2560,Journal of Neural Engineering,1.65694650230053
 1741-5977,Inverse Problems in Science and Engineering,1.03848758340857
 1741-7007,BMC Biology,1.51107275535042
-1741-8453,International Journal of Electronic Healthcare,0.4793509014613
-1741-8763,International Journal of Business Process Integration and Management,0.475824253342799
-1742-2132,Journal of Geophysics and Engineering,0.867997685406949
-1742-4682,Theoretical Biology and Medical Modelling,1.00526880769893
-1742-5360,International Journal of Entrepreneurial Venturing,0.693922862007592
 1742-5468,Journal of Statistical Mechanics: Theory and Experiment,0.806145500743331
 1742-5689,Journal of the Royal Society Interface,1.56164730897056
 1742-6588,Journal of Physics: Conference Series,0.394915398743675
 1742-7061,Acta Biomaterialia,1.83381296742528
 1742-7185,International Journal of Computational Science and Engineering,0.459753403153733
-1742-7355,International Journal of Economic Theory,0.891521476559122
-1742-7371,International Journal of Pervasive Computing and Communications,0.943633825453904
 1743-0003,Journal of NeuroEngineering and Rehabilitation,1.93925075818831
-1743-8187,International Journal of Business Intelligence and Data Mining,0.308215344178456
-1743-9213,Proceedings of the International Astronomical Union,0.0484973437172273
 1744-2370,International Journal of Services and Operations Management,0.521432771828293
-1744-2508,Stochastics,1.17096760123152
-1744-2621,"International Journal of Metadata, Semantics and Ontologies",0.835941895075739
 1744-5485,International Journal of Bioinformatics Research and Applications,0.305030126401343
 1744-5760,"International Journal of Parallel, Emergent and Distributed Systems",0.67649887020657
 1744-683X,Soft Matter,1.01657925694205
 1745-2473,Nature Physics,4.68337244116965
-1745-2759,Virtual and Physical Prototyping,1.99327946804232
 1745-3925,Monthly Notices of the Royal Astronomical Society: Letters,0.9085491493729
 1745-6150,Biology Direct,1.02742218919628
 1745-9737,Journal of Mathematics and Music,0.958372910859818
-1746-1596,Diagnostic Pathology,1.07783880661799
 1746-4811,Plant Methods,1.93446697089091
-1746-6172,"International Journal of Modelling, Identification and Control",0.282444651119896
 1746-725X,International Journal of Mobile Learning and Organisation,1.3577906505829
 1746-8094,Biomedical Signal Processing and Control,1.85523140277792
-1747-7778,Journal of Simulation,1.21734294574489
-1748-006X,"Proceedings of the Institution of Mechanical Engineers, Part O: Journal of Risk and Reliability",0.948501938075093
 1748-0221,Journal of Instrumentation,0.711069741082228
 1748-0671,International Journal of System of Systems Engineering,0.395440973951292
 1748-0698,International Journal of Signal and Imaging Systems Engineering,0.411065049844331
-1748-3107,Disability and Rehabilitation: Assistive Technology,1.21563340115372
 1748-3182,Bioinspiration and Biomimetics,1.30133896987383
-1748-5673,International Journal of Data Mining and Bioinformatics,0.175544885893404
-1748-569X,International Journal of Internet Technology and Secured Transactions,0.489178426430215
-1748-5983,Regulation and Governance,2.2959986214416
-1748-670X,Computational and Mathematical Methods in Medicine,0.963169335812589
-1748-7188,Algorithms for Molecular Biology,0.853193660739817
 1748-9326,Environmental Research Letters,1.79473200856031
 1748-9725,Journal of Location Based Services,1.10471666861585
-1749-4885,Nature Photonics,7.67311784304679
-1749-5032,Corpora,1.37704346387284
 1751-1577,Journal of Informetrics,2.22820859012436
 1751-3472,Journal of Mathematics and the Arts,0.446577349030538
 1751-570X,Nonlinear Analysis: Hybrid Systems,1.64854981045462
@@ -1719,7 +1281,6 @@ journal_issn,journal_title,snip_latest
 1751-8628,IET Communications,0.598867692173263
 1751-8644,IET Control Theory and Applications,0.878911762662557
 1751-8687,"IET Generation, Transmission and Distribution",1.09333450754466
-1751-8709,IET Information Security,0.838567728110465
 1751-8725,"IET Microwaves, Antennas and Propagation",0.890678217004468
 1751-8806,IET Software,0.824502798916692
 1751-8849,IET Systems Biology,0.496583152875408
@@ -1727,50 +1288,29 @@ journal_issn,journal_title,snip_latest
 1751-9632,IET Computer Vision,0.806793179769291
 1751-9659,IET Image Processing,0.827738184670859
 1751-9675,IET Signal Processing,0.759044764456786
-1752-0509,BMC Systems Biology,1.01991724017536
-1752-1416,IET Renewable Power Generation,1.17381291522848
 1752-9131,International Journal of Computational Vision and Robotics,0.26905312268236
-1753-0822,"International Journal of Services, Economics and Management",0.331145426267978
 1753-3309,"International Journal of Oil, Gas and Coal Technology",0.359653291221162
-1753-5123,Reviews in Aquaculture,3.26248240323358
-1753-8432,International Journal of Procurement Management,0.736412111484634
 1754-3916,International Journal of Communication Networks and Distributed Systems,0.569044032888285
 1755-0203,Review of Symbolic Logic,1.84429306331448
-1755-0386,International Journal of Advanced Intelligence Paradigms,0.473005027372679
-1755-1307,IOP Conference Series: Earth and Environmental Science,0.40876875703418
 1755-375X,Acta Ophthalmologica,1.66601371526344
 1755-4535,IET Power Electronics,0.894327230644847
-1755-5345,Journal of Choice Modelling,1.71617661748223
 1755-5817,CIRP Journal of Manufacturing Science and Technology,1.59275065277123
 1756-0381,BioData Mining,0.946791017727876
-1756-0500,BMC Research Notes,0.949696691653444
 1756-8757,Topics in Cognitive Science,1.75021276068951
 1757-8981,IOP Conference Series: Materials Science and Engineering,0.344440733077951
-1758-0366,International Journal of Bio-Inspired Computation,1.03305309412843
 1758-0463,Database : the journal of biological databases and curation,0.998540947563537
 1758-2946,Journal of Cheminformatics,2.238995313757
-1758-9193,Alzheimer's Research and Therapy,1.64786266743903
 1759-2879,Research Synthesis Methods,2.78840938285086
-1783-7677,Journal on Multimodal User Interfaces,1.14458218299569
 1793-0057,New Mathematics and Natural Computation,1.15532652897531
-1793-0421,International Journal of Number Theory,1.03132987585048
 1793-351X,International Journal of Semantic Computing,0.393938035314508
-1793-5571,Asian-European Journal of Mathematics,0.941748888632644
 1793-8309,"Discrete Mathematics, Algorithms and Applications",0.958180494176973
 1793-9623,"International Journal of Modeling, Simulation, and Scientific Computing",0.567774391866128
-1796-2021,Journal of Communications,0.357559571727191
-1804-1930,Agris On-line Papers in Economics and Informatics,0.617713361220396
-1813-3304,Siberian Electronic Mathematical Reports,0.742982831844678
 1815-0659,"Symmetry, Integrability and Geometry: Methods and Applications (SIGMA)",0.822321662635978
 1815-2406,Communications in Computational Physics,0.863693620640993
-1820-0214,Computer Science and Information Systems,0.561587430218129
-1821-3251,Telfor Journal,0.121211221993727
-1841-9836,"International Journal of Computers, Communications and Control",0.711560445239093
 1843-8121,Scientific Annals of Computer Science,0.40817969935804
 1845-6421,Journal of Communications Software and Systems,0.515711295436677
 1860-5974,Logical Methods in Computer Science,1.02372520303215
 1860-7179,ChemMedChem,0.885511472085038
-1861-2032,Journal on Data Semantics,1.28081460004905
 1861-2776,Intelligent Service Robotics,1.34164764424413
 1861-6410,International journal of computer assisted radiology and surgery,1.39733807443207
 1861-8200,Journal of Real-Time Image Processing,1.00806603672715
@@ -1778,35 +1318,23 @@ journal_issn,journal_title,snip_latest
 1862-4472,Optimization Letters,1.05627374486971
 1862-5347,Advances in Data Analysis and Classification,1.64006620925976
 1863-1703,"Signal, Image and Video Processing",0.785369775539604
-1863-2386,Service Oriented Computing and Applications,1.22530719540396
-1863-2483,Journal of Robotic Surgery,1.37030891315976
-1863-2653,Brain Structure and Function,1.03399572422928
-1863-8171,AStA Advances in Statistical Analysis,1.10859132512938
-1864-5909,Evolutionary Intelligence,1.15374802040987
 1865-0473,Earth Science Informatics,0.893883449879064
 1865-9284,Memetic Computing,1.52221358110913
-1866-749X,Public Transport,1.50690315065699
 1866-9298,Applied Geomatics,1.01586743284669
 1866-9956,Cognitive Computation,1.51549510482892
 1867-0717,European Transport Research Review,1.74390314887144
-1867-1144,"Groups, Complexity, Cryptology",1.1101711233051
-1867-2949,Mathematical Programming Computation,5.37404937904806
 1867-4828,Journal of Internet Services and Applications,2.01477880985895
 1868-1743,Molecular Informatics,1.005047441968
-1868-2502,CEAS Space Journal,1.31888165872341
 1868-3967,Energy Systems,0.910949623100175
 1868-5137,Journal of Ambient Intelligence and Humanized Computing,1.68991053376252
 1868-6478,Evolving Systems,1.04396352695657
 1868-7865,Journal of the Knowledge Economy,0.947702949058073
 1868-8071,International Journal of Machine Learning and Cybernetics,1.31984186869268
-1869-2672,GEM - International Journal on Geomathematics,1.03216134968374
 1869-408X,Cardiovascular Engineering and Technology,1.07530880535133
 1869-4187,SERIEs,0.845266558334443
 1869-5450,Social Network Analysis and Mining,1.24829231170101
-1871-4021,Diabetes and Metabolic Syndrome: Clinical Research and Reviews,1.89588155858262
 1871-4080,Cognitive Neurodynamics,1.50832324448144
 1872-4981,Intelligent Decision Technologies,0.465702675902052
-1874-3919,Journal of Proteomics,0.897801057204934
 1874-4907,Physical Communication,0.817174175802852
 1874-5482,International Journal of Critical Infrastructure Protection,1.78367456174486
 1874-7655,Statistical Journal of the IAOS,0.649759199468243
@@ -1814,12 +1342,8 @@ journal_issn,journal_title,snip_latest
 1875-4791,International Journal of Social Robotics,2.35471784887775
 1875-9521,Entertainment Computing,1.26579419550425
 1876-0341,Journal of Infection and Public Health,2.01769175245264
-1876-6102,Energy Procedia,0.959524610019829
 1877-0533,Set-Valued and Variational Analysis,1.37107901282634
-1877-0568,Orthopaedics and Traumatology: Surgery and Research,1.65641891483469
-1877-7058,Procedia Engineering,1.3593732085862
 1877-7503,Journal of Computational Science,1.72960544524179
-1878-5077,EPMA Journal,1.61738679462375
 1878-7789,Nano Communication Networks,1.15335978827316
 1899-2358,"Acta Physica Polonica B, Proceedings Supplement",0.193334366928798
 1930-5346,Advances in Mathematics of Communications,0.985116392625028
@@ -1830,8 +1354,6 @@ journal_issn,journal_title,snip_latest
 1931-7573,Nanoscale Research Letters,1.24043598278068
 1932-1864,Statistical Analysis and Data Mining,0.776302152320767
 1932-2054,Global Business and Organizational Excellence,0.578869658010108
-1932-2968,Journal of diabetes science and technology,1.06442457107048
-1932-4529,IEEE Industrial Electronics Magazine,2.69299755105602
 1932-4537,IEEE Transactions on Network and Service Management,1.69751223961374
 1932-4545,IEEE Transactions on Biomedical Circuits and Systems,1.93972059203105
 1932-4553,IEEE Journal on Selected Topics in Signal Processing,2.97652873455811
@@ -1843,7 +1365,6 @@ journal_issn,journal_title,snip_latest
 1933-1681,Journal of Information Technology and Politics,1.521364378508
 1935-0090,Applied Mathematics and Information Sciences,0.528026758394169
 1935-3812,Swarm Intelligence,1.25652594863166
-1935-7516,Statistics Surveys,3.54298986742656
 1935-8237,Foundations and Trends in Machine Learning,21.0849773113179
 1936-0975,Bayesian Analysis,2.24488995847063
 1936-1610,Journal of Applied Security Research,0.78915931149572
@@ -1854,29 +1375,21 @@ journal_issn,journal_title,snip_latest
 1936-7228,ACM Transactions on Accessible Computing,0.864137099363587
 1936-7406,ACM Transactions on Reconfigurable Technology and Systems,1.44163951768241
 1937-3333,IEEE Reviews in Biomedical Engineering,3.59523059702505
-1938-6389,Journal of Library Metadata,0.742253174484809
-1938-7849,Journal of Transport and Land Use,1.26920514132209
 1938-7857,Journal of Information Technology Research,0.673537051541958
-1938-7989,Statistics and its Interface,0.64573953021822
 1939-0114,Security and Communication Networks,1.07458001751774
 1939-1374,IEEE Transactions on Services Computing,3.48457927453059
 1939-1382,IEEE Transactions on Learning Technologies,2.04393696929688
 1939-1390,IEEE Intelligent Transportation Systems Magazine,1.84550209028089
 1939-1404,IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing,1.51182408516971
 1939-1412,IEEE Transactions on Haptics,1.43483920205309
-1939-3555,Information Security Journal,0.986269516753257
 1939-5108,Wiley Interdisciplinary Reviews: Computational Statistics,1.79137695943083
 1939-8018,Journal of Signal Processing Systems,0.599919231234642
 1940-1493,Journal of Building Performance Simulation,1.05999104847533
 1941-1383,Annual Review of Economics,4.27764192525044
 1941-4889,Journal of Geometric Mechanics,0.815878719036687
-1941-6210,International Journal of Digital Crime and Forensics,0.411407759658206
 1941-6237,International Journal of Ambient Computing and Intelligence,1.16530419167316
-1941-6296,International Journal of Decision Support System Technology,0.469700585392591
-1941-7012,Journal of Renewable and Sustainable Energy,0.714480284037244
 1942-2466,Journal of Advances in Modeling Earth Systems,1.80957945448294
 1942-3454,ACM Transactions on Computation Theory,0.747573470905917
-1942-390X,International Journal of Mobile Human Computer Interaction,0.437412086326919
 1942-3926,International Journal of Open Source Software and Processes,0.391080490792637
 1942-4302,Journal of Mechanisms and Robotics,1.36356654511083
 1942-4787,Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery,5.66169462167676
@@ -1887,10 +1400,6 @@ journal_issn,journal_title,snip_latest
 1943-9342,Journal of Development Effectiveness,0.718920872306634
 1944-7442,Environmental Progress and Sustainable Energy,0.721709424846809
 1945-497X,SIAM Journal on Financial Mathematics,1.27358739937588
-1947-5454,Annual Review of Condensed Matter Physics,5.8745774146238
-1947-5683,Annals of GIS,1.64979064279544
-1947-8283,International Journal of Applied Metaheuristic Computing,0.520400587089611
-1947-9263,International Journal of Swarm Intelligence Research,0.579048654388798
 1949-2553,Oncotarget,1.01863775578289
 1949-3029,IEEE Transactions on Sustainable Energy,2.54268016592951
 1949-3045,IEEE Transactions on Affective Computing,3.76758026854997
@@ -1898,15 +1407,9 @@ journal_issn,journal_title,snip_latest
 1949-307X,IEEE Magnetics Letters,0.59777390142195
 1951-6355,European Physical Journal: Special Topics,0.863065573310459
 1955-2513,International Journal on Interactive Design and Manufacturing,1.00379177502299
-1959-0318,IRBM,1.0765720020541
-1960-6206,International Journal of Material Forming,1.31172713723111
 1972-6724,Bolletino dell Unione Matematica Italiana,0.900126693711202
 1975-0102,Journal of Electrical Engineering and Technology,0.550716024895845
 1976-7277,KSII Transactions on Internet and Information Systems,0.408358540378677
-1976-913X,Journal of Information Processing Systems,0.653039829566584
-1988-5202,Journal of Human Sport and Exercise,0.637714939982112
-1990-3413,Astrophysical Bulletin,0.50941378558212
-1990-4789,Journal of Applied and Industrial Mathematics,0.852858669902304
 1994-2060,Engineering Applications of Computational Fluid Mechanics,2.42654680157495
 1994-9197,"Vestnik Udmurtskogo Universiteta: Matematika, Mekhanika, Komp'yuternye Nauki",0.627038617982992
 1995-0802,Lobachevskii Journal of Mathematics,0.973708562921879
@@ -1914,11 +1417,7 @@ journal_issn,journal_title,snip_latest
 1996-1944,Materials,1.13720303765347
 1998-4464,"International Journal of Circuits, Systems and Signal Processing",0.567244357917106
 1999-4893,Algorithms,0.910940542709203
-2005-4238,International Journal of Advanced Science and Technology,0.249871083414223
-2005-4297,International Journal of Control and Automation,0.393649282592383
 2010-3263,Random Matrices: Theory and Application,0.628547682465298
-2029-4913,Technological and Economic Development of Economy,1.38611600488588
-2040-3607,International Journal of Mathematical Modelling and Numerical Optimisation,0.807568602165971
 2040-7939,International Journal for Numerical Methods in Biomedical Engineering,1.15821483086163
 2040-8978,Journal of Optics (United Kingdom),0.895316034263929
 2041-1723,Nature Communications,3.34116916003264
@@ -1926,26 +1425,20 @@ journal_issn,journal_title,snip_latest
 2041-6520,Chemical Science,1.65989579268943
 2041-8205,Astrophysical Journal Letters,1.41827522080041
 2042-8898,Interface Focus,1.11738389734248
-2043-6386,IET Wireless Sensor Systems,1.00360027625122
-2045-1059,International Journal of Mechatronics and Automation,0.545904943211117
 2045-2322,Scientific Reports,1.38932037439669
-2045-7804,International Journal of Human Factors and Ergonomics,0.404735647867238
 2046-0430,International Journal of Transportation Science and Technology,2.01536361581779
 2047-4938,IET Biometrics,1.34639449560748
 2047-4954,IET Networks,1.03896574359878
 2048-8459,International Journal of Space Science and Engineering,0.399896702333421
 2049-6427,International Journal of Intelligent Unmanned Systems,0.633849144256283
-2049-8470,Political Science Research and Methods,2.66711595264463
 2050-084X,eLife,1.92715981649705
 2050-1242,Network Science,1.16164964173855
 2050-3806,Aslib Journal of Information Management,1.04776245536452
 2051-1310,Journal of Complex Networks,0.925070235079766
 2055-7671,Digital Scholarship in the Humanities,1.29647397946501
-2055-7795,Journal of Network Theory in Finance,0.776843371902316
 2056-4961,Information and Computer Security,0.945078937018065
 2057-2085,Journal of Cybersecurity,2.27513338267091
 2070-0466,"P-Adic Numbers, Ultrametric Analysis, and Applications",0.749163090985755
-2071-0216,"Bulletin of the South Ural State University, Series: Mathematical Modelling, Programming and Computer Software",0.809036188118844
 2071-0410,Prikladnaya Diskretnaya Matematika,0.626174981361919
 2071-1050,Sustainability,1.31025385240239
 2072-4292,Remote Sensing,1.54564157979865
@@ -1954,46 +1447,27 @@ journal_issn,journal_title,snip_latest
 2073-4441,Water (Switzerland),1.12782884366003
 2073-4859,R Journal,2.99503515620106
 2073-8994,Symmetry,1.12143789156764
-2074-904X,International Journal of Intelligent Systems and Applications,1.14565938473338
 2074-9090,International Journal of Computer Network and Information Security,1.38772847458822
 2075-2180,"Electronic Proceedings in Theoretical Computer Science, EPTCS",0.648383265654182
 2076-393X,Vaccines,1.16707546856576
 2078-2489,Information (Switzerland),1.13287267515132
 2081-8858,Operations Research and Decisions,0.122998790351201
-2090-0147,Journal of Electrical and Computer Engineering,0.79216123909522
-2090-3359,Advances in Decision Sciences,0.388281156770976
-2090-4479,Ain Shams Engineering Journal,2.04147723106902
 2090-7141,Journal of Computer Networks and Communications,1.18278907606769
-2090-9551,Information Sciences Letters,0.927482558803734
 2093-274X,International Journal of Aeronautical and Space Sciences,0.863709276767156
 2095-0462,Frontiers of Physics,0.963604972942066
 2095-2228,Frontiers of Computer Science,1.18152582413285
-2095-4689,Quantitative Biology,0.783313319291086
-2095-5138,National Science Review,2.93527341292818
 2095-6983,Control Theory and Technology,0.622590787850183
-2095-8099,Engineering,3.16751070835239
-2095-9184,Frontiers of Information Technology and Electronic Engineering,1.22207069246633
-2095-9273,Science Bulletin,2.02741491471529
-2096-0042,CSEE Journal of Power and Energy Systems,0.702893717851311
-2096-0433,Computational Visual Media,1.59549246352976
-2096-1081,Journal of Communications and Information Networks,0.650136141786009
 2096-1790,Forensic Sciences Research,1.7674843204827
-2096-4250,Automotive Innovation,0.834557032525464
 2150-704X,Remote Sensing Letters,0.827039090784828
 2150-8097,Proceedings of the VLDB Endowment,2.46358231917172
 2152-5080,International Journal for Uncertainty Quantification,0.726733645434235
 2153-0785,Dynamic Games and Applications,1.72954651125425
 2153-2648,International Journal of Prognostics and Health Management,0.633451057991858
-2155-3289,"Numerical Algebra, Control and Optimization",0.933800379633963
-2155-6849,International Journal of Game-Based Learning,1.08887696769247
 2156-3357,IEEE Journal on Emerging and Selected Topics in Circuits and Systems,1.81011107213846
-2156-3381,IEEE Journal of Photovoltaics,1.23436110651588
-2156-3950,"IEEE Transactions on Components, Packaging and Manufacturing Technology",1.03182837456444
 2156-7085,Biomedical Optics Express,1.45144775491969
 2156-8472,Mathematical Control and Related Fields,1.14635079867602
 2157-6904,ACM Transactions on Intelligent Systems and Technology,2.76612752261944
 2158-107X,International Journal of Advanced Computer Science and Applications,0.527985408264082
-2158-2440,SAGE Open,1.03561679424452
 2158-3188,Translational Psychiatry,1.75952831510856
 2158-3226,AIP Advances,0.627890048300175
 2158-5571,Algorithmic Finance,0.123107351048528
@@ -2005,8 +1479,6 @@ journal_issn,journal_title,snip_latest
 2162-237X,IEEE Transactions on Neural Networks and Learning Systems,3.30613336618914
 2164-6457,Journal of Applied Nonlinear Dynamics,0.444420414937269
 2164-8034,Information and Culture,0.460340890926986
-2165-0349,International Journal of Design Creativity and Innovation,1.17622315912572
-2166-2746,Journal of Vacuum Science and Technology B:Nanotechnology and Microelectronics,0.636175775246639
 2167-6461,Big Data,1.64719844640899
 2167-8359,PeerJ,1.0736389306964
 2167-8375,ACM Transactions on Economics and Computation,1.40791348186351
@@ -2025,7 +1497,6 @@ journal_issn,journal_title,snip_latest
 2169-5172,Soft Robotics,2.79457760824803
 2169-897X,Journal of Geophysical Research D: Atmospheres,1.38713500053683
 2186-2982,International Journal of GEOMATE,0.720652194420337
-2190-5444,European Physical Journal Plus,1.09831505214487
 2190-5452,Journal of Civil Structural Health Monitoring,1.42986331596874
 2190-5983,Journal of Mathematics in Industry,0.795228516357837
 2190-7188,Health and Technology,0.785340715925744
@@ -2035,8 +1506,6 @@ journal_issn,journal_title,snip_latest
 2192-4406,EURO Journal on Computational Optimization,1.11088029441581
 2192-6352,Progress in Artificial Intelligence,1.61122881102037
 2192-6611,International Journal of Multimedia Information Retrieval,2.21755214023976
-2193-1402,Statistics and Risk Modeling,0.636194738534883
-2193-5343,Arabian Journal of Mathematics,1.1112504777244
 2193-567X,Arabian Journal for Science and Engineering,1.03378771498892
 2193-8407,Journal of Homotopy and Related Structures,0.777697684865478
 2193-9764,Integrating Materials and Manufacturing Innovation,1.0444351103068
@@ -2046,55 +1515,36 @@ journal_issn,journal_title,snip_latest
 2195-268X,International Journal of Dynamics and Control,0.886578460487675
 2195-3880,"Journal of Control, Automation and Electrical Systems",0.752235827733774
 2196-4378,Computational Particle Mechanics,1.05036309823007
-2196-5609,Quantum Studies: Mathematics and Foundations,0.450099303201431
 2196-5625,Journal of Modern Power Systems and Clean Energy,1.60267469070909
 2197-9987,Journal of Computers in Education,1.9282105718208
-2198-1620,Management Review Quarterly,2.13237716510039
 2198-3844,Advanced Science,2.23805193753914
-2198-4018,Brain Informatics,2.35443275019229
 2198-5804,Annals of Data Science,1.57730197227014
 2199-160X,Advanced Electronic Materials,1.27453256714235
 2199-4668,Journal of Reliable Intelligent Environments,1.12778081722345
 2199-6792,Arnold Mathematical Journal,0.999104565605458
-2203-1693,Journal of Telecommunications and the Digital Economy,0.567425639101506
-2210-5379,Sustainable Computing: Informatics and Systems,1.77862818332146
 2210-5433,Philosophy and Technology,3.35937931294889
-2210-5824,Language Dynamics and Change,0.370487103215101
 2210-6502,Swarm and Evolutionary Computation,2.99091683519329
 2210-6707,Sustainable Cities and Society,2.53859109262415
 2211-3568,Computability,1.51046911436237
 2211-3711,Translation Spaces(Netherland),1.06620763645488
-2211-467X,Energy Strategy Reviews,2.70924270422223
 2211-6753,Spatial Statistics,1.35561872031387
-2211-8837,Health Policy and Technology,1.56263255314834
-2212-0416,Ecosystem Services,1.80679512053366
 2212-0548,Digital Applications in Archaeology and Cultural Heritage,1.64254686051104
 2212-0955,Urban Climate,1.79333128753835
-2212-4209,International Journal of Disaster Risk Reduction,1.82788205824855
 2212-683X,Biologically Inspired Cognitive Architectures,1.28394889413512
 2212-8271,Procedia CIRP,0.898897320610128
-2212-8689,International Journal of Child-Computer Interaction,2.15415963474116
 2213-1337,Astronomy and Computing,0.847477630111938
-2213-1582,NeuroImage: Clinical,1.45367748781276
 2214-5796,Big Data Research,1.89919464548703
-2228-6179,Iranian Journal of Science and Technology - Transactions of Electrical Engineering,0.737225255970147
 2234-943X,Frontiers in Oncology,1.1914645051148
 2238-3603,Computational and Applied Mathematics,1.12836268129964
 2251-1717,Journal of Astronomical Instrumentation,1.16271433545376
 2254-3902,SeMA Journal,1.07839245610343
-2255-8942,Baltic Journal of Modern Computing,0.421925041647834
-2287-9099,Journal of Information Science Theory and Practice,0.418769921678848
 2301-3850,Unmanned Systems,1.13125564628937
 2304-9650,European Journal of Contemporary Education,1.04198769705885
 2305-221X,Vietnam Journal of Mathematics,0.752682310388579
 2306-6172,Eurasian Journal of Mathematical and Computer Applications,0.795985307058222
-2308-1309,Journal of Fractal Geometry,0.81876204471667
 2308-5827,"Annales de l'Institut Henri Poincare (D) Combinatorics, Physics and their Interactions",0.606418824737712
 2314-4629,Journal of Mathematics,0.818133091138785
-2314-6133,BioMed Research International,1.11927985228272
-2321-0222,Studies in Microeconomics,0.976686564684445
 2321-6654,Journal of Scientometric Research,0.542266225075854
-2325-1107,Foundations and Trends in Programming Languages,0.922870193530361
 2325-5870,IEEE Transactions on Control of Network Systems,1.58443819187985
 2325-6818,Foundations and Trends in Systems and Control,2.98351702759784
 2326-263X,Brain-Computer Interfaces,0.637107458267942
@@ -2108,27 +1558,17 @@ journal_issn,journal_title,snip_latest
 2329-9266,IEEE/CAA Journal of Automatica Sinica,2.65126763899475
 2329-9290,IEEE/ACM Transactions on Audio Speech and Language Processing,2.25122231504479
 2330-1635,Journal of the Association for Information Science and Technology,1.67190688098148
-2331-1916,Cogent Engineering,0.924487214430868
-2332-2071,Mathematics and Statistics,1.10001764680857
-2332-4309,Journal of Computational and Theoretical Transport,0.490216642619119
 2332-7766,IEEE Transactions on Multi-Scale Computing Systems,1.01660646708184
 2333-9683,Annual Review of Linguistics,3.11623365554689
 2334-2536,Optica,3.13489710545692
-2349-5103,International Journal of Applied and Computational Mathematics,0.88175181645683
 2352-2208,Journal of Logical and Algebraic Methods in Programming,1.17887449516728
 2352-3409,Data in Brief,0.105561172364336
 2352-4677,"Sustainable Energy, Grids and Networks",1.17536233283117
-2352-4847,Energy Reports,1.40324754869666
-2356-6140,"Scientific World Journal, The",0.997416644195156
 2363-7005,Business and Information Systems Engineering,2.23863624977453
 2364-1185,Data Science and Engineering,2.33622577414505
 2364-415X,International Journal of Data Science and Analytics,1.32902780961471
-2364-4966,Granular Computing,1.52072807783616
-2366-5971,International Journal of Intelligent Robotics and Applications,0.900760677144968
-2367-3613,Living Reviews in Relativity,10.437896702041
 2374-0353,ACM Transactions on Spatial Algorithms and Systems,1.06040025244775
 2375-4699,ACM Transactions on Asian and Low-Resource Language Information Processing,1.15764288746192
-2376-3639,ACM Transactions on Modeling and Performance Evaluation of Computing Systems,0.57387446505956
 2378-962X,ACM Transactions on Cyber-Physical Systems,1.00341529683969
 2379-8920,IEEE Transactions on Cognitive and Developmental Systems,1.3605197769736
 2379-9927,International Journal of Computer Mathematics: Computer Systems Theory,0.479951808127576
@@ -2136,9 +1576,7 @@ journal_issn,journal_title,snip_latest
 2399-8083,Environment and Planning B: Urban Analytics and City Science,1.78662796197325
 2405-8963,IFAC-PapersOnLine,0.441506491710934
 2413-9351,Jordanian Journal of Computers and Information Technology,0.522971025418335
-2446-4732,Research on Biomedical Engineering,0.504013596619529
 2452-414X,Journal of Industrial Information Integration,3.75128364734034
-2469-4452,Annals of the American Association of Geographers,1.88132043785645
 2469-9926,Physical Review A,0.928374845630502
 2469-9950,Physical Review B,0.993500431543761
 2470-0010,Physical Review D,1.22519962134541
@@ -2148,17 +1586,14 @@ journal_issn,journal_title,snip_latest
 2472-5579,IISE Transactions on Healthcare Systems Engineering,0.529557592954299
 2472-5854,IISE Transactions,1.49928345603782
 2472-6303,SLAS Technology,0.750365707007203
-2473-2907,Journal of Transportation Engineering Part A: Systems,0.934978334826614
 2475-1502,IEEE Transactions on Games,1.77126959719873
 2475-1839,Journal of Information and Telecommunication,0.787368634708918
 2511-2104,International Journal of Information Technology (Singapore),0.947495358411292
-2523-3920,Journal of Vibration Engineering and Technologies,1.43215356911204
 2523-8906,Journal of Membrane Computing,5.57327646975
 2524-4906,Quantum Machine Intelligence,1.46165670953823
 2524-4957,KN - Journal of Cartography and Geographic Information,1.77237722054822
 2524-521X,CCF Transactions on Pervasive Computing and Interaction,0.899323687975144
 2524-8510,Software-Intensive Cyber-Physical Systems,1.02632036331965
-2573-234X,Journal of Business Analytics,1.22507796157373
 2590-0552,Journal of Computational Physics: X,1.68357152760582
 2666-2558,Recent Advances in Computer Science and Communications,0.588681093600317
 2667-3053,Intelligent Systems with Applications,2.91256815539905
