@@ -27,7 +27,7 @@ We use Neo4J as the graph database. The database schema is similar to the schema
 
 ![[Figure 3. Graph database schema]](images/graph_db_schema.png)
 
-## 1.3. Data Cleaning and Transformations
+## 1.3. Data Cleaning, Transformations, and Augmentations
 Below is the step-by step description of data cleaning and transformations done within the pipeline.The following steps are in the functionality of `dags/scripts/raw_to_tables.py` module.
 
 1. Data are downloaded from kaggle, unzipped, and only the necessary columns are extracted and converted to a `pandas DataFrame`.
@@ -49,9 +49,6 @@ Next the clean data for use in databases are created and augmented. Here, the mo
 8. Finally, we update all tables to be in coherence with each other (meaning that each entity/node has relations, etc).
 
 9. Clean data tables are saved in `.csv` format to `dags/data_ready/` directory from where it can be used for loading to databases.
-
-## 1.4. Data Augmentations
-TBW
 
 # 2. How to Run
 ## 2.1. Prerequisites<br>
