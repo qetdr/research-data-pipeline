@@ -119,7 +119,113 @@ In order to get the journal information, we need the journal ISSN list from the 
 ### 4.2.3. `author`
 For each author, we used a names-genders dataset to add supposed genders to each author. Although affiliation could also be of interest, there are several problems due to which we decided not to find affiliation data. First, the article augmentation source was largely missing affiliation data for authors. Second, in some cases, making queries based on author names were not possible (e.g., only author's first name initial was present - not allowing to identify the author properly). Third, authors' affiliation may change dynamically (e.g., when changing an institution) and authors can also have multiple affiliations. Fourth, author affiliation in itself was not within the scope of the present project.
 
-# 5. Discussion and Conclusions
-Working with this pipeline demanded a lot of effort for several reasons. First, this pipeline works relatively easily on a small data set (say, 100 articles) - but working with tens of thousands (or more) data samples is very slow, especially in the augmentation phase where querying Crossref too often and in large amount may result in a blocked IP. Second, most of the frustration was likely experienced with Neo4J, as its functioning is, at times, unreliable. 
+# 5. Example Queries and Results
+In the present pipeline, we had several analytic goals for which the pipeline was created. The aim of the Data Warehouse was to provide insights into the productivity (operationalized as the number of total publications) and influence (operationalized as citation count) of top researchers in the database. 
 
-WRITE MORE!!!
+## 5.1. Data Warehouse Queries
+Below are (1) analytic questions, (2) SQL-queries (via Python), and pictures of results of the queries.
+
+### 5.1.1. Who are the top 0.01% scientists with the most publications in the sample?
+<pre>
+SELECT author_id, rank_total_pubs as rank, total_pubs as publications
+FROM author 
+ORDER BY rank_total_pubs 
+LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100;
+</pre>
+
+[PIC1]
+
+### 5.1.2. Proportionally, in which journals have the top 0.01% of scientists (in terms of publication count) published their work the most?
+
+<pre>
+SELECT final.author_id, final.rank, final.publications, final.journal_title as top_journal,  TO_CHAR((final.number * 100 / final.publications), 'fm99%') as percentage_of_all_publications
+FROM (select a.author_id, rank, publications, mode() within group (order by j.journal_title) AS journal_title, COUNT(j.journal_title) as number
+      from (SELECT author_id, rank_total_pubs as rank, total_pubs as publications
+      FROM author 
+      ORDER BY rank_total_pubs 
+      LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100) AS a
+      INNER JOIN authorship au ON a.author_id = au.author_id
+      INNER JOIN article ar ON au.article_id = ar.article_id
+      INNER JOIN journal j ON ar.journal_issn = j.journal_issn
+      group by a.author_id, rank, publications,j.journal_title
+      having j.journal_title = mode() within group (order by j.journal_title)) as final
+LEFT JOIN (select a.author_id, rank, publications, mode() within group (order by j.journal_title) AS journal_title, COUNT(j.journal_title) as number
+      from (SELECT author_id, rank_total_pubs as rank, total_pubs as publications
+      FROM author 
+      ORDER BY rank_total_pubs 
+      LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100) AS a
+      INNER JOIN authorship au ON a.author_id = au.author_id
+      INNER JOIN article ar ON au.article_id = ar.article_id
+      INNER JOIN journal j ON ar.journal_issn = j.journal_issn
+      group by a.author_id, rank, publications,j.journal_title
+      having j.journal_title = mode() within group (order by j.journal_title)) as final1 ON 
+    final.author_id = final1.author_id AND final.number < final1.number
+WHERE final1.author_id IS NULL
+ORDER BY final.rank 
+LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100;
+</pre>
+
+[PIC2]
+
+### 5.1.3. What was the most productive year (N publications) for top 0.01% scientists?
+
+<pre>
+SELECT final.author_id, final.rank, final.publications, final.most_productive_year as most_productive_year, final.number as count_of_pub
+FROM (SELECT a.author_id, rank, publications, mode() within group (order by ar.year) AS most_productive_year, sum(publications) as number
+    FROM (SELECT author_id, rank_total_pubs as rank, total_pubs as publications
+    FROM author 
+    ORDER BY rank_total_pubs 
+    LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100) AS a
+    INNER JOIN authorship au ON a.author_id = au.author_id
+    INNER JOIN article ar ON au.article_id = ar.article_id
+    GROUP BY a.author_id, rank, publications, ar.year
+    having ar.year = mode() within group (order by ar.year)) as final
+LEFT JOIN (SELECT a.author_id, rank, publications, mode() within group (order by ar.year) AS most_productive_year, sum(publications) as number 
+    FROM (SELECT author_id, rank_total_pubs as rank, total_pubs as publications
+    FROM author 
+    ORDER BY rank_total_pubs 
+    LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100) AS a
+    INNER JOIN authorship au ON a.author_id = au.author_id
+    INNER JOIN article ar ON au.article_id = ar.article_id
+    GROUP BY a.author_id, rank, publications, ar.year
+    having ar.year = mode() within group (order by ar.year)) as final1 ON 
+    final.author_id = final1.author_id AND final.number < final1.number
+WHERE final1.author_id IS NULL
+ORDER BY final.rank 
+LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100;
+</pre>
+
+[pic3]
+
+### 5.1.4. What was the most influential (in terms of N citations/ N publications) year for top 3% scientists?
+
+<pre>
+SELECT final.author_id, final.rank, final.hindex, final.pub, final.avg_cites, final.year
+FROM (SELECT a.author_id, rank, sum(hindex::DECIMAL) as hindex, sum(publications::DECIMAL) as pub, sum(avg_cites::DECIMAL) as avg_cites, ar.year
+    FROM (SELECT author_id, rank_total_pubs as rank, total_pubs as publications, hindex, avg_cites
+    FROM author 
+    ORDER BY rank_total_pubs 
+    LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100) AS a
+    INNER JOIN authorship au ON a.author_id = au.author_id
+    INNER JOIN article ar ON au.article_id = ar.article_id
+    GROUP BY a.author_id, rank, ar.year) as final
+LEFT JOIN (SELECT a.author_id, rank, sum(hindex::DECIMAL) as hindex, sum(publications::DECIMAL) as pub, sum(avg_cites::DECIMAL) as avg_cites, ar.year 
+    FROM (SELECT author_id, rank_total_pubs as rank, total_pubs as publications, hindex, avg_cites
+    FROM author 
+    ORDER BY rank_total_pubs 
+    LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100) AS a
+    INNER JOIN authorship au ON a.author_id = au.author_id
+    INNER JOIN article ar ON au.article_id = ar.article_id
+    GROUP BY a.author_id, rank, ar.year) as final1 ON 
+    final.author_id = final1.author_id AND final.hindex < final1.hindex
+WHERE final1.author_id IS NULL
+ORDER BY final.rank 
+LIMIT  0.01 * (SELECT COUNT(*) FROM author) / 100;
+</pre>
+
+<PIC>
+
+## 5.2. Graph Database Queries
+Using the graph database, the aim of the queries was to provide information about a particular author's research activity. Specifically, we wanted to see with whom and on what a given author (e.g., based on name) has collaborated. Querying graph database allows to gain insights into the ego-network of a particualr scientist. To that end, we can see the total network (with the scientist) as well as gain a first insight into how modularized is the network (when exploring the network qithout including the ego-node).
+
+## 5.2.1. 
