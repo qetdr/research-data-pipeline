@@ -1,4 +1,4 @@
-# Data Pipeline for Exploring the Scientific Activities with the Computer Science Domain
+# Data Pipeline for Exploring the Scientific Activities within the Computer Science Domain
 A Capstone Project for the *Data Engineering* (LTAT.02.007) course.
 
 The aim of the present project is to develop an end-to-end data pipeline for analytic queries.
